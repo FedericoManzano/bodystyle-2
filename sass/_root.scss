@@ -23,7 +23,7 @@
     // Hover
     --force-hov:         #af1c1c;
     --fish-hov:          #133792;
-    --toxic-hov:         #b8951a;
+    --toxic-hov:         #e2b40c;
     --death-hov:         #242222;
     --dark-hov:          #363841;
     --grey-hov:          #aaaaaa;
@@ -68,4 +68,38 @@ body * {
     margin:             0;
     letter-spacing:     var(--es-character);
     width:              auto;
+}
+
+h1 {
+    font-size: $h1-fz;
+    font-weight: $fw-600;
+}
+
+h2 {
+    font-size: $h2-fz;
+    font-weight: $fw-500;
+}
+
+h3 {
+    font-size: $h3-fz;
+    font-weight: $fw-500;
+}
+
+h4 {
+    font-size: $h4-fz;
+    font-weight: $fw-400;
+}
+
+h5 {
+    font-size: $h5-fz;
+    font-weight: $fw-400;
+}
+
+h6 {
+    font-size: $h6-fz;
+    font-weight: $fw-300;
+}
+
+p, span, a {
+    font-size: 1em;
 }

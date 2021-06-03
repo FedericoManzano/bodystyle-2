@@ -6,6 +6,8 @@
 .btn,
 .btn-sm,
 .btn-lg {
+
+    // Inicializa las propiedades
     border: none                    !important;
     background: none                !important;
     border-radius: $btn-bor-rad     !important;
@@ -23,8 +25,6 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
-    
 }
 
 .btn {
@@ -33,49 +33,49 @@
 }
 
 .btn-sm {
-    font-size: $btn-sm-fz              !important;
-    padding: $btn-sm-padding           !important;
+    font-size: $btn-sm-fz               !important;
+    padding: $btn-sm-padding            !important;
 }
 .btn-lg {
-    font-size: $btn-lg-fz              !important;
-    padding: $btn-lg-padding           !important;
+    font-size: $btn-lg-fz               !important;
+    padding: $btn-lg-padding            !important;
 }
 
 .btn-fish {
-    background-color: var(--fish) !important;
-    color: var(--cure) !important;
+    background-color: var(--fish)           !important;
+    color: var(--cure)                      !important;
      &:hover {
-        background-color: var(--fish-hov) !important;
+        background-color: var(--fish-hov)   !important;
      }
 
      &:active {
-        background-color: var(--fish) !important;
+        background-color: var(--fish)       !important;
      }
 }
 
 .btn-force {
-    background-color: var(--force) !important;
+    background-color: var(--force)          !important;
     color: var(--cure) !important;
      &:hover {
-        background-color: var(--force-hov) !important;
+        background-color: var(--force-hov)  !important;
      }
 
 
      &:active {
-        background-color: var(--force) !important;
+        background-color: var(--force)      !important;
      }
 }
 
 
 .btn-pasture {
-    background-color: var(--pasture) !important;
+    background-color: var(--pasture)        !important;
     color: var(--cure) !important;
      &:hover {
         background-color: var(--pasture-hov) !important;
      }
 
      &:active {
-        background-color: var(--pasture) !important;
+        background-color: var(--pasture)     !important;
      }
 }
 
