@@ -3,19 +3,32 @@
 * Bodystyle 2 librería de estilos CSS
 * @Autor Federico Manzano
 */
+/***********************************************************
+    ESTILOS GENERALES PARA TODA LA LIBRERÍA
+************************************************************/
 :root {
-  --bg-force: #D11E1E;
-  --bg-fish: #2254CE;
-  --bg-toxic: #F3C51A;
-  --bg-death: #000000;
-  --bg-dark: #1B1C22;
-  --bg-grey: #ABABAB;
-  --bg-gentle: #F4F4F4;
-  --bg-cure: #FFFFFF;
-  --bg-pasture: #0EA443;
-  --es-character: 0.02em;
+  --force: #D11E1E;
+  --fish: #2254CE;
+  --toxic: #ffc802;
+  --death: #000000;
+  --dark: #1B1C22;
+  --grey: #c4c4c4;
+  --gentle: #eeeeee;
+  --cure: #FFFFFF;
+  --pasture: #098d5a;
+  --haven: #00cafd;
+  --force-hov: #af1c1c;
+  --fish-hov: #133792;
+  --toxic-hov: #b8951a;
+  --death-hov: #242222;
+  --dark-hov: #363841;
+  --grey-hov: #aaaaaa;
+  --gentle-hov: #e0e0e0;
+  --pasture-hov: #077044;
+  --haven-hov: #00b5e2;
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --es-character: 0.02em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 *::before,
@@ -29,84 +42,235 @@ body * {
   padding: 0;
   margin: 0;
   letter-spacing: var(--es-character);
+  width: auto;
 }
 
 /***********************************************************
     COLORES DE FONDO
 ************************************************************/
 .bg-force {
-  background-color: var(--bg-force) !important;
+  background-color: var(--force) !important;
 }
 
 .bg-toxic {
-  background-color: var(--bg-toxic) !important;
+  background-color: var(--toxic) !important;
 }
 
 .bg-dark {
-  background-color: var(--bg-dark) !important;
+  background-color: var(--dark) !important;
 }
 
 .bg-fish {
-  background-color: var(--bg-fish) !important;
+  background-color: var(--fish) !important;
 }
 
 .bg-grey {
-  background-color: var(--bg-grey) !important;
+  background-color: var(--grey) !important;
 }
 
 .bg-gentle {
-  background-color: var(--bg-gentle) !important;
+  background-color: var(--gentle) !important;
 }
 
 .bg-pasture {
-  background-color: var(--bg-pasture) !important;
+  background-color: var(--pasture) !important;
 }
 
 .bg-death {
-  background-color: var(--bg-death) !important;
+  background-color: var(--death) !important;
 }
 
 .bg-cure {
-  background-color: var(--bg-cure) !important;
+  background-color: var(--cure) !important;
 }
 
 /***********************************************************
     COLORES DE TEXTO
 ************************************************************/
 .t-force {
-  color: var(--bg-force) !important;
+  color: var(--force) !important;
 }
 
 .t-toxic {
-  color: var(--bg-toxic) !important;
+  color: var(--toxic) !important;
 }
 
 .t-dark {
-  color: var(--bg-dark) !important;
+  color: var(--dark) !important;
 }
 
 .t-fish {
-  color: var(--bg-fish) !important;
+  color: var(--fish) !important;
 }
 
 .t-grey {
-  color: var(--bg-grey) !important;
+  color: var(--grey) !important;
 }
 
 .t-gentle {
-  color: var(--bg-gentle) !important;
+  color: var(--gentle) !important;
 }
 
 .t-pasture {
-  color: var(--bg-pasture) !important;
+  color: var(--pasture) !important;
 }
 
 .t-death {
-  color: var(--bg-death) !important;
+  color: var(--death) !important;
 }
 
 .t-cure {
-  color: var(--bg-cure) !important;
+  color: var(--cure) !important;
+}
+
+/***********************************************************
+    BOTORNES
+************************************************************/
+.btn,
+.btn-sm,
+.btn-lg {
+  border: none !important;
+  background: none !important;
+  border-radius: 0.2em !important;
+  white-space: nowrap !important;
+  box-shadow: 0px 2px 3px #00000075 !important;
+  max-width: fit-content !important;
+  font-weight: 400 !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn {
+  font-size: 1.1em !important;
+  padding: 0.5em 1em !important;
+}
+
+.btn-sm {
+  font-size: 1em !important;
+  padding: 0.4em 0.8em !important;
+}
+
+.btn-lg {
+  font-size: 1.3em !important;
+  padding: 0.9em 1.2em !important;
+}
+
+.btn-fish {
+  background-color: var(--fish) !important;
+  color: var(--cure) !important;
+}
+.btn-fish:hover {
+  background-color: var(--fish-hov) !important;
+}
+.btn-fish:active {
+  background-color: var(--fish) !important;
+}
+
+.btn-force {
+  background-color: var(--force) !important;
+  color: var(--cure) !important;
+}
+.btn-force:hover {
+  background-color: var(--force-hov) !important;
+}
+.btn-force:active {
+  background-color: var(--force) !important;
+}
+
+.btn-pasture {
+  background-color: var(--pasture) !important;
+  color: var(--cure) !important;
+}
+.btn-pasture:hover {
+  background-color: var(--pasture-hov) !important;
+}
+.btn-pasture:active {
+  background-color: var(--pasture) !important;
+}
+
+.btn-toxic {
+  background-color: var(--toxic) !important;
+  color: var(--dark) !important;
+}
+.btn-toxic:hover {
+  background-color: var(--toxic-hov) !important;
+}
+.btn-toxic:active {
+  background-color: var(--toxic) !important;
+}
+
+.btn-death {
+  background-color: var(--death) !important;
+  color: var(--cure) !important;
+}
+.btn-death:hover {
+  background-color: var(--death-hov) !important;
+}
+.btn-death:active {
+  background-color: var(--death) !important;
+}
+
+.btn-cure {
+  background-color: var(--cure) !important;
+  color: var(--death) !important;
+}
+.btn-cure:hover {
+  background-color: var(--death) !important;
+  color: var(--cure) !important;
+}
+.btn-cure:active {
+  background-color: var(--cure) !important;
+  color: var(--death) !important;
+}
+
+.btn-grey {
+  background-color: var(--grey) !important;
+  color: var(--death) !important;
+}
+.btn-grey:hover {
+  background-color: var(--grey-hov) !important;
+}
+.btn-grey:active {
+  background-color: var(--grey) !important;
+}
+
+.btn-gentle {
+  background-color: var(--gentle) !important;
+  color: var(--dark) !important;
+}
+.btn-gentle:hover {
+  background-color: var(--gentle-hov) !important;
+}
+.btn-gentle:active {
+  background-color: var(--gentle) !important;
+}
+
+.btn-haven {
+  background-color: var(--haven) !important;
+  color: var(--dark) !important;
+}
+.btn-haven:hover {
+  background-color: var(--haven-hov) !important;
+}
+.btn-haven:active {
+  background-color: var(--haven) !important;
+}
+
+.btn-dark {
+  background-color: var(--dark) !important;
+  color: var(--cure) !important;
+}
+.btn-dark:hover {
+  background-color: var(--dark-hov) !important;
+}
+.btn-dark:active {
+  background-color: var(--dark) !important;
 }
 
 /*# sourceMappingURL=bodystyle.css.map */

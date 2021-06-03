@@ -3,50 +3,69 @@
 * @Autor Federico Manzano
 */
 
+/***********************************************************
+    ESTILOS GENERALES PARA TODA LA LIBRERÍA
+************************************************************/
 :root {
 
     // Colores
-    --bg-force:     #D11E1E;
-    --bg-fish:      #2254CE;
-    --bg-toxic:     #F3C51A;
-    --bg-death:     #000000;
-    --bg-dark:      #1B1C22;
-    --bg-grey:      #ABABAB;
-    --bg-gentle:    #F4F4F4;
-    --bg-cure:      #FFFFFF;
-    --bg-pasture:   #0EA443;
+    --force:             #D11E1E;
+    --fish:              #2254CE;
+    --toxic:             #ffc802;
+    --death:             #000000;
+    --dark:              #1B1C22;
+    --grey:              #c4c4c4;
+    --gentle:            #eeeeee;
+    --cure:              #FFFFFF;
+    --pasture:           #098d5a;
+    --haven:             #00cafd;
 
-    // espaciado
-    --es-character: 0.02em;
+    // Hover
+    --force-hov:         #af1c1c;
+    --fish-hov:          #133792;
+    --toxic-hov:         #b8951a;
+    --death-hov:         #242222;
+    --dark-hov:          #363841;
+    --grey-hov:          #aaaaaa;
+    --gentle-hov:        #e0e0e0;
+    --pasture-hov:       #077044;
+    --haven-hov:         #00b5e2;
 
     // 1 em 
-    font-size: 16px;
+    font-size:              16px;
 
-    font-family:    -apple-system, 
-                    BlinkMacSystemFont, 
-                    "Segoe UI", 
-                    Roboto, 
-                    "Helvetica Neue", 
-                    Arial, 
-                    "Noto Sans", 
-                    sans-serif, 
-                    "Apple Color Emoji", 
-                    "Segoe UI Emoji", 
-                    "Segoe UI Symbol", 
-                    "Noto Color Emoji";
+
+    // espaciado
+    --es-character:         0.02em;
+
+    // Vector de fuentes
+    font-family:        system-ui,
+                        -apple-system,
+                         BlinkMacSystemFont,
+                        "Segoe UI",
+                        Roboto,
+                        "Helvetica Neue", Arial,
+                        "Noto Sans",
+                        "Liberation Sans",
+                        sans-serif,
+                        "Apple Color Emoji", 
+                        "Segoe UI Emoji", 
+                        "Segoe UI Symbol", 
+                        "Noto Color Emoji";
     
 }
 
 
 *::before,
 *::after {
-    padding:    0;
-    margin:     0;
+    padding:            0;
+    margin:             0;
 }
 
 body,
 body * {
-    padding:    0;
-    margin:     0;
-    letter-spacing: var(--es-character);
+    padding:            0;
+    margin:             0;
+    letter-spacing:     var(--es-character);
+    width:              auto;
 }

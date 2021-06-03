@@ -1,0 +1,168 @@
+
+/***********************************************************
+    BOTORNES
+************************************************************/
+
+.btn,
+.btn-sm,
+.btn-lg {
+    border: none                    !important;
+    background: none                !important;
+    border-radius: $btn-bor-rad     !important;
+    white-space: nowrap             !important;
+    box-shadow: $btn-shadow         !important;
+    max-width: fit-content          !important;
+    font-weight: $fw                !important;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
+}
+
+.btn {
+    font-size: $btn-fz                  !important;
+    padding: $btn-padding               !important;
+}
+
+.btn-sm {
+    font-size: $btn-sm-fz              !important;
+    padding: $btn-sm-padding           !important;
+}
+.btn-lg {
+    font-size: $btn-lg-fz              !important;
+    padding: $btn-lg-padding           !important;
+}
+
+.btn-fish {
+    background-color: var(--fish) !important;
+    color: var(--cure) !important;
+     &:hover {
+        background-color: var(--fish-hov) !important;
+     }
+
+     &:active {
+        background-color: var(--fish) !important;
+     }
+}
+
+.btn-force {
+    background-color: var(--force) !important;
+    color: var(--cure) !important;
+     &:hover {
+        background-color: var(--force-hov) !important;
+     }
+
+
+     &:active {
+        background-color: var(--force) !important;
+     }
+}
+
+
+.btn-pasture {
+    background-color: var(--pasture) !important;
+    color: var(--cure) !important;
+     &:hover {
+        background-color: var(--pasture-hov) !important;
+     }
+
+     &:active {
+        background-color: var(--pasture) !important;
+     }
+}
+
+.btn-toxic {
+    background-color: var(--toxic) !important;
+    color: var(--dark) !important;
+     &:hover {
+        background-color: var(--toxic-hov) !important;
+     }
+
+     &:active {
+        background-color: var(--toxic) !important;
+     }
+}
+
+
+.btn-death {
+    background-color: var(--death) !important;
+    color: var(--cure) !important;
+     &:hover {
+        background-color: var(--death-hov) !important;
+     }
+
+     &:active {
+        background-color: var(--death) !important;
+     }
+}
+
+
+.btn-cure {
+    background-color: var(--cure) !important;
+    color: var(--death) !important;
+     &:hover {
+        background-color: var(--death) !important;
+        color: var(--cure) !important;
+     }
+
+     &:active {
+        background-color: var(--cure) !important;
+        color: var(--death) !important;
+     }
+}
+
+.btn-grey {
+    background-color: var(--grey) !important;
+    color: var(--death) !important;
+     &:hover {
+        background-color: var(--grey-hov) !important;
+     }
+
+     &:active {
+        background-color: var(--grey) !important;
+     }
+}
+
+.btn-gentle {
+    background-color: var(--gentle) !important;
+    color: var(--dark) !important;
+     &:hover {
+        background-color: var(--gentle-hov) !important;
+     }
+
+     &:active {
+        background-color: var(--gentle) !important;
+     }
+}
+
+.btn-haven {
+    background-color: var(--haven) !important;
+    color: var(--dark) !important;
+     &:hover {
+        background-color: var(--haven-hov) !important;
+     }
+
+     &:active {
+        background-color: var(--haven) !important;
+     }
+}
+
+.btn-dark {
+    background-color: var(--dark) !important;
+    color: var(--cure) !important;
+     &:hover {
+        background-color: var(--dark-hov) !important;
+     }
+
+     &:active {
+        background-color: var(--dark) !important;
+     }
+}
