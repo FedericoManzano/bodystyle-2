@@ -1,0 +1,70 @@
+.hide-only-large {
+    @include agregar-a-medida-minima(m){
+        display: none !important;
+    }
+}
+
+
+.hide-only-medium {
+    @include agregar-a-medida-maxima(m){
+        display: none !important;
+    }
+}
+
+.hide-since-small {
+    @include agregar-a-medida-maxima(s){
+        display: none !important;
+    }
+}
+
+.hide-since-xsmall {
+    @include agregar-a-medida-maxima(xs){
+        display: none !important;
+    }
+}
+
+
+.show-only-xsmall {
+    @include agregar-a-medida-minima(xs){
+        display: none !important;
+    }
+}
+
+.show-only-small {
+    @include agregar-a-medida-minima(s){
+        display: none !important;
+    }
+
+    @include agregar-a-medida-maxima(xs){
+        display: none !important;
+    }
+}
+
+
+.show-only-medium {
+    @include agregar-a-medida-minima(m){
+        display: none !important;
+    }
+
+    @include agregar-a-medida-maxima(s){
+        display: none !important;
+    }
+}
+
+.show-only-large {
+    @include agregar-a-medida-maxima(m){
+        display: none !important;
+    }
+}
+
+.right {
+    justify-content: flex-end !important;
+}
+
+.left {
+    justify-content: flex-start !important;
+}
+
+.center {
+    justify-content: center !important;
+}

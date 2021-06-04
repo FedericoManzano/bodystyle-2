@@ -4805,6 +4805,76 @@ p, span, a {
   }
 }
 
+@media (min-width: 1030px) {
+  .hide-only-large {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  .hide-only-medium {
+    display: none !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .hide-since-small {
+    display: none !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .hide-since-xsmall {
+    display: none !important;
+  }
+}
+
+@media (min-width: 400px) {
+  .show-only-xsmall {
+    display: none !important;
+  }
+}
+
+@media (min-width: 770px) {
+  .show-only-small {
+    display: none !important;
+  }
+}
+@media (max-width: 400px) {
+  .show-only-small {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1030px) {
+  .show-only-medium {
+    display: none !important;
+  }
+}
+@media (max-width: 770px) {
+  .show-only-medium {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  .show-only-large {
+    display: none !important;
+  }
+}
+
+.right {
+  justify-content: flex-end !important;
+}
+
+.left {
+  justify-content: flex-start !important;
+}
+
+.center {
+  justify-content: center !important;
+}
+
 /***********************************************************
     COLORES DE FONDO
 ************************************************************/
@@ -5045,6 +5115,7 @@ p, span, a {
 .body-nav-fish,
 .body-nav-cure,
 .body-nav-grey,
+.body-nav-death,
 .body-nav-traslucent {
   width: auto;
   display: flex;
@@ -5052,6 +5123,38 @@ p, span, a {
   background-color: var(--force);
   padding: 0 2em;
   font-size: 1.1em;
+  min-height: 3em;
+  z-index: 400;
+}
+.body-nav-dark .container,
+.body-nav-gentle .container,
+.body-nav-pasture .container,
+.body-nav-toxic .container,
+.body-nav-force .container,
+.body-nav-haven .container,
+.body-nav-fish .container,
+.body-nav-cure .container,
+.body-nav-grey .container,
+.body-nav-death .container,
+.body-nav-traslucent .container {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .body-nav-dark .container,
+.body-nav-gentle .container,
+.body-nav-pasture .container,
+.body-nav-toxic .container,
+.body-nav-force .container,
+.body-nav-haven .container,
+.body-nav-fish .container,
+.body-nav-cure .container,
+.body-nav-grey .container,
+.body-nav-death .container,
+.body-nav-traslucent .container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .body-nav-dark .body-logo,
 .body-nav-gentle .body-logo,
@@ -5062,10 +5165,12 @@ p, span, a {
 .body-nav-fish .body-logo,
 .body-nav-cure .body-logo,
 .body-nav-grey .body-logo,
+.body-nav-death .body-logo,
 .body-nav-traslucent .body-logo {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.4em;
+  margin-right: 1em;
 }
 .body-nav-dark .body-list,
 .body-nav-gentle .body-list,
@@ -5076,11 +5181,12 @@ p, span, a {
 .body-nav-fish .body-list,
 .body-nav-cure .body-list,
 .body-nav-grey .body-list,
+.body-nav-death .body-list,
 .body-nav-traslucent .body-list {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
   width: 80%;
+  margin-right: 1em;
 }
 .body-nav-dark .body-list li a,
 .body-nav-gentle .body-list li a,
@@ -5091,6 +5197,7 @@ p, span, a {
 .body-nav-fish .body-list li a,
 .body-nav-cure .body-list li a,
 .body-nav-grey .body-list li a,
+.body-nav-death .body-list li a,
 .body-nav-traslucent .body-list li a {
   text-decoration: none;
   padding: 0.9em 0.7em;
@@ -5098,16 +5205,20 @@ p, span, a {
   align-items: center;
 }
 
-.body-nav-dark {
+.body-nav-dark,
+.body-nav-death {
   background-color: var(--dark);
 }
-.body-nav-dark .body-logo {
+.body-nav-dark .body-logo,
+.body-nav-death .body-logo {
   color: var(--cure);
 }
-.body-nav-dark .body-list li a {
+.body-nav-dark .body-list li a,
+.body-nav-death .body-list li a {
   color: var(--cure);
 }
-.body-nav-dark .body-list li a:hover {
+.body-nav-dark .body-list li a:hover,
+.body-nav-death .body-list li a:hover {
   color: var(--grey);
 }
 
@@ -5184,8 +5295,19 @@ p, span, a {
   background-color: var(--grey);
 }
 
+.body-nav-death {
+  background-color: var(--death);
+}
+
 .body-nav-traslucent {
   background-color: rgba(0, 0, 0, 0);
+}
+
+[class*=body-nav].fixed {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
 }
 
 /*# sourceMappingURL=bodystyle.css.map */

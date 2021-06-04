@@ -11,6 +11,7 @@
 .body-nav-fish,
 .body-nav-cure,
 .body-nav-grey,
+.body-nav-death,
 .body-nav-traslucent {
 
     width: auto;
@@ -20,12 +21,27 @@
     background-color: var(--force);
     padding: $nav-body-padding;
     font-size: $nav-body-fz;
+    min-height: 3em;
 
+    z-index: dameZIndex(nav);
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1024px) {
+            & {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
 
     .body-logo {
         text-decoration: none;
         font-weight: $fw-600;
         font-size: $nav-fz-logo;
+        margin-right: 1em;
     }
 
 
@@ -33,9 +49,8 @@
     .body-list {
         list-style: none;
         display: flex;
-        justify-content: flex-end;
         width: $nav-list-width;
-
+        margin-right: 1em;
         & li a {
             text-decoration: none;
             padding: $nav-list-link-padding;
@@ -45,7 +60,8 @@
     }   
 }
 
-.body-nav-dark {
+.body-nav-dark,
+.body-nav-death {
     background-color: var(--dark);
     .body-logo {
         color: var(--cure);
@@ -131,6 +147,18 @@
     background-color: var(--grey);
 }
 
+.body-nav-death {
+    background-color: var(--death);
+}
+
 .body-nav-traslucent {
     background-color: rgba(0, 0, 0, 0);
 }
+
+[class*="body-nav"].fixed {
+    position: fixed !important;
+    top:    0 !important;
+    left:   0 !important;
+    right:  0 !important;
+} 
+

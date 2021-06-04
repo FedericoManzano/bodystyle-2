@@ -33,6 +33,12 @@
     }
 }
 
+@function dameZIndex($component) {
+    @if map-has-key($z-index, $component) {
+        @return map-get($z-index, $component);
+    }
+}
+
 // Verifica si un valor es multiplo de 5
 @function multiplo5($num){
     @return $num % 5 == 0;
