@@ -1,0 +1,70 @@
+
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+
+    outline:        none !important;
+    border:         $input-borde;
+    font-size:      $input-fz;
+    color:          $input-color;
+    padding:        $input-padding;
+    border-radius:  $input-radio;
+    width:          100%;
+    
+    &:focus {
+        border-radius:  8px;
+        box-shadow:     none !important;
+        border:         none !important;
+        border:         $input-borde-focus;
+    }
+
+    &::placeholder {
+        color: $input-color-placeholder;
+    }
+}
+
+.form-group {
+    margin-bottom: 1.2em !important;
+    label {
+        color: $group-label-color;
+        font-size: 1em;
+    }
+
+    input {
+        margin-top: 0.4em !important;
+    }
+}
+
+
+.form-group-line {
+    margin-bottom:  1.2em !important;
+    display:        flex;
+    align-items:    baseline;
+    label {
+        color:          $group-label-color;
+        font-size:      1em;
+        margin-right:   1em;
+    }
+}
+
+.input-err {
+    border: 1px solid var(--force) !important;
+}
+
+$disabled-bgcolor: #e0e0e0 !important;
+
+input.disabled {
+    background-color: $disabled-bgcolor;
+    color: rgb(206, 206, 206);
+    &:focus {
+        border:$input-borde !important;
+    }
+
+    &::placeholder {
+        color: $disabled-bgcolor !important;
+    }
+}

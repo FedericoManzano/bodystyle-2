@@ -1,0 +1,100 @@
+/***********************************************************
+    CARD
+************************************************************/
+
+$card-border:           1px solid rgba(0, 0, 0, 0.075);
+$card-border-rad:       4px;
+$card-padding:          0.8em;
+$card-maxw:             250px;
+$card-lh:               1.4em;
+
+// Footer
+$card-footer: rgba(0, 0, 0, 0.027);
+
+
+.card {
+    background-color: var(--cure);
+    border: $card-border;
+    border-radius: $card-border-rad;
+    max-width: $card-maxw;
+    line-height: $card-lh;
+
+    .card-description {
+        padding: $card-padding;
+    }
+
+
+    .card-footer {
+        padding: $card-padding;
+        border-top: $card-border;
+        background-color: $card-footer;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+
+.card-force,
+.card-dark,
+.card-fish,
+.card-death,
+.card-pasture {
+    color:              var(--cure)   !important;
+    a{
+        color:          var(--cure);
+    }
+}
+
+.card-cure,
+.card-gentle,
+.card-grey,
+.card-toxic,
+.card-haven {
+    color:              var(--death)   !important;
+    a{
+        color:          var(--death);
+    }
+}
+
+
+.card-force {
+    background-color:   var(--force)   !important;
+}
+
+.card-dark {
+    background-color:   var(--dark)   !important;
+}
+
+.card-death {
+    background-color:   var(--death)   !important;
+}
+
+.card-fish {
+    background-color:   var(--fish)   !important;
+}
+
+.card-pasture {
+    background-color:   var(--pasture)   !important;
+}
+
+.card-gentle {
+    background-color:   var(--gentle)   !important;
+}
+
+.card-toxic {
+    background-color:   var(--toxic)   !important;
+}
+
+
+.card-grey {
+    background-color:   var(--grey)   !important;
+}
+
+.card-cure {
+    background-color:   var(--cure)   !important;
+}
+
+.card-haven {
+    background-color:   var(--haven)   !important;
+}

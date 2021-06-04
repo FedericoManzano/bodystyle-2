@@ -15,8 +15,10 @@
     box-shadow: $btn-shadow         !important;
     max-width: fit-content          !important;
     font-weight: $fw                !important;
-    cursor: pointer;
+    text-decoration: none           !important;
 
+    cursor: pointer;
+   
     display: flex;
     justify-content: center;
     align-items: center;

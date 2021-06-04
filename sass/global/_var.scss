@@ -110,5 +110,20 @@ $z-index:(
             toast:           320,
 );
 
+///////////////////////////////////////////////////////////////// 
+//////////////////////// FORMULARIO /////////////////////////////
+/////////////////////////////////////////////////////////////////
 
+$input-borde:       1px solid rgba(0, 0, 0, 0.233);
+$input-fz:          1em;  
+$input-color:       #363636;
+$input-padding:     0.7em;
+$input-radio:       8px;
+
+
+$input-color-placeholder: #9e9e9e;
+
+$input-borde-focus: 1px solid #87caf7 !important;
+
+$group-label-color: #4b4b4b;
 

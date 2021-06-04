@@ -5,6 +5,11 @@
  * Licencia MIT
  * Repositorio ()
  */
+/*******************************************************************
+////////////////////////////////////////////////////////////////////
+/////////////////// GLOBALES ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////// 
+*******************************************************************/
 /***********************************************************
     ESTILOS GENERALES PARA TODA LA LIBRERÍA
 ************************************************************/
@@ -83,6 +88,11 @@ p, span, a {
   font-size: 1em;
 }
 
+/*******************************************************************
+////////////////////////////////////////////////////////////////////
+/////////////////// ALINEAMIENTO ///////////////////////////////////
+//////////////////////////////////////////////////////////////////// 
+*******************************************************************/
 /****
     Grilla para acomodar los elementos dentro del sitio
     Contiene 4 medidas disponibles
@@ -9051,6 +9061,11 @@ p, span, a {
   text-align: left !important;
 }
 
+/******************************************************************
+///////////////////////////////////////////////////////////////////
+/////////////////// UTILITARIOS ///////////////////////////////////
+///////////////////////////////////////////////////////////////////
+*******************************************************************/
 /***********************************************************
     ANCHO Y ALTO
 ************************************************************/
@@ -15767,6 +15782,103 @@ p, span, a {
     line-height: 100px !important;
   }
 }
+/******************************************************************
+///////////////////////////////////////////////////////////////////
+/////////////////// CSS ///////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+*******************************************************************/
+/***********************************************************
+    CARD
+************************************************************/
+.card {
+  background-color: var(--cure);
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+  max-width: 250px;
+  line-height: 1.4em;
+}
+.card .card-description {
+  padding: 0.8em;
+}
+.card .card-footer {
+  padding: 0.8em;
+  border-top: 1px solid rgba(0, 0, 0, 0.075);
+  background-color: rgba(0, 0, 0, 0.027);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-force,
+.card-dark,
+.card-fish,
+.card-death,
+.card-pasture {
+  color: var(--cure) !important;
+}
+.card-force a,
+.card-dark a,
+.card-fish a,
+.card-death a,
+.card-pasture a {
+  color: var(--cure);
+}
+
+.card-cure,
+.card-gentle,
+.card-grey,
+.card-toxic,
+.card-haven {
+  color: var(--death) !important;
+}
+.card-cure a,
+.card-gentle a,
+.card-grey a,
+.card-toxic a,
+.card-haven a {
+  color: var(--death);
+}
+
+.card-force {
+  background-color: var(--force) !important;
+}
+
+.card-dark {
+  background-color: var(--dark) !important;
+}
+
+.card-death {
+  background-color: var(--death) !important;
+}
+
+.card-fish {
+  background-color: var(--fish) !important;
+}
+
+.card-pasture {
+  background-color: var(--pasture) !important;
+}
+
+.card-gentle {
+  background-color: var(--gentle) !important;
+}
+
+.card-toxic {
+  background-color: var(--toxic) !important;
+}
+
+.card-grey {
+  background-color: var(--grey) !important;
+}
+
+.card-cure {
+  background-color: var(--cure) !important;
+}
+
+.card-haven {
+  background-color: var(--haven) !important;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("fonts/icomoon.eot?m5h0i1");
@@ -15940,6 +16052,11 @@ p, span, a {
   color: var(--cure) !important;
 }
 
+/******************************************************************
+///////////////////////////////////////////////////////////////////
+/////////////////// COMPONENTES ///////////////////////////////////
+///////////////////////////////////////////////////////////////////
+*******************************************************************/
 /***********************************************************
     BOTORNES
 ************************************************************/
@@ -15953,6 +16070,7 @@ p, span, a {
   box-shadow: 0px 2px 3px #00000075 !important;
   max-width: fit-content !important;
   font-weight: 400 !important;
+  text-decoration: none !important;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -16482,6 +16600,85 @@ p, span, a {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.555);
   z-index: 410;
+}
+
+/******************************************************************
+///////////////////////////////////////////////////////////////////
+/////////////////// FORMULARIOS ///////////////////////////////////
+///////////////////////////////////////////////////////////////////
+*******************************************************************/
+input[type=text],
+input[type=search],
+input[type=number],
+input[type=email],
+input[type=password],
+input[type=text],
+textarea {
+  outline: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  font-size: 1em;
+  color: #363636;
+  padding: 0.7em;
+  border-radius: 8px;
+  width: 100%;
+}
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=text]:focus,
+textarea:focus {
+  border-radius: 8px;
+  box-shadow: none !important;
+  border: none !important;
+  border: 1px solid #87caf7 !important;
+}
+input[type=text]::placeholder,
+input[type=search]::placeholder,
+input[type=number]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=text]::placeholder,
+textarea::placeholder {
+  color: #9e9e9e;
+}
+
+.form-group {
+  margin-bottom: 1.2em !important;
+}
+.form-group label {
+  color: #4b4b4b;
+  font-size: 1em;
+}
+.form-group input {
+  margin-top: 0.4em !important;
+}
+
+.form-group-line {
+  margin-bottom: 1.2em !important;
+  display: flex;
+  align-items: baseline;
+}
+.form-group-line label {
+  color: #4b4b4b;
+  font-size: 1em;
+  margin-right: 1em;
+}
+
+.input-err {
+  border: 1px solid var(--force) !important;
+}
+
+input.disabled {
+  background-color: #e0e0e0 !important;
+  color: #cecece;
+}
+input.disabled:focus {
+  border: 1px solid rgba(0, 0, 0, 0.233) !important;
+}
+input.disabled::placeholder {
+  color: #e0e0e0 !important !important;
 }
 
 /*# sourceMappingURL=bodystyle.css.map */
