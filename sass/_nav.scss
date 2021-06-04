@@ -1,0 +1,136 @@
+/***********************************************************
+    NAV
+************************************************************/
+
+.body-nav-dark,
+.body-nav-gentle,
+.body-nav-pasture,
+.body-nav-toxic,
+.body-nav-force,
+.body-nav-haven,
+.body-nav-fish,
+.body-nav-cure,
+.body-nav-grey,
+.body-nav-traslucent {
+
+    width: auto;
+    display: flex;
+    align-items: center;
+    
+    background-color: var(--force);
+    padding: $nav-body-padding;
+    font-size: $nav-body-fz;
+
+
+    .body-logo {
+        text-decoration: none;
+        font-weight: $fw-600;
+        font-size: $nav-fz-logo;
+    }
+
+
+
+    .body-list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        width: $nav-list-width;
+
+        & li a {
+            text-decoration: none;
+            padding: $nav-list-link-padding;
+            display: flex;
+            align-items: center;
+        }
+    }   
+}
+
+.body-nav-dark {
+    background-color: var(--dark);
+    .body-logo {
+        color: var(--cure);
+    }
+
+
+    .body-list {
+        & li a {
+            color: var(--cure);
+            &:hover {
+                color: var(--grey);
+            }
+        }
+    }
+}
+
+
+.body-nav-haven,
+.body-nav-toxic,
+.body-nav-gentle,
+.body-nav-cure,
+.body-nav-grey,
+.body-nav-traslucent  {
+    .body-logo {
+        color: var(--death);
+    }
+
+    .body-list {
+        & li a {
+            color: var(--death);
+            &:hover {
+                color: var(--dark);
+            }
+        }
+    }
+}
+
+.body-nav-force,
+.body-nav-fish,
+.body-nav-pasture {
+
+    .body-logo {
+        color: var(--cure);
+    }
+    & li a {
+        color: var(--cure);
+        &:hover {
+            color: var(--grey);
+        }
+    }
+}
+
+.body-nav-force {
+    background-color: var(--force);
+}
+
+
+.body-nav-fish {
+    background-color: var(--fish);
+}
+
+.body-nav-gentle {
+    background-color: var(--gentle);
+}
+
+.body-nav-pasture {
+    background-color: var(--pasture);
+}
+
+.body-nav-haven {
+    background-color: var(--haven);
+}
+
+.body-nav-toxic {
+    background-color: var(--toxic);
+}
+
+.body-nav-cure {
+    background-color: var(--cure);
+}
+
+.body-nav-grey {
+    background-color: var(--grey);
+}
+
+.body-nav-traslucent {
+    background-color: rgba(0, 0, 0, 0);
+}

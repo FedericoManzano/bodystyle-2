@@ -55,3 +55,22 @@ $sizes:(
             m: 1030px,
             l: 1200px, /// Mayor 
 );
+
+
+///////////////////////////////////////////////////////////////// 
+//////////////////////// NAV ////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+$nav-body-padding:          0 2em;
+$nav-body-fz:               1.1em;
+
+// Lista
+$nav-list-width:            80%;
+
+//Logo
+$nav-fz-logo:               1.4em;
+
+// Enlaces
+$nav-hover-white:         #ffffff13;
+$nav-hover-black:         #00000013;
+$nav-list-link-padding:     0.9em 0.7em;

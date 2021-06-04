@@ -11,7 +11,7 @@
   --fish: #2254CE;
   --toxic: #ffc802;
   --death: #000000;
-  --dark: #1B1C22;
+  --dark: #292a30;
   --grey: #c4c4c4;
   --gentle: #eeeeee;
   --cure: #FFFFFF;
@@ -331,6 +331,161 @@ p, span, a {
 }
 .btn-dark:active {
   background-color: var(--dark) !important;
+}
+
+/***********************************************************
+    NAV
+************************************************************/
+.body-nav-dark,
+.body-nav-gentle,
+.body-nav-pasture,
+.body-nav-toxic,
+.body-nav-force,
+.body-nav-haven,
+.body-nav-fish,
+.body-nav-cure,
+.body-nav-grey,
+.body-nav-traslucent {
+  width: auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--force);
+  padding: 0 2em;
+  font-size: 1.1em;
+}
+.body-nav-dark .body-logo,
+.body-nav-gentle .body-logo,
+.body-nav-pasture .body-logo,
+.body-nav-toxic .body-logo,
+.body-nav-force .body-logo,
+.body-nav-haven .body-logo,
+.body-nav-fish .body-logo,
+.body-nav-cure .body-logo,
+.body-nav-grey .body-logo,
+.body-nav-traslucent .body-logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+.body-nav-dark .body-list,
+.body-nav-gentle .body-list,
+.body-nav-pasture .body-list,
+.body-nav-toxic .body-list,
+.body-nav-force .body-list,
+.body-nav-haven .body-list,
+.body-nav-fish .body-list,
+.body-nav-cure .body-list,
+.body-nav-grey .body-list,
+.body-nav-traslucent .body-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+.body-nav-dark .body-list li a,
+.body-nav-gentle .body-list li a,
+.body-nav-pasture .body-list li a,
+.body-nav-toxic .body-list li a,
+.body-nav-force .body-list li a,
+.body-nav-haven .body-list li a,
+.body-nav-fish .body-list li a,
+.body-nav-cure .body-list li a,
+.body-nav-grey .body-list li a,
+.body-nav-traslucent .body-list li a {
+  text-decoration: none;
+  padding: 0.9em 0.7em;
+  display: flex;
+  align-items: center;
+}
+
+.body-nav-dark {
+  background-color: var(--dark);
+}
+.body-nav-dark .body-logo {
+  color: var(--cure);
+}
+.body-nav-dark .body-list li a {
+  color: var(--cure);
+}
+.body-nav-dark .body-list li a:hover {
+  color: var(--grey);
+}
+
+.body-nav-haven .body-logo,
+.body-nav-toxic .body-logo,
+.body-nav-gentle .body-logo,
+.body-nav-cure .body-logo,
+.body-nav-grey .body-logo,
+.body-nav-traslucent .body-logo {
+  color: var(--death);
+}
+.body-nav-haven .body-list li a,
+.body-nav-toxic .body-list li a,
+.body-nav-gentle .body-list li a,
+.body-nav-cure .body-list li a,
+.body-nav-grey .body-list li a,
+.body-nav-traslucent .body-list li a {
+  color: var(--death);
+}
+.body-nav-haven .body-list li a:hover,
+.body-nav-toxic .body-list li a:hover,
+.body-nav-gentle .body-list li a:hover,
+.body-nav-cure .body-list li a:hover,
+.body-nav-grey .body-list li a:hover,
+.body-nav-traslucent .body-list li a:hover {
+  color: var(--dark);
+}
+
+.body-nav-force .body-logo,
+.body-nav-fish .body-logo,
+.body-nav-pasture .body-logo {
+  color: var(--cure);
+}
+.body-nav-force li a,
+.body-nav-fish li a,
+.body-nav-pasture li a {
+  color: var(--cure);
+}
+.body-nav-force li a:hover,
+.body-nav-fish li a:hover,
+.body-nav-pasture li a:hover {
+  color: var(--grey);
+}
+
+.body-nav-force {
+  background-color: var(--force);
+}
+
+.body-nav-fish {
+  background-color: var(--fish);
+}
+
+.body-nav-gentle {
+  background-color: var(--gentle);
+}
+
+.body-nav-pasture {
+  background-color: var(--pasture);
+}
+
+.body-nav-haven {
+  background-color: var(--haven);
+}
+
+.body-nav-toxic {
+  background-color: var(--toxic);
+}
+
+.body-nav-cure {
+  background-color: var(--cure);
+}
+
+.body-nav-grey {
+  background-color: var(--grey);
+}
+
+.body-nav-traslucent {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /****
