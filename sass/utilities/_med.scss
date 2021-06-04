@@ -1,0 +1,70 @@
+/***********************************************************
+    ANCHO Y ALTO
+************************************************************/
+
+@for $i from 1 through 100 {
+    @if(multiplo5($i)){    
+        .w-#{$i}{        
+            width: 0% + $i !important; 
+        }
+    }
+}
+@for $i from 1 through 100 {
+    @if(multiplo5($i)){    
+        .h-#{$i}{        
+            height: 0% + $i !important; 
+        }
+    }
+}
+
+
+@media (max-width: dameMedida(m)){
+    @for $i from 1 through 100 {
+        @if(multiplo5($i)){    
+            .w-m-#{$i}{        
+                width: 0% + $i !important; 
+            }
+        }
+    }
+    @for $i from 1 through 100 {
+        @if(multiplo5($i)){    
+            .h-m-#{$i}{        
+                height: 0% + $i !important; 
+            }
+        }
+    }
+}
+
+@media (max-width: dameMedida(s)){
+    @for $i from 1 through 100 {
+        @if(multiplo5($i)){    
+            .w-s-#{$i}{        
+                width: 0% + $i !important; 
+            }
+        }
+    }
+    @for $i from 1 through 100 {
+        @if(multiplo5($i)){    
+            .h-s-#{$i}{        
+                height: 0% + $i !important; 
+            }
+        }
+    }
+}
+
+@media (max-width: dameMedida(xs)){
+    @for $i from 1 through 100 {
+        @if(multiplo5($i)){    
+            .w-xs-#{$i}{        
+                width: 0% + $i !important; 
+            }
+        }
+    }
+    @for $i from 1 through 100 {
+        @if(multiplo5($i)){    
+            .h-xs-#{$i}{        
+                height: 0% + $i !important; 
+            }
+        }
+    }
+}

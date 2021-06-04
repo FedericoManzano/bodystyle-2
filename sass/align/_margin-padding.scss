@@ -1,4 +1,8 @@
-// Clases para agregarle padding a los elementos
+/***********************************************************
+    MARGIN PADDING
+************************************************************/
+
+
 $p: inicializarVariable();
 @for $i from 0 through 15 {
     .p-#{$i} { 

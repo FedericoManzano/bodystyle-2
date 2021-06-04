@@ -1,3 +1,11 @@
+
+/*!
+ * BodyStyle2 v1.0.0
+ * Copyright Federico Manzano
+ * Licencia MIT
+ * Repositorio ()
+ */
+
 @import "./global/var";
 @import "./global/root";
 @import "./global/mixim";
@@ -7,6 +15,11 @@
 @import "./align/container";
 @import "./align/flex";
 @import "./align/margin-padding";
+@import "./align/text";
+
+
+@import "./utilities/med";
+@import "./utilities/text-tam";
 
 @import "icon";
 
