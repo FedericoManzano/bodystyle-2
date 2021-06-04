@@ -1,0 +1,23 @@
+@mixin agregar-a-medida-maxima($tam) { 
+    @if map-has-key($sizes, $tam) {
+        @media (max-width: #{map-get($sizes, $tam)}) {
+            @content;
+        }
+    }
+  
+    @else {
+      @warn "El tamaño seleccionado no existe";
+    }
+};
+
+@mixin agregar-a-medida-minima($tam) { 
+    @if map-has-key($sizes, $tam) {
+        @media (min-width: #{map-get($sizes, $tam)}) {
+            @content;
+        }
+    }
+
+    @else {
+      @warn "El tamaño seleccionado no existe";;
+    }
+};

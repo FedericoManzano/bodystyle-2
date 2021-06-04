@@ -79,6 +79,32 @@ p, span, a {
   font-size: 1em;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 1030px) {
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 /***********************************************************
     COLORES DE FONDO
 ************************************************************/
@@ -259,8 +285,8 @@ p, span, a {
   color: var(--cure) !important;
 }
 .btn-cure:active {
-  background-color: var(--cure) !important;
-  color: var(--death) !important;
+  background-color: var(--dark) !important;
+  color: var(--cure) !important;
 }
 
 .btn-grey {
@@ -2192,7 +2218,7 @@ p, span, a {
 .row .offset-l-12-12 {
   grid-column: 13/span 12;
 }
-@media (max-width: dameMedida(m)) {
+@media (max-width: 1030px) {
   .row .cxs-1 {
     grid-column: span 1;
   }
@@ -3598,7 +3624,7 @@ p, span, a {
     grid-column: 13/span 12;
   }
 }
-@media (max-width: dameMedida(s)) {
+@media (max-width: 770px) {
   .row .cxs-1 {
     grid-column: span 1;
   }
@@ -4536,7 +4562,7 @@ p, span, a {
     grid-column: 13/span 12;
   }
 }
-@media (max-width: dameMedida(xs)) {
+@media (max-width: 400px) {
   .row .cxs-1 {
     grid-column: span 1;
   }
