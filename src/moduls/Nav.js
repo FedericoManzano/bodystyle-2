@@ -27,11 +27,14 @@ import $ from "jquery"
         // Agrega el sidebar cover
         $("body").append(`<div class="body-sidebar-cover"></div>`)
 
+
         // Oculta el sidebar cover
         $(".body-sidebar-cover").hide()
 
+
         // Obtiene el id del sidebar
         id = $(".bs-trigger").data("trigger")
+            
     }
 
     /**
@@ -79,12 +82,24 @@ import $ from "jquery"
         })
     }
 
+    /**
+     * Captura el evento resize de la 
+     * ventana y oculta el sidebar si este 
+     * es visible
+     */
+    const resize = () => {
+        $(window).on("resize", () => {
+            if( id !== null && id !== undefined && visible ) 
+                move(HIDE)
+        })
+    }
 
     const Nav = {
         init: () => {
             initNav()       // Inicializa el nav
             activate()      // activa el nav si este no es visible
             desactivate()   // desactiva a el nav si está activado
+            resize()
         }
     }
 

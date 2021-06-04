@@ -1,0 +1,382 @@
+.d-flex {
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    -ms-display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-no-wrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+
+.just-start {
+    justify-content: flex-start;
+}
+
+.just-end {
+    justify-content: flex-end;
+}
+
+.just-center {
+    justify-content: center;
+}
+
+.just-around {
+    justify-content: space-around;
+}
+
+.just-around-between {
+    justify-content: space-between;
+}
+
+.ali-center {
+    align-items: center;
+}
+
+.ali-start {
+    align-items: flex-start;
+}
+
+.ali-end {
+    align-items: flex-end;
+}
+
+.ali-baseline {
+    align-items: baseline;
+}
+
+.ali-stretch {
+    align-items: stretch;
+}
+
+.ali-contenido-centrada {
+    align-content: center;
+}
+
+.ali-content-start {
+    align-content: flex-start;
+}
+
+.ali-content-end {
+    align-content: flex-end;
+}
+
+.ali-content-stretch {
+    align-content: stretch;
+}
+
+
+
+@media (max-width: dameMedida(m)){
+    .d-flex-m {
+        display: flex;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -o-display: flex;
+        -ms-display: flex;
+    }
+    
+    .flex-row-m {
+        flex-direction: row;
+    }
+    
+    .flex-column-m {
+        flex-direction: column;
+    }
+    
+    .flex-row-reverse-m {
+        flex-direction: row-reverse;
+    }
+    
+    .flex-column-reverse-m {
+        flex-direction: column-reverse;
+    }
+    
+    .flex-no-wrap-m {
+        flex-wrap: nowrap;
+    }
+    
+    .flex-wrap-m {
+        flex-wrap: wrap;
+    }
+    
+    .flex-wrap-reverse-m {
+        flex-wrap: wrap-reverse;
+    }
+    
+    
+    .just-start-m {
+        justify-content: flex-start;
+    }
+    
+    .just-end-m {
+        justify-content: flex-end;
+    }
+    
+    .just-center-m {
+        justify-content: center;
+    }
+    
+    .just-around-m {
+        justify-content: space-around;
+    }
+    
+    .just-between-m {
+        justify-content: space-between;
+    }
+    
+    .ali-center-m {
+        align-items: center;
+    }
+    
+    .ali-start-m {
+        align-items: flex-start;
+    }
+    
+    .ali-end-m {
+        align-items: flex-end;
+    }
+    
+    .ali-baseline-m {
+        align-items: baseline;
+    }
+    
+    .ali-stretch-m {
+        align-items: stretch;
+    }
+    
+    .ali-content-center-m {
+        align-content: center;
+    }
+    
+    .ali-content-start-m {
+        align-content: flex-start;
+    }
+    
+    .ali-content-end-m {
+        align-content: flex-end;
+    }
+    
+    .ali-content-stretch-m {
+        align-content: stretch;
+    }
+    
+}
+
+@media (max-width: dameMedida(s)){
+    .d-flex-s {
+        display: flex;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -o-display: flex;
+        -ms-display: flex;
+    }
+    
+    .flex-row-s {
+        flex-direction: row;
+    }
+    
+    .flex-column-s {
+        flex-direction: column;
+    }
+    
+    .flex-row-reverse-s {
+        flex-direction: row-reverse;
+    }
+    
+    .flex-column-reverse-s {
+        flex-direction: column-reverse;
+    }
+    
+    .flex-no-wrap-s {
+        flex-wrap: nowrap;
+    }
+    
+    .flex-wrap-s {
+        flex-wrap: wrap;
+    }
+    
+    .flex-wrap-reverse-s {
+        flex-wrap: wrap-reverse;
+    }
+    
+    .just-start-s {
+        justify-content: flex-start;
+    }
+    
+    .just-end-s {
+        justify-content: flex-end;
+    }
+    
+    .just-center-s {
+        justify-content: center;
+    }
+    
+    .just-around-s {
+        justify-content: space-around;
+    }
+    
+    .just-between-s {
+        justify-content: space-between;
+    }
+    
+    .ali-center-s {
+        align-items: center;
+    }
+    
+    .ali-start-s {
+        align-items: flex-start;
+    }
+    
+    .ali-end-s {
+        align-items: flex-end;
+    }
+    
+    .ali-baseline-s {
+        align-items: baseline;
+    }
+    
+    .ali-stretch-s {
+        align-items: stretch;
+    }
+    
+    .ali-content-center-s {
+        align-content: center;
+    }
+    
+    .ali-content-start-s {
+        align-content: flex-start;
+    }
+    
+    .ali-content-end-s {
+        align-content: flex-end;
+    }
+    
+    .ali-content-stretch-s {
+        align-content: stretch;
+    }
+    
+}
+
+
+@media (max-width: dameMedida(xs)){
+    .d-flex-xs {
+        display: flex;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -o-display: flex;
+        -ms-display: flex;
+    }
+    
+    .flex-row-xs {
+        flex-direction: row;
+    }
+    
+    .flex-column-xs {
+        flex-direction: column;
+    }
+    
+    .flex-row-reverse-xs {
+        flex-direction: row-reverse;
+    }
+    
+    .flex-column-reverse-xs {
+        flex-direction: column-reverse;
+    }
+    
+    .flex-no-wrap-xs {
+        flex-wrap: nowrap;
+    }
+    
+    .flex-wrap-xs {
+        flex-wrap: wrap;
+    }
+    
+    .flex-wrap-reverse-xs {
+        flex-wrap: wrap-reverse;
+    }
+    
+    .just-start-xs {
+        justify-content: flex-start;
+    }
+    
+    .just-end-xs {
+        justify-content: flex-end;
+    }
+    
+    .just-center-xs {
+        justify-content: center;
+    }
+    
+    .just-around-xs {
+        justify-content: space-around;
+    }
+    
+    .just-between-xs {
+        justify-content: space-between;
+    }
+
+    
+    .ali-center-xs {
+        align-items: center;
+    }
+    
+    .ali-start-s {
+        align-items: flex-start;
+    }
+    
+    .ali-end-xs {
+        align-items: flex-end;
+    }
+    
+    .ali-baseline-xs {
+        align-items: baseline;
+    }
+    
+    .ali-stretch-xs {
+        align-items: stretch;
+    }
+    
+    .ali-content-center-xs {
+        align-content: center;
+    }
+    
+    .ali-content-start-xs {
+        align-content: flex-start;
+    }
+    
+    .ali-content-end-xs {
+        align-content: flex-end;
+    }
+    
+    .ali-content-stretch-xs {
+        align-content: stretch;
+    }
+    
+}
