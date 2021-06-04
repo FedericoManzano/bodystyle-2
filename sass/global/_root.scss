@@ -60,6 +60,7 @@
 *::after {
     padding:            0;
     margin:             0;
+    box-sizing:         border-box;
 }
 
 body,
@@ -68,6 +69,7 @@ body * {
     margin:             0;
     letter-spacing:     var(--es-character);
     width:              auto;
+    box-sizing:         border-box;
 }
 
 h1 {

@@ -35,6 +35,7 @@
 *::after {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body,
@@ -43,6 +44,7 @@ body * {
   margin: 0;
   letter-spacing: var(--es-character);
   width: auto;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -4805,6 +4807,31 @@ p, span, a {
   }
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?m5h0i1");
+  src: url("fonts/icomoon.eot?m5h0i1#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?m5h0i1") format("truetype"), url("fonts/icomoon.woff?m5h0i1") format("woff"), url("fonts/icomoon.svg?m5h0i1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=bs-], [class*=" bs-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bs-menu:before {
+  content: "";
+}
+
 @media (min-width: 1030px) {
   .hide-only-large {
     display: none !important;
@@ -5117,6 +5144,7 @@ p, span, a {
 .body-nav-grey,
 .body-nav-death,
 .body-nav-traslucent {
+  position: relative;
   width: auto;
   display: flex;
   align-items: center;
@@ -5125,6 +5153,24 @@ p, span, a {
   font-size: 1.1em;
   min-height: 3em;
   z-index: 400;
+  user-select: none;
+}
+.body-nav-dark .bs-menu,
+.body-nav-gentle .bs-menu,
+.body-nav-pasture .bs-menu,
+.body-nav-toxic .bs-menu,
+.body-nav-force .bs-menu,
+.body-nav-haven .bs-menu,
+.body-nav-fish .bs-menu,
+.body-nav-cure .bs-menu,
+.body-nav-grey .bs-menu,
+.body-nav-death .bs-menu,
+.body-nav-traslucent .bs-menu {
+  position: absolute;
+  right: 15px;
+  padding: 0.9em 0.7em;
+  top: 0;
+  cursor: pointer;
 }
 .body-nav-dark .container,
 .body-nav-gentle .container,
@@ -5308,6 +5354,174 @@ p, span, a {
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
+}
+
+/***********************************************************
+    SIDEBAR
+************************************************************/
+.body-sidebar-force,
+.body-sidebar-fish,
+.body-sidebar-death,
+.body-sidebar-pasture,
+.body-sidebar-gentle,
+.body-sidebar-grey,
+.body-sidebar-cure,
+.body-sidebar-toxic,
+.body-sidebar-haven,
+.body-sidebar-dark {
+  font: 16px;
+  position: fixed;
+  width: 210px;
+  top: 0;
+  bottom: 0;
+  left: -210px;
+  z-index: 420;
+  border-right: 1px solid rgba(0, 0, 0, 0.055);
+  transition: left 0.3s ease;
+  user-select: none;
+}
+.body-sidebar-force .side-list,
+.body-sidebar-fish .side-list,
+.body-sidebar-death .side-list,
+.body-sidebar-pasture .side-list,
+.body-sidebar-gentle .side-list,
+.body-sidebar-grey .side-list,
+.body-sidebar-cure .side-list,
+.body-sidebar-toxic .side-list,
+.body-sidebar-haven .side-list,
+.body-sidebar-dark .side-list {
+  margin-top: 0em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.body-sidebar-force .side-list .side-logo,
+.body-sidebar-fish .side-list .side-logo,
+.body-sidebar-death .side-list .side-logo,
+.body-sidebar-pasture .side-list .side-logo,
+.body-sidebar-gentle .side-list .side-logo,
+.body-sidebar-grey .side-list .side-logo,
+.body-sidebar-cure .side-list .side-logo,
+.body-sidebar-toxic .side-list .side-logo,
+.body-sidebar-haven .side-list .side-logo,
+.body-sidebar-dark .side-list .side-logo {
+  display: flex;
+  padding: 0.7em 0.8em;
+  font-weight: 500;
+  font-size: 1.25em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+  background-color: rgba(0, 0, 0, 0.041);
+}
+.body-sidebar-force .side-list li a,
+.body-sidebar-fish .side-list li a,
+.body-sidebar-death .side-list li a,
+.body-sidebar-pasture .side-list li a,
+.body-sidebar-gentle .side-list li a,
+.body-sidebar-grey .side-list li a,
+.body-sidebar-cure .side-list li a,
+.body-sidebar-toxic .side-list li a,
+.body-sidebar-haven .side-list li a,
+.body-sidebar-dark .side-list li a {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+.body-sidebar-force .side-logo,
+.body-sidebar-fish .side-logo,
+.body-sidebar-death .side-logo,
+.body-sidebar-pasture .side-logo,
+.body-sidebar-dark .side-logo {
+  color: var(--cure);
+}
+.body-sidebar-force .side-list li a,
+.body-sidebar-fish .side-list li a,
+.body-sidebar-death .side-list li a,
+.body-sidebar-pasture .side-list li a,
+.body-sidebar-dark .side-list li a {
+  color: var(--cure);
+}
+.body-sidebar-force .side-list li a:hover,
+.body-sidebar-fish .side-list li a:hover,
+.body-sidebar-death .side-list li a:hover,
+.body-sidebar-pasture .side-list li a:hover,
+.body-sidebar-dark .side-list li a:hover {
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
+.body-sidebar-grey .side-logo,
+.body-sidebar-toxic .side-logo,
+.body-sidebar-haven .side-logo,
+.body-sidebar-cure .side-logo,
+.body-sidebar-gentle .side-logo {
+  color: var(--death);
+}
+.body-sidebar-grey .side-list li a,
+.body-sidebar-toxic .side-list li a,
+.body-sidebar-haven .side-list li a,
+.body-sidebar-cure .side-list li a,
+.body-sidebar-gentle .side-list li a {
+  color: var(--death);
+}
+.body-sidebar-grey .side-list li a:hover,
+.body-sidebar-toxic .side-list li a:hover,
+.body-sidebar-haven .side-list li a:hover,
+.body-sidebar-cure .side-list li a:hover,
+.body-sidebar-gentle .side-list li a:hover {
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
+.body-sidebar-force {
+  background-color: var(--force);
+}
+
+.body-sidebar-fish {
+  background-color: var(--fish);
+}
+
+.body-sidebar-toxic {
+  background-color: var(--toxic);
+}
+
+.body-sidebar-pasture {
+  background-color: var(--pasture);
+}
+
+.body-sidebar-death {
+  background-color: var(--death);
+}
+
+.body-sidebar-gentle {
+  background-color: var(--gentle);
+}
+
+.body-sidebar-cure {
+  background-color: var(--cure);
+}
+
+.body-sidebar-grey {
+  background-color: var(--grey);
+}
+
+.body-sidebar-haven {
+  background-color: var(--haven);
+}
+
+.body-sidebar-dark {
+  background-color: var(--dark);
+}
+
+.body-sidebar-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.555);
+  z-index: 410;
 }
 
 /*# sourceMappingURL=bodystyle.css.map */

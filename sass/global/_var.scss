@@ -77,17 +77,38 @@ $nav-list-link-padding:     0.9em 0.7em;
 
 
 ///////////////////////////////////////////////////////////////// 
+//////////////////////// SIDEBAR ////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+
+$sidebar-width:             210px; 
+$sidebar-list-mt:           0em;
+$sidebar-link-fz:           1em;
+$sidebar-link-padding:      0.5em;
+$sidebar-link-width:        100%;
+
+$side-logo-bgcolor:       rgba(0, 0, 0, 0.041);
+$side-logo-padding:         0.7em 0.8em;
+$side-logo-fz:              1.25em;
+$side-bar-border:           1px solid rgba(0, 0, 0, 0.055);
+
+///////////////////////////////////////////////////////////////// 
 //////////////////////// Z-INDEX ////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
 
 $z-index:(
             modal:           500,
-            cobertura:       450,
+            cobertura-modal: 450,
             tips:            420,
             dropdown:        420,
             comment:         420,
+            
+            sidebar:         420, 
+            cobertura-nav:   410,
             nav:             400,
-            sidebar:         350, 
             toast:           320,
 );
+
+
+
