@@ -30,17 +30,17 @@
 }
 
 .btn {
-    font-size: $btn-fz                  !important;
-    padding: $btn-padding               !important;
+    font-size: $btn-fz      !important;
+    padding: $btn-padding   !important;
 }
 
 .btn-sm {
-    font-size: $btn-sm-fz               !important;
-    padding: $btn-sm-padding            !important;
+    font-size: $btn-sm-fz    !important;
+    padding: $btn-sm-padding !important;
 }
 .btn-lg {
-    font-size: $btn-lg-fz               !important;
-    padding: $btn-lg-padding            !important;
+    font-size: $btn-lg-fz    !important;
+    padding: $btn-lg-padding !important;
 }
 
 .btn-fish {
@@ -146,20 +146,20 @@
 }
 
 .btn-haven {
-    background-color: var(--haven) !important;
-    color: var(--dark) !important;
+    background-color: var(--haven)        !important;
+    color: var(--dark)                    !important;
      &:hover {
         background-color: var(--haven-hov) !important;
      }
 
      &:active {
-        background-color: var(--haven) !important;
+        background-color: var(--haven)    !important;
      }
 }
 
 .btn-dark {
-    background-color: var(--dark) !important;
-    color: var(--cure) !important;
+    background-color: var(--dark)         !important;
+    color: var(--cure)                    !important;
      &:hover {
         background-color: var(--dark-hov) !important;
      }
@@ -167,4 +167,13 @@
      &:active {
         background-color: var(--dark) !important;
      }
+}
+
+.btn.disabled,
+.btn-sm.disabled,
+.btn-lg.disabled {
+   background-color: $disabled-bgcolor;
+   color: #aaaaaa !important;
+   box-shadow: none !important;
+   border: none !important;
 }

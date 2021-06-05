@@ -16208,6 +16208,15 @@ p, span, a {
   background-color: var(--dark) !important;
 }
 
+.btn.disabled,
+.btn-sm.disabled,
+.btn-lg.disabled {
+  background-color: #f1f1f1 !important;
+  color: #aaaaaa !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 /***********************************************************
     NAV
 ************************************************************/
@@ -16671,14 +16680,14 @@ textarea::placeholder {
 }
 
 input.disabled {
-  background-color: #e0e0e0 !important;
+  background-color: #f1f1f1 !important;
   color: #cecece;
 }
 input.disabled:focus {
   border: 1px solid rgba(0, 0, 0, 0.233) !important;
 }
 input.disabled::placeholder {
-  color: #e0e0e0 !important !important;
+  color: #f1f1f1 !important;
 }
 
 /*# sourceMappingURL=bodystyle.css.map */

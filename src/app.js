@@ -1,7 +1,12 @@
 
 import Nav from "./moduls/Nav"
+import Handler from "./moduls/Input-Handler"
+import Disabled from "./moduls/Disabled"
 
 (function() {
+
+    Handler.init()
+    Disabled.init()
 
     const navInit = () => {
         Nav.init()
