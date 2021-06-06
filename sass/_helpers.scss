@@ -1,3 +1,7 @@
+/***********************************************************
+    HELPERS
+************************************************************/
+
 .hide-only-large {
     @include agregar-a-medida-minima(m){
         display: none !important;

@@ -15792,7 +15792,7 @@ p, span, a {
 ************************************************************/
 .card {
   background-color: var(--cure);
-  border: 1px solid rgba(0, 0, 0, 0.075);
+  border: 1px solid #00000013;
   border-radius: 4px;
   max-width: 250px;
   line-height: 1.4em;
@@ -15802,8 +15802,8 @@ p, span, a {
 }
 .card .card-footer {
   padding: 0.8em;
-  border-top: 1px solid rgba(0, 0, 0, 0.075);
-  background-color: rgba(0, 0, 0, 0.027);
+  border-top: 1px solid #00000013;
+  background-color: #00000007;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -15879,6 +15879,97 @@ p, span, a {
   background-color: var(--haven) !important;
 }
 
+.card-image {
+  max-width: 14.365em;
+  padding: 1.2em;
+  border: 1px solid #00000028;
+  position: relative;
+  background-color: var(--dark);
+  border-radius: 0.5em;
+}
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7.5em;
+  width: 100%;
+}
+.card-image .card-img {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  top: 2.5em;
+  left: calc(50% - 40px);
+  overflow: hidden;
+  background-color: var(--force);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 0.1px 20px #0000009d;
+}
+.card-image .card-img img {
+  max-width: 100%;
+  width: 5em;
+  height: 5em;
+  border-radius: 0.5em;
+}
+.card-image .card-content {
+  margin-top: 6.875em;
+  text-align: center;
+  margin-bottom: 2.5em;
+  border-bottom: 1px solid #0000001f;
+}
+.card-image .card-content .content-title {
+  font-size: 1.125em;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--cure);
+}
+.card-image .card-content small {
+  color: #a5a5a5;
+  font-style: italic;
+}
+.card-image .card-content .content-subtitle {
+  font-size: 1em;
+  color: #4e4e4e;
+  margin-top: 3px;
+  margin-bottom: 25px;
+}
+.card-image .card-content .button {
+  margin: auto;
+  max-width: fit-content;
+  font-size: 0.625em;
+  border-radius: 9999999px;
+  padding: 1em;
+  color: var(--cure);
+  font-weight: 500;
+  background: linear-gradient(90deg, #f327e2, #185fca) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 25px;
+  box-shadow: 3px 0.1px 20px #0000009d;
+}
+.card-image .card-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+.card-image .card-footer .circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(90deg, #a127f3, #185fca) !important;
+  box-shadow: 3px 0.1px 20px #0000009d;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("fonts/icomoon.eot?m5h0i1");
@@ -15904,6 +15995,9 @@ p, span, a {
   content: "";
 }
 
+/***********************************************************
+    HELPERS
+************************************************************/
 @media (min-width: 1030px) {
   .hide-only-large {
     display: none !important;
@@ -16075,9 +16169,6 @@ p, span, a {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -16206,6 +16297,23 @@ p, span, a {
 }
 .btn-dark:active {
   background-color: var(--dark) !important;
+}
+
+a.link {
+  color: #0066b9;
+  border-bottom: 1.45px solid #0066b9;
+  line-height: 20px;
+  text-decoration: none;
+}
+a.link:hover {
+  color: #1094ff;
+  border-bottom: 1.45px solid #1094ff;
+}
+
+a.disabled,
+a.link.disabled {
+  color: #c5c5c5 !important;
+  border-bottom: 1.45px solid #c5c5c5 !important;
 }
 
 .btn.disabled,

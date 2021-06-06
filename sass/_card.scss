@@ -2,35 +2,25 @@
     CARD
 ************************************************************/
 
-$card-border:           1px solid rgba(0, 0, 0, 0.075);
-$card-border-rad:       4px;
-$card-padding:          0.8em;
-$card-maxw:             250px;
-$card-lh:               1.4em;
-
-// Footer
-$card-footer: rgba(0, 0, 0, 0.027);
-
-
 .card {
-    background-color: var(--cure);
-    border: $card-border;
-    border-radius: $card-border-rad;
-    max-width: $card-maxw;
-    line-height: $card-lh;
+    background-color:       var(--cure);
+    border:                 $card-border;
+    border-radius:          $card-border-rad;
+    max-width:              $card-maxw;
+    line-height:            $card-lh;
 
     .card-description {
-        padding: $card-padding;
+        padding:            $card-padding;
     }
 
 
     .card-footer {
-        padding: $card-padding;
-        border-top: $card-border;
-        background-color: $card-footer;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        padding:            $card-padding;
+        border-top:         $card-border;
+        background-color:   $card-footer;
+        display:            flex;
+        justify-content:    space-between;
+        align-items:        baseline;
     }
 }
 
@@ -97,4 +87,122 @@ $card-footer: rgba(0, 0, 0, 0.027);
 
 .card-haven {
     background-color:   var(--haven)   !important;
+}
+
+
+.card-image {
+    max-width:              $card-imagew;
+    padding:                $card-image-padding;
+    border:                 $card-image-border;
+
+
+    position:               relative;
+    background-color:       var(--dark);
+    border-radius:          $card-image-radio;
+
+
+    img {
+        position:           absolute;
+        top:                0;
+        left:               0;
+        height:             $card-image-imgh;
+        width:              $card-image-imgw;
+    }
+
+    .card-img {
+
+        position:           absolute;
+
+
+        width:              $card-img-contw;
+        height:             $card-img-conth;
+        border-radius:      $card-img-cont-radio;
+        
+        top:                $card-img-cont-top;
+        left:               $card-img-cont-left;
+        overflow:           hidden;
+        background-color:   var(--force);
+        
+        display:            flex;
+        justify-content:    center;
+        align-items:        center;
+
+        box-shadow:         $card-shadow;
+
+
+        img {
+            max-width:      $card-img-cont-img-mw;
+            width:          $card-img-cont-imgw;
+            height:         $card-img-cont-imgh;
+            border-radius:  $card-image-radio;
+        }
+    }
+    .card-content {
+
+
+        margin-top:         $card-content-mt;
+        text-align:         center;
+        margin-bottom:      $card-content-mb;
+        border-bottom:      $card-border-bottom;
+
+
+        .content-title {
+            font-size:      $card-content-title-fz;
+            font-weight:    $fw-500;
+            letter-spacing: 0;
+            color:          var(--cure);
+        }
+
+
+        small {
+            color:          $card-content-small;
+            font-style:     italic;
+        }
+
+
+
+        .content-subtitle {
+            font-size:          1em;
+            color:            #4e4e4e;
+            margin-top:         3px;
+            margin-bottom:      25px;
+        }
+
+        .button {
+            margin :                auto;
+            max-width:              fit-content;
+            font-size:              .625em;
+            border-radius:          9999999px;
+            padding:                1em;
+            color:                  var(--cure);
+            font-weight:            $fw-500;
+            background:             $card-gradient-1 !important;
+            display:                flex;
+            justify-content:        center;
+            align-items:            center;
+            text-decoration:        none;
+            margin-bottom:          25px;
+            box-shadow:             $card-shadow;
+        }
+    }   
+
+    .card-footer {
+        position:           absolute;
+        left:               0;
+        right:              0;
+        bottom:             0;
+        padding:            0.5em;
+        
+        display:            flex;
+        justify-content:    center;
+
+        .circle {
+            width:          35px;
+            height:         35px;
+            border-radius:  50%;
+            cursor:         pointer;
+            background:     $card-gradient-2 !important;
+            box-shadow:     $card-shadow;
+        }
+    }
 }

@@ -110,6 +110,57 @@ $z-index:(
             toast:           320,
 );
 
+
+///////////////////////////////////////////////////////////////// 
+//////////////////////// CARD ///////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+// Modelo 1 ****************************************************
+$card-border:           1px solid #00000013;
+$card-border-rad:       4px;
+$card-padding:          0.8em;
+$card-maxw:             250px;
+$card-lh:               1.4em;
+
+// Footer
+$card-footer:         #00000007;
+
+
+// Modelo 2 con imagen
+// Generales
+$card-imagew:           14.365em;
+$card-image-padding:    1.2em;
+$card-image-border:     1px solid #00000028;
+$card-image-radio:      .5em;
+
+// IMG
+$card-image-imgh:       7.5em;
+$card-image-imgw:       100%;
+
+
+$card-img-contw:        5em;
+$card-img-conth:        5em;
+$card-img-cont-top:     2.5em;
+$card-img-cont-left:    calc(50% - 40px);
+$card-img-cont-radio:   50%;
+$card-img-cont-img-mw:  100%;
+$card-img-cont-imgw:    5em;
+$card-img-cont-imgh:    5em;
+
+// generales para toda la card
+$card-shadow:                3px 0.1px 20px #0000009d;
+$card-gradient-1:            linear-gradient(90deg, #f327e2, #185fca);
+$card-gradient-2:            linear-gradient(90deg, #a127f3, #185fca);
+
+
+$card-content-mt:            6.875em;
+$card-content-mb:            2.5em;
+$card-border-bottom:         1px solid #0000001f;
+
+$card-content-title-fz:      1.125em;
+$card-content-small:        #a5a5a5;
+
+
 ///////////////////////////////////////////////////////////////// 
 //////////////////////// FORMULARIO /////////////////////////////
 /////////////////////////////////////////////////////////////////
