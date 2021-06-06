@@ -88,6 +88,26 @@ p, span, a {
   font-size: 1em;
 }
 
+.display-1 {
+  font-size: 3.75em !important;
+}
+
+.display-2 {
+  font-size: 4em !important;
+}
+
+.display-3 {
+  font-size: 4.25em !important;
+}
+
+.display-4 {
+  font-size: 4.5em !important;
+}
+
+.display-5 {
+  font-size: 4.75em !important;
+}
+
 /*******************************************************************
 ////////////////////////////////////////////////////////////////////
 /////////////////// ALINEAMIENTO ///////////////////////////////////
@@ -16107,6 +16127,10 @@ p, span, a {
   background-color: var(--cure) !important;
 }
 
+.bg-gradient-1 {
+  background: linear-gradient(90deg, #f327e2, #185fca) !important;
+}
+
 /***********************************************************
     COLORES DE TEXTO
 ************************************************************/
@@ -16159,7 +16183,7 @@ p, span, a {
 .btn-lg {
   border: none !important;
   background: none !important;
-  border-radius: 0.2em !important;
+  border-radius: 0.3em !important;
   white-space: nowrap !important;
   box-shadow: 0px 2px 3px #00000075 !important;
   max-width: fit-content !important;
@@ -16323,6 +16347,36 @@ a.link.disabled {
   color: #aaaaaa !important;
   box-shadow: none !important;
   border: none !important;
+}
+
+.btn-grad-1,
+.btn-grad-2 {
+  border: none !important;
+  background: none !important;
+  border-radius: 0.3em !important;
+  white-space: nowrap !important;
+  box-shadow: 0px 2px 3px #00000075 !important;
+  max-width: fit-content !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  max-width: fit-content;
+  font-size: 0.625em !important;
+  border-radius: 9999999px !important;
+  padding: 1em;
+  color: var(--cure) !important;
+  font-weight: 500 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-grad-1 {
+  background: linear-gradient(90deg, #f327e2, #185fca) !important;
+}
+
+.btn-grad-2 {
+  background: linear-gradient(90deg, #a127f3, #185fca) !important;
 }
 
 /***********************************************************

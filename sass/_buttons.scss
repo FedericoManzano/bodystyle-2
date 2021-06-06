@@ -2,28 +2,17 @@
 /***********************************************************
     BOTORNES
 ************************************************************/
-
 .btn,
 .btn-sm,
 .btn-lg {
 
-    // Inicializa las propiedades
-    border: none                    !important;
-    background: none                !important;
-    border-radius: $btn-bor-rad     !important;
-    white-space: nowrap             !important;
-    box-shadow: $btn-shadow         !important;
-    max-width: fit-content          !important;
-    font-weight: $fw                !important;
-    text-decoration: none           !important;
-
-    cursor: pointer;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    user-select: none;
+   @include initButton();
+    
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   user-select: none;
 }
 
 .btn {
@@ -191,3 +180,27 @@ a.link.disabled {
    box-shadow: none        !important;
    border: none            !important;
 }
+
+
+.btn-grad-1,
+.btn-grad-2 {
+   @include initButton();
+   max-width:              fit-content;
+   font-size:              .625em            !important;
+   border-radius:          9999999px         !important;
+   padding:                1em;
+   color:                  var(--cure)       !important;
+   font-weight:            $fw-500           !important;
+   display:                flex;
+   justify-content:        center;
+   align-items:            center;
+   text-decoration:        none;
+}
+
+.btn-grad-1 {
+   background:             $card-gradient-1  !important;
+}
+
+.btn-grad-2 {
+   background:             $card-gradient-2  !important;
+} 
