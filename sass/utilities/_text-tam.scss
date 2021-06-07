@@ -66,3 +66,15 @@
         }
     }
 }
+
+$i: 100;
+@while $i <= 900 {
+    .fw-#{$i} {
+        font-weight: #{$i} !important;
+    } 
+    $i: $i + 100
+}
+
+.fw-bold {
+    font-weight: bold !important;
+}
