@@ -112,6 +112,17 @@ $z-index:(
 
 
 ///////////////////////////////////////////////////////////////// 
+//////////////////////// GRADIENTES /////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+$gradient-1:            linear-gradient(90deg, #f327e2, #185fca);
+$gradient-2:            linear-gradient(90deg, #a127f3, #185fca);
+$gradient-3:            linear-gradient(90deg, #110ed4, #446dac);
+$gradient-4:            linear-gradient(140deg,#c4c4c4, #ffffff);
+$gradient-5:            linear-gradient(140deg,#9ec72c, #c91a5d);
+
+
+///////////////////////////////////////////////////////////////// 
 //////////////////////// CARD ///////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
@@ -149,8 +160,8 @@ $card-img-cont-imgh:    5em;
 
 // generales para toda la card
 $card-shadow:                3px 0.1px 20px #0000009d;
-$card-gradient-1:            linear-gradient(90deg, #f327e2, #185fca);
-$card-gradient-2:            linear-gradient(90deg, #a127f3, #185fca);
+$card-gradient-1:            $gradient-1;
+$card-gradient-2:            $gradient-2;
 
 
 $card-content-mt:            6.875em;

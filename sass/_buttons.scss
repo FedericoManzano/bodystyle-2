@@ -183,7 +183,10 @@ a.link.disabled {
 
 
 .btn-grad-1,
-.btn-grad-2 {
+.btn-grad-2,
+.btn-grad-3,
+.btn-grad-4,
+.btn-grad-5 {
    @include initButton();
    max-width:              fit-content;
    font-size:              .625em            !important;
@@ -198,9 +201,22 @@ a.link.disabled {
 }
 
 .btn-grad-1 {
-   background:             $card-gradient-1  !important;
+   background:             $gradient-1  !important;
 }
 
 .btn-grad-2 {
-   background:             $card-gradient-2  !important;
+   background:             $gradient-2  !important;
 } 
+
+
+.btn-grad-3 {
+   background:             $gradient-3  !important;
+}
+
+.btn-grad-4 {
+   background:             $gradient-4  !important;
+} 
+
+.btn-grad-5 {
+   background:             $gradient-5  !important;
+}

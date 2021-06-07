@@ -16131,6 +16131,22 @@ p, span, a {
   background: linear-gradient(90deg, #f327e2, #185fca) !important;
 }
 
+.bg-gradient-2 {
+  background: linear-gradient(90deg, #a127f3, #185fca) !important;
+}
+
+.bg-gradient-3 {
+  background: linear-gradient(90deg, #110ed4, #446dac) !important;
+}
+
+.bg-gradient-4 {
+  background: linear-gradient(140deg, #c4c4c4, #ffffff) !important;
+}
+
+.bg-gradient-5 {
+  background: linear-gradient(140deg, #9ec72c, #c91a5d) !important;
+}
+
 /***********************************************************
     COLORES DE TEXTO
 ************************************************************/
@@ -16350,7 +16366,10 @@ a.link.disabled {
 }
 
 .btn-grad-1,
-.btn-grad-2 {
+.btn-grad-2,
+.btn-grad-3,
+.btn-grad-4,
+.btn-grad-5 {
   border: none !important;
   background: none !important;
   border-radius: 0.3em !important;
@@ -16377,6 +16396,18 @@ a.link.disabled {
 
 .btn-grad-2 {
   background: linear-gradient(90deg, #a127f3, #185fca) !important;
+}
+
+.btn-grad-3 {
+  background: linear-gradient(90deg, #110ed4, #446dac) !important;
+}
+
+.btn-grad-4 {
+  background: linear-gradient(140deg, #c4c4c4, #ffffff) !important;
+}
+
+.btn-grad-5 {
+  background: linear-gradient(140deg, #9ec72c, #c91a5d) !important;
 }
 
 /***********************************************************
