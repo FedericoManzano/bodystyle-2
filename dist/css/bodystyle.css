@@ -16147,6 +16147,10 @@ p, span, a {
   background: linear-gradient(140deg, #9ec72c, #c91a5d) !important;
 }
 
+.bg-gradient-6 {
+  background: linear-gradient(70deg, #1a1a1d, #023b69, #1a1a1d) !important;
+}
+
 /***********************************************************
     COLORES DE TEXTO
 ************************************************************/
@@ -16412,54 +16416,66 @@ p, span, a {
   transition: all 0.5s ease;
 }
 
+.btn-o-cure {
+  background-color: transparent;
+  border: 1px solid var(--cure) !important;
+  color: var(--cure) !important;
+  box-shadow: none !important;
+}
+.btn-o-cure:hover {
+  background-color: var(--cure) !important;
+  color: var(--death) !important;
+  transition: all 0.5s ease;
+}
+
 .btn-fish:focus,
 .btn-o-fish:focus {
-  box-shadow: 0 0 0 4px #2253ce70 !important;
+  box-shadow: 0 0 0 5px #2253ce42 !important;
 }
 
 .btn-force:focus,
 .btn-o-force:focus {
-  box-shadow: 0 0 0 4px #d11e1e80 !important;
+  box-shadow: 0 0 0 5px #d11e1e54 !important;
 }
 
 .btn-toxic:focus,
 .btn-o-toxic:focus {
-  box-shadow: 0 0 0 4px #ffc80277 !important;
+  box-shadow: 0 0 0 5px #ffc80252 !important;
 }
 
 .btn-haven:focus,
 .btn-o-haven:focus {
-  box-shadow: 0 0 0 4px #00cafd7a !important;
+  box-shadow: 0 0 0 5px #00cafd54 !important;
 }
 
 .btn-pasture:focus,
 .btn-o-pasture:focus {
-  box-shadow: 0 0 0 4px #098d5a79 !important;
+  box-shadow: 0 0 0 5px #098d5a52 !important;
 }
 
 .btn-gentle:focus,
 .btn-o-gentle:focus {
-  box-shadow: 0 0 0 4px #eeeeeeb7 !important;
+  box-shadow: 0 0 0 5px #eeeeee81 !important;
 }
 
 .btn-death:focus,
 .btn-o-death:focus {
-  box-shadow: 0 0 0 4px #0000006e !important;
+  box-shadow: 0 0 0 5px #00000042 !important;
 }
 
 .btn-dark:focus,
 .btn-o-dark:focus {
-  box-shadow: 0 0 0 4px #292a307a !important;
+  box-shadow: 0 0 0 5px #292a3044 !important;
 }
 
 .btn-grey:focus,
 .btn-o-grey:focus {
-  box-shadow: 0 0 0 4px #c4c4c471 !important;
+  box-shadow: 0 0 0 5px #c4c4c446 !important;
 }
 
 .btn-cure:focus,
 .btn-o-cure:focus {
-  box-shadow: 0 0 0 4px #ffffff71 !important;
+  box-shadow: 0 0 0 5px #ffffff4f !important;
 }
 
 a.link {
@@ -16484,7 +16500,7 @@ a.link.disabled {
 .btn-lg.disabled {
   background-color: #f1f1f1 !important;
   color: #aaaaaa !important;
-  box-shadow: none;
+  box-shadow: none !important;
   border: none !important;
 }
 

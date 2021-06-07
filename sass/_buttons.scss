@@ -237,10 +237,23 @@
    }
 }
 
+.btn-o-cure {
+   background-color: transparent;
+   border: 1px solid var(--cure) !important;
+   color: var(--cure) !important;
+   box-shadow: none !important;
+   
+   &:hover {
+      background-color: var(--cure) !important;
+      color: var(--death) !important;
+      transition: all 0.5s ease;
+   }
+}
+
 .btn-fish,
 .btn-o-fish {
    &:focus {
-      box-shadow:  0 0 0 4px #2253ce70 !important;
+      box-shadow:  0 0 0 5px #2253ce42 !important;
    }
 }
 
@@ -248,63 +261,63 @@
 .btn-force,
 .btn-o-force {
    &:focus {
-      box-shadow:  0 0 0 4px #d11e1e80 !important;
+      box-shadow:  0 0 0 5px #d11e1e54 !important;
    }
 }
 
 .btn-toxic,
 .btn-o-toxic {
    &:focus {
-      box-shadow:  0 0 0 4px #ffc80277 !important;
+      box-shadow:  0 0 0 5px #ffc80252 !important;
    }
 }
 
 .btn-haven,
 .btn-o-haven {
    &:focus {
-      box-shadow:  0 0 0 4px #00cafd7a !important;
+      box-shadow:  0 0 0 5px #00cafd54 !important;
    }
 }
 
 .btn-pasture,
 .btn-o-pasture {
    &:focus {
-      box-shadow:  0 0 0 4px #098d5a79 !important;
+      box-shadow:  0 0 0 5px #098d5a52 !important;
    }
 }
 
 .btn-gentle,
 .btn-o-gentle {
    &:focus {
-      box-shadow:  0 0 0 4px #eeeeeeb7 !important;
+      box-shadow:  0 0 0 5px #eeeeee81 !important;
    }
 }
 
 .btn-death,
 .btn-o-death {
    &:focus {
-      box-shadow:  0 0 0 4px #0000006e !important;
+      box-shadow:  0 0 0 5px #00000042 !important;
    }
 }
 
 .btn-dark,
 .btn-o-dark {
    &:focus {
-      box-shadow:  0 0 0 4px #292a307a !important;
+      box-shadow:  0 0 0 5px #292a3044 !important;
    }
 }
 
 .btn-grey,
 .btn-o-grey {
    &:focus {
-      box-shadow:  0 0 0 4px #c4c4c471 !important;
+      box-shadow:  0 0 0 5px #c4c4c446 !important;
    }
 }
 
 .btn-cure,
 .btn-o-cure {
    &:focus {
-      box-shadow:  0 0 0 4px #ffffff71 !important;
+      box-shadow:  0 0 0 5px #ffffff4f !important;
    }
 }
 
@@ -330,7 +343,7 @@ a.link.disabled {
 .btn-lg.disabled {
    background-color:       $disabled-bgcolor;
    color: #aaaaaa        !important;
-   box-shadow: none;
+   box-shadow: none        !important;
    border: none            !important;
 }
 
