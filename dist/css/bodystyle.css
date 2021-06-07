@@ -16233,6 +16233,7 @@ p, span, a {
 }
 .btn-fish:hover {
   background-color: var(--fish-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-fish:active {
   background-color: var(--fish) !important;
@@ -16244,6 +16245,7 @@ p, span, a {
 }
 .btn-force:hover {
   background-color: var(--force-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-force:active {
   background-color: var(--force) !important;
@@ -16255,6 +16257,7 @@ p, span, a {
 }
 .btn-pasture:hover {
   background-color: var(--pasture-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-pasture:active {
   background-color: var(--pasture) !important;
@@ -16266,6 +16269,7 @@ p, span, a {
 }
 .btn-toxic:hover {
   background-color: var(--toxic-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-toxic:active {
   background-color: var(--toxic) !important;
@@ -16277,6 +16281,7 @@ p, span, a {
 }
 .btn-death:hover {
   background-color: var(--death-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-death:active {
   background-color: var(--death) !important;
@@ -16289,6 +16294,7 @@ p, span, a {
 .btn-cure:hover {
   background-color: var(--death) !important;
   color: var(--cure) !important;
+  transition: all 0.3s ease;
 }
 .btn-cure:active {
   background-color: var(--dark) !important;
@@ -16301,6 +16307,7 @@ p, span, a {
 }
 .btn-grey:hover {
   background-color: var(--grey-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-grey:active {
   background-color: var(--grey) !important;
@@ -16312,6 +16319,7 @@ p, span, a {
 }
 .btn-gentle:hover {
   background-color: var(--gentle-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-gentle:active {
   background-color: var(--gentle) !important;
@@ -16323,6 +16331,7 @@ p, span, a {
 }
 .btn-haven:hover {
   background-color: var(--haven-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-haven:active {
   background-color: var(--haven) !important;
@@ -16334,15 +16343,129 @@ p, span, a {
 }
 .btn-dark:hover {
   background-color: var(--dark-hov) !important;
+  transition: all 0.3s ease;
 }
 .btn-dark:active {
   background-color: var(--dark) !important;
 }
 
+.btn-o-force {
+  background-color: transparent;
+  border: 1px solid var(--force) !important;
+  color: var(--force) !important;
+  box-shadow: none !important;
+}
+.btn-o-force:hover {
+  background-color: var(--force) !important;
+  color: var(--cure) !important;
+  transition: all 0.5s ease;
+}
+
+.btn-o-pasture {
+  background-color: transparent;
+  border: 1px solid var(--pasture) !important;
+  color: var(--pasture) !important;
+  box-shadow: none !important;
+}
+.btn-o-pasture:hover {
+  background-color: var(--pasture) !important;
+  color: var(--cure) !important;
+  transition: all 0.5s ease;
+}
+
+.btn-o-gentle {
+  background-color: transparent;
+  border: 1px solid var(--gentle) !important;
+  color: var(--dark) !important;
+  box-shadow: none !important;
+}
+.btn-o-gentle:hover {
+  background-color: var(--dark) !important;
+  color: var(--cure) !important;
+  transition: all 0.5s ease;
+}
+
+.btn-o-toxic {
+  background-color: transparent;
+  border: 1px solid var(--toxic) !important;
+  color: var(--toxic) !important;
+  box-shadow: none !important;
+}
+.btn-o-toxic:hover {
+  background-color: var(--toxic) !important;
+  color: var(--death) !important;
+  transition: all 0.5s ease;
+}
+.btn-o-toxic:focus {
+  box-shadow: 0 0 0 4px #2253ce70 !important;
+}
+
+.btn-o-fish {
+  background-color: transparent;
+  border: 1px solid var(--fish) !important;
+  color: var(--fish) !important;
+  box-shadow: none !important;
+}
+.btn-o-fish:hover {
+  background-color: var(--fish) !important;
+  color: var(--cure) !important;
+  transition: all 0.5s ease;
+}
+
+.btn-fish:focus,
+.btn-o-fish:focus {
+  box-shadow: 0 0 0 4px #2253ce70 !important;
+}
+
+.btn-force:focus,
+.btn-o-force:focus {
+  box-shadow: 0 0 0 4px #d11e1e80 !important;
+}
+
+.btn-toxic:focus,
+.btn-o-toxic:focus {
+  box-shadow: 0 0 0 4px #ffc80277 !important;
+}
+
+.btn-haven:focus,
+.btn-o-haven:focus {
+  box-shadow: 0 0 0 4px #00cafd7a !important;
+}
+
+.btn-pasture:focus,
+.btn-o-pasture:focus {
+  box-shadow: 0 0 0 4px #098d5a79 !important;
+}
+
+.btn-gentle:focus,
+.btn-o-gentle:focus {
+  box-shadow: 0 0 0 4px #eeeeeeb7 !important;
+}
+
+.btn-death:focus,
+.btn-o-death:focus {
+  box-shadow: 0 0 0 4px #0000006e !important;
+}
+
+.btn-dark:focus,
+.btn-o-dark:focus {
+  box-shadow: 0 0 0 4px #292a307a !important;
+}
+
+.btn-grey:focus,
+.btn-o-grey:focus {
+  box-shadow: 0 0 0 4px #c4c4c471 !important;
+}
+
+.btn-cure:focus,
+.btn-o-cure:focus {
+  box-shadow: 0 0 0 4px #ffffff71 !important;
+}
+
 a.link {
   color: #0066b9;
   border-bottom: 1.45px solid #0066b9;
-  line-height: 20px;
+  line-height: 1.1em;
   text-decoration: none;
 }
 a.link:hover {
@@ -16361,7 +16484,7 @@ a.link.disabled {
 .btn-lg.disabled {
   background-color: #f1f1f1 !important;
   color: #aaaaaa !important;
-  box-shadow: none !important;
+  box-shadow: none;
   border: none !important;
 }
 

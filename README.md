@@ -5,3 +5,5 @@ Bodystyle es una librería con licencia MIT info para la creación del los eleme
 
 ## Contenido
 
+### Alineamiento
+
