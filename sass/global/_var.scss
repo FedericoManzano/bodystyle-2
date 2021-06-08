@@ -1,4 +1,44 @@
 ///////////////////////////////////////////////////////////////// 
+//////////////////////// LISTADO COLORES ///////////////////////
+////////////////////////////////////////////////////////////////
+
+
+$listadoColoresOscuros: (
+    force:      var(--force),
+    pasture:    var(--pasture),
+    fish:       var(--fish),
+    death:      var(--death),
+    dark:       var(--dark)
+);
+
+$listadoNombresOscuros: "force", "pasture", "fish", "death", "dark";
+
+$listadoColoresClaros: (
+    cure:       var(--cure),
+    gentle:     var(--gentle),
+    toxic:      var(--toxic),
+    haven:      var(--haven)
+);
+
+$listadoNombresClaros: "cure", "gentle", "toxic", "haven";
+
+
+$shadows: (
+    cure:       0 0 0 5px #ffffff4f,
+    force:      0 0 0 5px #d11e1e54,
+    toxic:      0 0 0 5px #ffc80252,
+    pasture:    0 0 0 5px #098d5a52,
+    gentle:     0 0 0 5px #eeeeee81,
+    dark:       0 0 0 5px #292a3044,
+    death:      0 0 0 5px #00000042,
+    haven:      0 0 0 5px #00cafd54,
+    fish:       0 0 0 5px #2253ce42
+);
+
+$listadoNombresSombras: "cure", "gentle", "toxic", "haven","dark", "pasture", "death", "fish", "force";
+
+
+//////////////////////////////////////////////////////////////// 
 //////////////////////// TEXTO /////////////////////////////////
 ////////////////////////////////////////////////////////////////
 

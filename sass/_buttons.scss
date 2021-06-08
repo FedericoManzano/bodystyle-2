@@ -5,16 +5,12 @@
 .btn,
 .btn-sm,
 .btn-lg {
-
    @include initButton();
-    
    cursor: pointer;
    display: flex;
    justify-content: center;
    align-items: center;
    user-select: none;
-
-   
 }
 
 .btn {
@@ -31,89 +27,32 @@
     padding: $btn-lg-padding !important;
 }
 
-.btn-fish {
-    background-color: var(--fish)           !important;
-    color: var(--cure)                      !important;
-     &:hover {
-        background-color: var(--fish-hov)   !important;
-        transition: all 0.3s ease;
-     }
-
-     &:active {
-        background-color: var(--fish)       !important;
-     }
+@each $var in $listadoNombresOscuros {
+   .btn-#{$var} {
+      background-color: map-get($map: $listadoColoresOscuros, $key: $var ) !important;
+      color: var(--cure);
+      &:hover {
+         background-color: var(--#{$var}-hov)   !important;
+         transition: all 0.3s ease;
+      }
+      &:active {
+         background-color: var(--#{$var})       !important;
+      }
+   }
 }
 
-.btn-force {
-    background-color: var(--force)          !important;
-    color: var(--cure) !important;
-     &:hover {
-        background-color: var(--force-hov)  !important;
-        transition: all 0.3s ease;
-     }
-
-
-     &:active {
-        background-color: var(--force)      !important;
-     }
-}
-
-
-.btn-pasture {
-    background-color: var(--pasture)        !important;
-    color: var(--cure) !important;
-     &:hover {
-        background-color: var(--pasture-hov) !important;
-        transition: all 0.3s ease;
-     }
-
-     &:active {
-        background-color: var(--pasture)     !important;
-       
-     }
-}
-
-.btn-toxic {
-    background-color: var(--toxic) !important;
-    color: var(--dark) !important;
-     &:hover {
-        background-color: var(--toxic-hov) !important;
-        transition: all 0.3s ease;
-     }
-
-     &:active {
-        background-color: var(--toxic) !important;
-     }
-}
-
-
-.btn-death {
-    background-color: var(--death) !important;
-    color: var(--cure) !important;
-     &:hover {
-        background-color: var(--death-hov) !important;
-        transition: all 0.3s ease;
-     }
-
-     &:active {
-        background-color: var(--death) !important;
-     }
-}
-
-
-.btn-cure {
-    background-color: var(--cure) !important;
-    color: var(--death) !important;
-     &:hover {
-        background-color: var(--death) !important;
-        color: var(--cure) !important;
-        transition: all 0.3s ease;
-     }
-
-     &:active {
-        background-color: var(--dark) !important;
-        color: var(--cure) !important;
-     }
+@each $var in $listadoNombresClaros {
+   .btn-#{$var} {
+      background-color: map-get($map: $listadoColoresClaros, $key: $var ) !important;
+      color: var(--dark);
+      &:hover {
+         background-color: var(--#{$var}-hov)   !important;
+         transition: all 0.3s ease;
+      }
+      &:active {
+         background-color: var(--#{$var})       !important;
+      }
+   }
 }
 
 .btn-grey {
@@ -129,181 +68,40 @@
      }
 }
 
-.btn-gentle {
-    background-color: var(--gentle) !important;
-    color: var(--dark) !important;
-     &:hover {
-        background-color: var(--gentle-hov) !important;
-        transition: all 0.3s ease;
-     }
 
-     &:active {
-        background-color: var(--gentle)     !important;
-     }
-}
-
-.btn-haven {
-    background-color: var(--haven)         !important;
-    color: var(--dark)                     !important;
-     &:hover {
-        background-color: var(--haven-hov) !important;
-        transition: all 0.3s ease;
-     }
-
-     &:active {
-        background-color: var(--haven)    !important;
-     }
-}
-
-.btn-dark {
-    background-color: var(--dark)         !important;
-    color: var(--cure)                    !important;
-     &:hover {
-        background-color: var(--dark-hov) !important;
-        transition: all 0.3s ease;
-     }
-
-     &:active {
-        background-color: var(--dark)     !important;
-     }
-}
-
-.btn-o-force {
-   background-color: transparent;
-   border: 1px solid var(--force) !important;
-   color: var(--force) !important;
-   box-shadow: none !important;
-   
-   &:hover {
-      background-color: var(--force) !important;
-      color: var(--cure) !important;
-      transition: all 0.5s ease;
+@each $var in $listadoNombresOscuros {
+   .btn-o-#{$var} {
+      background-color: transparent;
+      border: 1px solid map-get($map: $listadoColoresOscuros, $key: $var ) !important;
+      color: var(--#{$var});
+      &:hover {
+         background-color: var(--#{$var})   !important;
+         color: var(--cure) !important;
+         transition: all 0.3s ease;
+      }
    }
 }
 
-.btn-o-pasture {
-   background-color: transparent;
-   border: 1px solid var(--pasture) !important;
-   color: var(--pasture) !important;
-   box-shadow: none !important;
-   
-   &:hover {
-      background-color: var(--pasture) !important;
-      color: var(--cure) !important;
-      transition: all 0.5s ease;
-   }
-}
-
-.btn-o-gentle {
-   background-color: transparent;
-   border: 1px solid var(--gentle) !important;
-   color: var(--dark) !important;
-   box-shadow: none !important;
-   
-   &:hover {
-      background-color: var(--dark) !important;
-      color: var(--cure) !important;
-      transition: all 0.5s ease;
-   }
-}
-
-.btn-o-toxic {
-   background-color: transparent;
-   border: 1px solid var(--toxic) !important;
-   color: var(--toxic) !important;
-   box-shadow: none !important;
-   
-   &:hover {
-      background-color: var(--toxic) !important;
-      color: var(--death) !important;
-      transition: all 0.5s ease;
-   }
-
-   &:focus {
-      box-shadow:  0 0 0 4px #2253ce70 !important;
-   }
-}
-
-.btn-o-fish {
-   background-color: transparent;
-   border: 1px solid var(--fish) !important;
-   color: var(--fish) !important;
-   box-shadow: none !important;
-   
-   &:hover {
-      background-color: var(--fish) !important;
-      color: var(--cure) !important;
-      transition: all 0.5s ease;
-   }
-}
-
-.btn-o-cure {
-   background-color: transparent;
-   border: 1px solid var(--cure) !important;
-   color: var(--cure) !important;
-   box-shadow: none !important;
-   
-   &:hover {
-      background-color: var(--cure) !important;
-      color: var(--death) !important;
-      transition: all 0.5s ease;
-   }
-}
-
-.btn-fish,
-.btn-o-fish {
-   &:focus {
-      box-shadow:  0 0 0 5px #2253ce42 !important;
+@each $var in $listadoNombresClaros {
+   .btn-o-#{$var} {
+      background-color: transparent;
+      border: 1px solid map-get($map: $listadoColoresClaros, $key: $var ) !important;
+      color: var(--#{$var});
+      &:hover {
+         background-color: var(--#{$var})   !important;
+         color: var(--death) !important;
+         transition: all 0.3s ease;
+      }
    }
 }
 
 
-.btn-force,
-.btn-o-force {
-   &:focus {
-      box-shadow:  0 0 0 5px #d11e1e54 !important;
-   }
-}
-
-.btn-toxic,
-.btn-o-toxic {
-   &:focus {
-      box-shadow:  0 0 0 5px #ffc80252 !important;
-   }
-}
-
-.btn-haven,
-.btn-o-haven {
-   &:focus {
-      box-shadow:  0 0 0 5px #00cafd54 !important;
-   }
-}
-
-.btn-pasture,
-.btn-o-pasture {
-   &:focus {
-      box-shadow:  0 0 0 5px #098d5a52 !important;
-   }
-}
-
-.btn-gentle,
-.btn-o-gentle {
-   &:focus {
-      box-shadow:  0 0 0 5px #eeeeee81 !important;
-   }
-}
-
-.btn-death,
-.btn-o-death {
-   &:focus {
-      box-shadow:  0 0 0 5px #00000042 !important;
-   }
-}
-
-.btn-dark,
-.btn-o-dark {
-   &:focus {
-      box-shadow:  0 0 0 5px #292a3044 !important;
+@each $var in $listadoNombresSombras {
+   .btn-#{$var},
+   .btn-o-#{$var} {
+      &:focus {
+         box-shadow:  map-get($map: $shadows, $key: #{$var}) !important;
+      }
    }
 }
 
@@ -311,13 +109,6 @@
 .btn-o-grey {
    &:focus {
       box-shadow:  0 0 0 5px #c4c4c446 !important;
-   }
-}
-
-.btn-cure,
-.btn-o-cure {
-   &:focus {
-      box-shadow:  0 0 0 5px #ffffff4f !important;
    }
 }
 
