@@ -14,60 +14,27 @@
 
 
     <section class="container">
-        <pre class="cod-css">
-    @function tamLetra($hashLetras, $etiqueta) {
-        @if(map-has-key($hashLetras, $etiqueta )) {
-            @return map-get($hashLetras , $etiqueta);
-        }@else{
-            @warn "La etiqueta html no existe";
+        <pre class="cod-js">
+        class Persona {
+          constructor({nombre, apellido}) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+          }
+
+          getNombre() {
+            return this.nombre;
+          }
+
+          getApellido() {
+            return this.apellido;
+          }
+
+          static Persona personaFabric() {
+            return new Persona()
+          }
         }
-    }
-    
-    //Función para establecer el grosor de las 
-    // Fuentes 
-    @function get-grosor($grosor, $val) {
-        @if(map-has-key($grosor, $val )) {
-            @return map-get($grosor , $val);
-        }@else{
-            @warn "El grosor seleccionado no existe";
-        }
-    }
-    
-    
-    // Función que devuelve el nivel del componente
-    @function superposicion($al) {
-        @if map-has-key($superposicion, $al) {
-            @return map-get($superposicion, $al);
-        }@else {
-            @warn "El componente no existe";
-        }
-    }
-    
-    // Devuelve el breackpoint 
-    @function dameMedida($med) {
-        @if map-has-key($sizes, $med) {
-            @return map-get($sizes, $med);
-        }
-    }
-    
-    @function dameZIndex($component) {
-        @if map-has-key($z-index, $component) {
-            @return map-get($z-index, $component);
-        }
-    }
-    
-    // Verifica si un valor es multiplo de 5
-    @function multiplo5($num){
-        @return $num % 5 == 0;
-    }
+
         
-    @function inicializarVariable() {
-        @return 0;
-    }
-    
-    @function incrementar($var) {
-        @return $var + 0.5;
-    }
         </pre>
     </section>
 
@@ -82,6 +49,10 @@
     <script>
         $(document).ready(() => {
             BS.CssInit()
+            BS.HtmlInit()
+            BS.CInit()
+            BS.JavaInit()
+            BS.JsInit()
         })
 
     </script>
