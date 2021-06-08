@@ -17,7 +17,8 @@
   "author": "Federico Manzano",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "show-sintax": "^1.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",
