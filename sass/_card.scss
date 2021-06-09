@@ -171,7 +171,7 @@
         .button {
             margin :                auto;
             max-width:              fit-content;
-            font-size:              .625em;
+            font-size:              0.8em;
             border-radius:          9999999px;
             padding:                1em;
             color:                  var(--cure);
@@ -197,12 +197,16 @@
         justify-content:    center;
 
         .circle {
-            width:          35px;
-            height:         35px;
-            border-radius:  50%;
-            cursor:         pointer;
-            background:     $card-gradient-2 !important;
-            box-shadow:     $card-shadow;
+            width:              35px;
+            height:             35px;
+            border-radius:      50%;
+            cursor:             pointer;
+            display:            flex;
+            justify-content:    center;
+            align-items:        center;
+            color:              var(--cure);
+            background:         $card-gradient-2 !important;
+            box-shadow:         $card-shadow;
         }
     }
 }
