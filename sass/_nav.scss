@@ -21,7 +21,7 @@
     background-color:   var(--force);
     padding:            $nav-body-padding;
     font-size:          $nav-body-fz;
-    min-height:         3em;
+    min-height:         4em;
 
     z-index:            dameZIndex(nav);
 
@@ -31,7 +31,7 @@
         position: absolute;
         right: 15px;
         padding:            $nav-list-link-padding;
-        top: 0;
+        top: .5em;
         cursor: pointer;
     }
     
@@ -67,6 +67,7 @@
 
 
         & li a {
+            font-size:          $a-link-fz;
             text-decoration:    none;
             padding:            $nav-list-link-padding;
             display:            flex;

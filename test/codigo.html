@@ -35,7 +35,37 @@
         }
 
         
-        </pre>
+    
+
+        
+
+      </pre>
+      <pre class="cod-c">
+        #include <stdio.h>
+        #include "./federico/lib.c"  
+
+        /*
+        * Devuelve verdadero si el numero es par 
+        * y falso si el numero es impar
+        */
+        int esPar(const int * num) {
+
+          // Expresion booleana
+          return num ? (*num % 2 == 0) : 0;
+        }
+
+        int main() {
+
+          // Declaración de la variable 
+          int var1 = 2;
+
+          // Mostrar resultado por pantalla
+          printf("El numero ingresado es: %s", esPar(&var1) ? "ES PAR": "NO ES PAR");
+
+          return 0;
+
+        }
+      <pre>
     </section>
 
 

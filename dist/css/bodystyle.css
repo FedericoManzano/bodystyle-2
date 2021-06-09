@@ -16631,7 +16631,7 @@ a.link.disabled {
   background-color: var(--force);
   padding: 0 2em;
   font-size: 1.1em;
-  min-height: 3em;
+  min-height: 4em;
   z-index: 400;
   user-select: none;
 }
@@ -16648,8 +16648,8 @@ a.link.disabled {
 .body-nav-traslucent .bs-menu {
   position: absolute;
   right: 15px;
-  padding: 0.9em 0.7em;
-  top: 0;
+  padding: 1.1em 0.7em;
+  top: 0.5em;
   cursor: pointer;
 }
 .body-nav-dark .container,
@@ -16695,7 +16695,7 @@ a.link.disabled {
 .body-nav-traslucent .body-logo {
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.4em;
+  font-size: 1.6em;
   margin-right: 1em;
 }
 .body-nav-dark .body-list,
@@ -16725,8 +16725,9 @@ a.link.disabled {
 .body-nav-grey .body-list li a,
 .body-nav-death .body-list li a,
 .body-nav-traslucent .body-list li a {
+  font-size: 1.2em;
   text-decoration: none;
-  padding: 0.9em 0.7em;
+  padding: 1.1em 0.7em;
   display: flex;
   align-items: center;
 }
