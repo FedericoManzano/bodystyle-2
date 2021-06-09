@@ -14,7 +14,6 @@
     ESTILOS GENERALES PARA TODA LA LIBRERÍA
 ************************************************************/
 @import url("https://rawcdn.githack.com/FedericoManzano/dynamics-tips/b3bd24a6c9eb8cd9762c74cdd0dafdcb4fdfe90a/dist/css/estilos-dynamics.min.css");
-@import url("https://rawcdn.githack.com/FedericoManzano/bodystyle-iconos/67ed1347160750e506d5153c8ae523057db50b03/iconos/bs-iconos.min.css");
 :root {
   --force: #D11E1E;
   --fish: #2254CE;
@@ -16056,7 +16055,9 @@ p, span, a {
   font-style: normal;
   font-display: block;
 }
-[class^=bs-], [class*=" bs-"] {
+[class^=bs-], [class*=" bs-"],
+.check-radio-group .label-check::after,
+.check-radio-group .label-radio::after {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
@@ -16689,36 +16690,36 @@ p, span, a {
   background-color: var(--force) !important;
 }
 
-.bg-toxic {
-  background-color: var(--toxic) !important;
-}
-
-.bg-dark {
-  background-color: var(--dark) !important;
+.bg-pasture {
+  background-color: var(--pasture) !important;
 }
 
 .bg-fish {
   background-color: var(--fish) !important;
 }
 
-.bg-grey {
-  background-color: var(--grey) !important;
+.bg-death {
+  background-color: var(--death) !important;
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.bg-cure {
+  background-color: var(--cure) !important;
 }
 
 .bg-gentle {
   background-color: var(--gentle) !important;
 }
 
-.bg-pasture {
-  background-color: var(--pasture) !important;
+.bg-toxic {
+  background-color: var(--toxic) !important;
 }
 
-.bg-death {
-  background-color: var(--death) !important;
-}
-
-.bg-cure {
-  background-color: var(--cure) !important;
+.bg-haven {
+  background-color: var(--haven) !important;
 }
 
 .bg-gradient-1 {
@@ -17623,6 +17624,43 @@ input.disabled:focus {
 }
 input.disabled::placeholder {
   color: #f1f1f1 !important;
+}
+
+.check-radio-group {
+  user-select: none;
+}
+.check-radio-group input[type=checkbox],
+.check-radio-group input[type=radio] {
+  display: none;
+}
+.check-radio-group .label-check,
+.check-radio-group .label-radio {
+  position: relative;
+  padding-left: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.check-radio-group .label-check::after,
+.check-radio-group .label-radio::after {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.check-radio-group .label-check::after {
+  content: "";
+}
+.check-radio-group .label-radio::after {
+  content: "";
+}
+.check-radio-group input[type=checkbox]:checked + .label-check::after {
+  content: "";
+  color: var(--pasture);
+}
+.check-radio-group input[type=radio]:checked + .label-radio::after {
+  content: "";
+  color: var(--pasture);
+  font-size: 23px;
+  left: -3.6px;
+  top: -2px;
 }
 
 /*# sourceMappingURL=bodystyle.css.map */

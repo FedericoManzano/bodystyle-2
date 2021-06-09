@@ -1,40 +1,17 @@
 /***********************************************************
     COLORES DE FONDO
 ************************************************************/
-.bg-force {
-    background-color: var(--force) !important;
+
+@each $var in $listadoNombresOscuros {
+    .bg-#{$var} {
+        background-color: map-get($map: $listadoColoresOscuros, $key: $var ) !important;
+    }
 }
 
-.bg-toxic {
-    background-color: var(--toxic) !important;
-}
-
-.bg-dark {
-    background-color: var(--dark) !important;
-}
-
-.bg-fish {
-    background-color: var(--fish) !important;
-}
-
-.bg-grey {
-    background-color: var(--grey) !important;
-}
-
-.bg-gentle {
-    background-color: var(--gentle) !important;
-}
-
-.bg-pasture {
-    background-color: var(--pasture) !important;
-}
-
-.bg-death {
-    background-color: var(--death) !important;
-}
-
-.bg-cure {
-    background-color: var(--cure) !important;
+@each $var in $listadoNombresClaros {
+    .bg-#{$var} {
+        background-color: map-get($map: $listadoColoresClaros, $key: $var ) !important;
+    }
 }
 
 .bg-gradient-1 {

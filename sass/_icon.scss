@@ -10,7 +10,9 @@
   font-display: block;
 }
 
-[class^="bs-"], [class*=" bs-"] {
+[class^="bs-"], [class*=" bs-"],
+.check-radio-group .label-check::after,
+.check-radio-group .label-radio::after{
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   font-style: normal;

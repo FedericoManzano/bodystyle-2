@@ -1,0 +1,43 @@
+.check-radio-group {
+    user-select: none;
+
+    input[type="checkbox"],
+    input[type="radio"]  {
+      display: none;
+    }
+
+    .label-check,
+    .label-radio {
+        position: relative;
+        padding-left: 20px;
+        font-family: $fonts;
+
+        &::after {
+            
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+    }
+
+    .label-check::after {
+        content: "\e973";
+    }
+
+    .label-radio::after {
+        content: "\e921";
+    }
+
+    input[type="checkbox"]:checked + .label-check::after {
+        content: "\e975";
+        color: var(--pasture);
+    }
+
+    input[type="radio"]:checked + .label-radio::after {
+        content:    "\e922";
+        color:      var(--pasture);
+        font-size:  23px;
+        left:       -3.6px;
+        top:        -2px;
+    }
+}
