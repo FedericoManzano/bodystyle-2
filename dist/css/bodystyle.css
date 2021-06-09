@@ -4898,7 +4898,7 @@ p, span, a {
   justify-content: space-around;
 }
 
-.just-around-between {
+.just-between {
   justify-content: space-between;
 }
 
@@ -17647,6 +17647,7 @@ input.disabled::placeholder {
 }
 .check-radio-group .label-check::after {
   content: "";
+  font-size: 15px;
 }
 .check-radio-group .label-radio::after {
   content: "";

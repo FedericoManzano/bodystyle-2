@@ -22,10 +22,12 @@
 
     .label-check::after {
         content: "\e973";
+        font-size: 15px;
     }
 
     .label-radio::after {
         content: "\e921";
+        
     }
 
     input[type="checkbox"]:checked + .label-check::after {
