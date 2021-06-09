@@ -16293,9 +16293,6 @@ p, span, a {
   background-color: var(--force-hov) !important;
   transition: all 0.3s ease;
 }
-.btn-force:active {
-  background-color: var(--force) !important;
-}
 
 .btn-pasture {
   background-color: var(--pasture) !important;
@@ -16304,9 +16301,6 @@ p, span, a {
 .btn-pasture:hover {
   background-color: var(--pasture-hov) !important;
   transition: all 0.3s ease;
-}
-.btn-pasture:active {
-  background-color: var(--pasture) !important;
 }
 
 .btn-fish {
@@ -16317,9 +16311,6 @@ p, span, a {
   background-color: var(--fish-hov) !important;
   transition: all 0.3s ease;
 }
-.btn-fish:active {
-  background-color: var(--fish) !important;
-}
 
 .btn-death {
   background-color: var(--death) !important;
@@ -16328,9 +16319,6 @@ p, span, a {
 .btn-death:hover {
   background-color: var(--death-hov) !important;
   transition: all 0.3s ease;
-}
-.btn-death:active {
-  background-color: var(--death) !important;
 }
 
 .btn-dark {
@@ -16341,9 +16329,6 @@ p, span, a {
   background-color: var(--dark-hov) !important;
   transition: all 0.3s ease;
 }
-.btn-dark:active {
-  background-color: var(--dark) !important;
-}
 
 .btn-cure {
   background-color: var(--cure) !important;
@@ -16352,9 +16337,6 @@ p, span, a {
 .btn-cure:hover {
   background-color: var(--cure-hov) !important;
   transition: all 0.3s ease;
-}
-.btn-cure:active {
-  background-color: var(--cure) !important;
 }
 
 .btn-gentle {
@@ -16365,9 +16347,6 @@ p, span, a {
   background-color: var(--gentle-hov) !important;
   transition: all 0.3s ease;
 }
-.btn-gentle:active {
-  background-color: var(--gentle) !important;
-}
 
 .btn-toxic {
   background-color: var(--toxic) !important;
@@ -16377,9 +16356,6 @@ p, span, a {
   background-color: var(--toxic-hov) !important;
   transition: all 0.3s ease;
 }
-.btn-toxic:active {
-  background-color: var(--toxic) !important;
-}
 
 .btn-haven {
   background-color: var(--haven) !important;
@@ -16388,9 +16364,6 @@ p, span, a {
 .btn-haven:hover {
   background-color: var(--haven-hov) !important;
   transition: all 0.3s ease;
-}
-.btn-haven:active {
-  background-color: var(--haven) !important;
 }
 
 .btn-grey {
@@ -16623,6 +16596,18 @@ a.link.disabled {
 
 .btn-grad-5 {
   background: linear-gradient(140deg, #9ec72c, #c91a5d) !important;
+}
+
+.waves {
+  overflow: hidden;
+  position: relative;
+}
+
+.waves-effect {
+  transform: translate(-50%, -50%) !important;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
 }
 
 /***********************************************************

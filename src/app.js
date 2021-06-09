@@ -7,12 +7,14 @@ import Html from "./moduls/CodeHtml"
 import C from "./moduls/CodeC"
 import Java from "./moduls/CodeJava"
 import Js from "./moduls/CodeJs"
-
+import Waves from "./moduls/Waves"
 
 (function() {
 
     Handler.init()
     Disabled.init()
+    Waves.init()
+
 
     /** Codigo */
     const CodigoCssInit = (config) => {
@@ -41,12 +43,12 @@ import Js from "./moduls/CodeJs"
     }
 
     const BS = {
-        NavInit: () => navInit(),
-        CssInit: (config) => CodigoCssInit(config ),
-        HtmlInit: (config) => CodigoHtmlInit(config ),
-        CInit: (config) => CodigoCInit(config ),
-        JavaInit: (config) => CodigoJavaInit(config ),
-        JsInit: (config) => CodigoJsInit(config ),
+        NavInit:    ()        =>  navInit(),
+        CssInit:    (config)  =>  CodigoCssInit(config ),
+        HtmlInit:   (config)  =>  CodigoHtmlInit(config ),
+        CInit:      (config)  =>  CodigoCInit(config ),
+        JavaInit:   (config)  =>  CodigoJavaInit(config ),
+        JsInit:     (config)  =>  CodigoJsInit(config ),
     } 
     
     window.BS = BS

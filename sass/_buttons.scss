@@ -35,9 +35,7 @@
          background-color: var(--#{$var}-hov)   !important;
          transition: all 0.3s ease;
       }
-      &:active {
-         background-color: var(--#{$var})       !important;
-      }
+      
    }
 }
 
@@ -49,9 +47,7 @@
          background-color: var(--#{$var}-hov)   !important;
          transition: all 0.3s ease;
       }
-      &:active {
-         background-color: var(--#{$var})       !important;
-      }
+      
    }
 }
 
@@ -178,3 +174,14 @@ a.link.disabled {
    background:             $gradient-5  !important;
 }
 
+.waves {
+   overflow: hidden;
+   position: relative;
+}
+
+.waves-effect {
+   transform:  translate(-50%, -50%) !important;
+   position: absolute;
+   border-radius: 50%;
+   opacity: 0.4;
+}
