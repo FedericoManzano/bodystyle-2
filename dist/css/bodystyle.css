@@ -16888,7 +16888,7 @@ a.link.disabled {
 .body-sidebar-haven .side-list .side-logo,
 .body-sidebar-dark .side-list .side-logo {
   display: flex;
-  padding: 0.43em 0.8em;
+  padding: 0.56em 1em;
   font-weight: 500;
   font-size: 1.6em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.055);
