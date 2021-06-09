@@ -21,7 +21,6 @@
     background-color:   var(--force);
     padding:            $nav-body-padding;
     font-size:          $nav-body-fz;
-    min-height:         4em;
 
     z-index:            dameZIndex(nav);
 
@@ -31,9 +30,11 @@
         position: absolute;
         right: 15px;
         padding:            $nav-list-link-padding;
-        top: .5em;
+        top: 1em;
         cursor: pointer;
     }
+
+    
     
     
     .container {
@@ -50,7 +51,7 @@
 
     .body-logo {
         text-decoration:        none;
-        font-weight:            $fw-600;
+        font-weight:            $fw-500;
         font-size:              $nav-fz-logo;
         margin-right:           1em;
     }
@@ -62,16 +63,16 @@
 
         list-style:             none;
         display:                flex;
+        align-items:            center;
         width:                  $nav-list-width;
         margin-right:           1em;
-
 
         & li a {
             font-size:          $a-link-fz;
             text-decoration:    none;
             padding:            $nav-list-link-padding;
             display:            flex;
-            align-items:        center;
+            font-weight: $fw-300;
         }
     }   
 }
@@ -230,6 +231,7 @@
             width:              $sidebar-link-width;
             font-size:          $sidebar-link-fz;
             padding:            $sidebar-link-padding;
+            font-weight:        $fw-300;
         }
     }
 }

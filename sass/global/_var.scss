@@ -110,7 +110,7 @@ $sizes:(
 //////////////////////// NAV ////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-$nav-body-padding:          0 2em;
+$nav-body-padding:          0.7em 2em;
 $nav-body-fz:               1.1em;
 
 // Lista
@@ -122,7 +122,7 @@ $nav-fz-logo:               1.6em;
 // Enlaces
 $nav-hover-white:         #ffffff13;
 $nav-hover-black:         #00000013;
-$nav-list-link-padding:     1.1em 0.7em;
+$nav-list-link-padding:     0em 0.3em;
 $a-link-fz:                 1.2em;
 
 ///////////////////////////////////////////////////////////////// 
@@ -132,13 +132,13 @@ $a-link-fz:                 1.2em;
 
 $sidebar-width:             210px; 
 $sidebar-list-mt:           0em;
-$sidebar-link-fz:           1em;
-$sidebar-link-padding:      0.5em;
+$sidebar-link-fz:           1.2em;
+$sidebar-link-padding:      0.5em 1em;
 $sidebar-link-width:        100%;
 
 $side-logo-bgcolor:       rgba(0, 0, 0, 0.041);
-$side-logo-padding:         0.7em 0.8em;
-$side-logo-fz:              1.25em;
+$side-logo-padding:         0.43em 0.8em;
+$side-logo-fz:              1.6em;
 $side-bar-border:           1px solid rgba(0, 0, 0, 0.055);
 
 ///////////////////////////////////////////////////////////////// 

@@ -16629,9 +16629,8 @@ a.link.disabled {
   display: flex;
   align-items: center;
   background-color: var(--force);
-  padding: 0 2em;
+  padding: 0.7em 2em;
   font-size: 1.1em;
-  min-height: 4em;
   z-index: 400;
   user-select: none;
 }
@@ -16648,8 +16647,8 @@ a.link.disabled {
 .body-nav-traslucent .bs-menu {
   position: absolute;
   right: 15px;
-  padding: 1.1em 0.7em;
-  top: 0.5em;
+  padding: 0em 0.3em;
+  top: 1em;
   cursor: pointer;
 }
 .body-nav-dark .container,
@@ -16694,7 +16693,7 @@ a.link.disabled {
 .body-nav-death .body-logo,
 .body-nav-traslucent .body-logo {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6em;
   margin-right: 1em;
 }
@@ -16711,6 +16710,7 @@ a.link.disabled {
 .body-nav-traslucent .body-list {
   list-style: none;
   display: flex;
+  align-items: center;
   width: 80%;
   margin-right: 1em;
 }
@@ -16727,9 +16727,9 @@ a.link.disabled {
 .body-nav-traslucent .body-list li a {
   font-size: 1.2em;
   text-decoration: none;
-  padding: 1.1em 0.7em;
+  padding: 0em 0.3em;
   display: flex;
-  align-items: center;
+  font-weight: 300;
 }
 
 .body-nav-dark,
@@ -16888,9 +16888,9 @@ a.link.disabled {
 .body-sidebar-haven .side-list .side-logo,
 .body-sidebar-dark .side-list .side-logo {
   display: flex;
-  padding: 0.7em 0.8em;
+  padding: 0.43em 0.8em;
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: 1.6em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.055);
   background-color: rgba(0, 0, 0, 0.041);
 }
@@ -16907,8 +16907,9 @@ a.link.disabled {
   display: flex;
   text-decoration: none;
   width: 100%;
-  font-size: 1em;
-  padding: 0.5em;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  font-weight: 300;
 }
 
 .body-sidebar-force .side-logo,
