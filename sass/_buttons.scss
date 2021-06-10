@@ -142,7 +142,7 @@ a.link.disabled {
 .btn-grad-5 {
    @include initButton();
    max-width:              fit-content;
-   font-size:              1em               !important;
+   font-size:              0.5em               !important;
    border-radius:          9999999px         !important;
    padding:                1em;
    color:                  var(--cure)       !important;

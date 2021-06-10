@@ -17108,7 +17108,7 @@ a.link.disabled {
   font-weight: 400 !important;
   text-decoration: none !important;
   max-width: fit-content;
-  font-size: 1em !important;
+  font-size: 0.5em !important;
   border-radius: 9999999px !important;
   padding: 1em;
   color: var(--cure) !important;
@@ -17170,7 +17170,7 @@ a.link.disabled {
   display: flex;
   align-items: center;
   background-color: var(--force);
-  padding: 0.7em 2em;
+  padding: 0.6em 2em;
   font-size: 1.1em;
   z-index: 400;
   user-select: none;
@@ -17189,9 +17189,9 @@ a.link.disabled {
   position: absolute;
   right: 15px;
   padding: 0em 0.3em;
-  top: 1.2em;
+  top: 0.8em;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1em;
 }
 .body-nav-dark .container,
 .body-nav-gentle .container,
@@ -17236,7 +17236,7 @@ a.link.disabled {
 .body-nav-traslucent .body-logo {
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.3em;
   margin-right: 1em;
 }
 .body-nav-dark .body-list,
@@ -17267,7 +17267,7 @@ a.link.disabled {
 .body-nav-grey .body-list li a,
 .body-nav-death .body-list li a,
 .body-nav-traslucent .body-list li a {
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   padding: 0em 0.3em;
   display: flex;
@@ -17432,7 +17432,7 @@ a.link.disabled {
   display: flex;
   padding: 0.56em 1em;
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.3em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.055);
   background-color: rgba(0, 0, 0, 0.041);
 }
