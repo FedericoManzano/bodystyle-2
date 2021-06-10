@@ -6,6 +6,16 @@
   "scripts": {
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoManzano/bodystyle-2"
+  },
+  "files": [
+    "dist/{css,js}/*.{css,js,map}",
+    "src/{modulos}/**/*.{js}",
+    "src/**/*.js",
+    "sass/**/*.scss"
+  ],
   "keywords": [
     "Framework",
     "Front-end",
