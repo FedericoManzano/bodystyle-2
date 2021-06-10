@@ -8,7 +8,7 @@ import $ from "jquery"
 (function(){
 
     // Desplazamiento del sidenav hacia la izquierda
-    const HIDE      = -210
+    const HIDE      = -260
 
     // Desplazamiento del sidenav hacia la derecha
     const SHOW      = 0

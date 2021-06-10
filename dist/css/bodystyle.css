@@ -17175,22 +17175,23 @@ a.link.disabled {
   z-index: 400;
   user-select: none;
 }
-.body-nav-dark .bs-menu,
-.body-nav-gentle .bs-menu,
-.body-nav-pasture .bs-menu,
-.body-nav-toxic .bs-menu,
-.body-nav-force .bs-menu,
-.body-nav-haven .bs-menu,
-.body-nav-fish .bs-menu,
-.body-nav-cure .bs-menu,
-.body-nav-grey .bs-menu,
-.body-nav-death .bs-menu,
-.body-nav-traslucent .bs-menu {
+.body-nav-dark .bs-menu-line-1,
+.body-nav-gentle .bs-menu-line-1,
+.body-nav-pasture .bs-menu-line-1,
+.body-nav-toxic .bs-menu-line-1,
+.body-nav-force .bs-menu-line-1,
+.body-nav-haven .bs-menu-line-1,
+.body-nav-fish .bs-menu-line-1,
+.body-nav-cure .bs-menu-line-1,
+.body-nav-grey .bs-menu-line-1,
+.body-nav-death .bs-menu-line-1,
+.body-nav-traslucent .bs-menu-line-1 {
   position: absolute;
   right: 15px;
   padding: 0em 0.3em;
-  top: 1em;
+  top: 1.2em;
   cursor: pointer;
+  font-size: 20px;
 }
 .body-nav-dark .container,
 .body-nav-gentle .container,
@@ -17393,10 +17394,10 @@ a.link.disabled {
 .body-sidebar-dark {
   font: 16px;
   position: fixed;
-  width: 210px;
+  width: 260px;
   top: 0;
   bottom: 0;
-  left: -210px;
+  left: -260px;
   z-index: 420;
   border-right: 1px solid rgba(0, 0, 0, 0.055);
   transition: left 0.3s ease;
