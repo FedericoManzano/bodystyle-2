@@ -12,7 +12,7 @@
   },
   "files": [
     "dist/{css,js}/*.{css,js,map}",
-    "src/{modulos}/**/*.{js}",
+    "src/{moduls}/**/*.{js}",
     "src/**/*.js",
     "sass/**/*.scss"
   ],
