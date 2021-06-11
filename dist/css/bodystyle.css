@@ -17449,7 +17449,7 @@ a.link.disabled {
   display: flex;
   text-decoration: none;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 0.5em 1em;
   font-weight: 300;
 }

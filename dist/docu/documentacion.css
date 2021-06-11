@@ -1,0 +1,79 @@
+#cabecera-documentacion {
+  min-height: 500px;
+  padding: 120px 0;
+  text-align: center;
+  color: white;
+  user-select: none;
+}
+#cabecera-documentacion h6 {
+  font-weight: 200;
+  font-size: 35px;
+}
+#cabecera-documentacion .subtitulo {
+  font-weight: 500;
+  margin-top: 7px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#descargas {
+  margin-top: 90px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#descargas h6 {
+  font-weight: 300;
+  font-size: 35px;
+}
+#descargas p {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 300;
+}
+#descargas .box {
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  width: fit-content;
+}
+#descargas .bs-cloud-download {
+  font-size: 300px !important;
+  margin-right: 40px;
+}
+
+.codigo {
+  text-align: left;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.codigo .cabecera {
+  background-color: black;
+  padding: 10px 30px 12px 30px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.codigo .cabecera .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#descripcion {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#descripcion h6 {
+  font-weight: 300;
+  line-height: 40px;
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=documentacion.css.map */

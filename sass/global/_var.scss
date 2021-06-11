@@ -3,18 +3,18 @@
 ////////////////////////////////////////////////////////////////
 
 $fonts: system-ui,
--apple-system,
- BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue", Arial,
-"Noto Sans",
-"Liberation Sans",
-sans-serif,
-"Apple Color Emoji", 
-"Segoe UI Emoji", 
-"Segoe UI Symbol", 
-"Noto Color Emoji";
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue", Arial,
+        "Noto Sans",
+        "Liberation Sans",
+        sans-serif,
+        "Apple Color Emoji", 
+        "Segoe UI Emoji", 
+        "Segoe UI Symbol", 
+        "Noto Color Emoji";
 
 
 ///////////////////////////////////////////////////////////////// 
@@ -151,11 +151,11 @@ $a-link-fz:                 1em;
 
 $sidebar-width:             260px; 
 $sidebar-list-mt:           0em;
-$sidebar-link-fz:           1.2em;
+$sidebar-link-fz:           1em;
 $sidebar-link-padding:      0.5em 1em;
 $sidebar-link-width:        100%;
 
-$side-logo-bgcolor:       rgba(0, 0, 0, 0.041);
+$side-logo-bgcolor:        rgba(0, 0, 0, 0.041);
 $side-logo-padding:         0.56em 1em;
 $side-logo-fz:              1.3em;
 $side-bar-border:           1px solid rgba(0, 0, 0, 0.055);
@@ -188,7 +188,7 @@ $gradient-2:            linear-gradient(90deg, #a127f3, #185fca);
 $gradient-3:            linear-gradient(90deg, #110ed4, #446dac);
 $gradient-4:            linear-gradient(140deg,#c4c4c4, #ffffff);
 $gradient-5:            linear-gradient(140deg,#9ec72c, #c91a5d);
-$gradient-6:            linear-gradient(70deg,#1a1a1d, #023b69,#1a1a1d);
+$gradient-6:            linear-gradient(70deg, #1a1a1d, #023b69,#1a1a1d);
 
 ///////////////////////////////////////////////////////////////// 
 //////////////////////// CARD ///////////////////////////////////

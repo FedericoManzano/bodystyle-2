@@ -1,13 +1,19 @@
 
-import Nav from "./moduls/Nav"
-import Handler from "./moduls/Input-Handler"
-import Disabled from "./moduls/Disabled"
-import Css from "./moduls/CodeCss"
-import Html from "./moduls/CodeHtml"
-import C from "./moduls/CodeC"
-import Java from "./moduls/CodeJava"
-import Js from "./moduls/CodeJs"
-import Waves from "./moduls/Waves"
+/*!
+ * BodyStyle2 v1.0.0
+ * Copyright Federico Manzano
+ * Licencia MIT
+ * Repositorio (https://github.com/FedericoManzano/bodystyle-2)
+ */
+import Nav      from    "./moduls/Nav"
+import Handler  from    "./moduls/Input-Handler"
+import Disabled from    "./moduls/Disabled"
+import Css      from    "./moduls/CodeCss"
+import Html     from    "./moduls/CodeHtml"
+import C        from    "./moduls/CodeC"
+import Java     from    "./moduls/CodeJava"
+import Js       from    "./moduls/CodeJs"
+import Waves    from    "./moduls/Waves"
 
 (function() {
 
@@ -44,11 +50,11 @@ import Waves from "./moduls/Waves"
 
     const BS = {
         NavInit:    ()        =>  navInit(),
-        CssInit:    (config)  =>  CodigoCssInit(config ),
-        HtmlInit:   (config)  =>  CodigoHtmlInit(config ),
-        CInit:      (config)  =>  CodigoCInit(config ),
-        JavaInit:   (config)  =>  CodigoJavaInit(config ),
-        JsInit:     (config)  =>  CodigoJsInit(config ),
+        CssInit:    (config)  =>  CodigoCssInit ( config ),
+        HtmlInit:   (config)  =>  CodigoHtmlInit( config ),
+        CInit:      (config)  =>  CodigoCInit   ( config ),
+        JavaInit:   (config)  =>  CodigoJavaInit( config ),
+        JsInit:     (config)  =>  CodigoJsInit  ( config ),
     } 
     
     window.BS = BS
