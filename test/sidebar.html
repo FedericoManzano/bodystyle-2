@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="../dist/css/bodystyle.css">
+    <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/tema-oscuro.css">
+    
+    <link rel="stylesheet" href="../dist/docu/documentacion.css">
+    <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/tema-oscuro.css">
+    
+    <title>Document</title>
+</head>
+<body >
+
+    <div id="sidebar-fija">
+        <a class="sidebar-fija-logo">Bodystyle</a>
+        <a class="titulo-sidebar trigger" data-trigger="#principal">PRINCIPAL <span class="bs-arrow-forward fz-20"></span></a>
+        <ul id="principal">
+            <li><a href="">Home</a></li>
+            <li><a href="">Docs</a></li>
+            <li><a href="">GitHub</a></li>
+        </ul>
+        <a class="titulo-sidebar trigger" data-trigger="#introduccion">INTRODUCCIÓN <span class="bs-arrow-forward fz-20"></span></a>
+        <ul id="introduccion">
+            <li><a href="">Get Started</a></li>
+            <li><a href="">Descarga</a></li>
+            <li><a href="">Webpack</a></li>
+        </ul>
+    </div>
+
+    <section class="pagina">
+        <div class="article">
+            <h1 class="h1">Bodystyle</h1>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime praesentium commodi veritatis corporis nihil, ex at deleniti modi ullam quibusdam quo unde perferendis harum temporibus. Non ea cupiditate accusantium.</p>
+            <div class="d-flex">
+                <a href="#" class="btn btn-o-pasture">Descargar</a>
+                <a href="#" class="btn btn-o-dark ml-1">GitHub</a>
+            </div>
+        </div>
+        <div class="article">
+            <h2 class="h2">CDN</h2>
+            <p class="p">Dentro de las etiquetas <span class="res">header</span> de la página
+                añadir los siguientes enlaces para agregar la librería.
+            </p>
+            <p class="p">Es necesario agregar el meta view port para poder utilizar la librería.</p>
+        <div class="codigo">
+        <div class="cabecera">
+            Meta View Port
+            <div class="d-flex">
+                <div class="circle bg-pasture"></div>
+                <div class="circle bg-toxic ml-1"></div>
+                <div class="circle bg-force ml-1"></div>
+            </div>
+        </div>
+    <pre class="cod-html"> 
+    <!-- META obligatorio para poder utilizar la libreria -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </pre>
+    </div>
+    <p class="p mt-2">Cdn de los estilos de la librería</p>
+    <div class="codigo">
+        <div class="cabecera">
+            Meta View Port
+            <div class="d-flex">
+                <div class="circle bg-pasture"></div>
+                <div class="circle bg-toxic ml-1"></div>
+                <div class="circle bg-force ml-1"></div>
+            </div>
+        </div>
+    <pre class="cod-html"> 
+    <!-- META obligatorio para poder utilizar la libreria -->
+    <link  rel="stylesheet"  href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">
+    </pre>
+    </div>
+
+    </div>
+    </section>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="../dist/js/bodystyle.js"></script>
+    <script src="../docs/sidebar.js"></script>
+    <script>
+        $(document).ready(() => {
+            BS.NavInit()
+            BS.HtmlInit({lineas: false})
+        })
+    </script>
+</body>
+</html>
