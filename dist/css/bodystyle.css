@@ -17170,28 +17170,60 @@ a.link.disabled {
   display: flex;
   align-items: center;
   background-color: var(--force);
-  padding: 0.6em 2em;
+  padding: 1em 2em;
   font-size: 1.1em;
   z-index: 400;
   user-select: none;
 }
 .body-nav-dark .bs-menu-line-1,
+.body-nav-dark .bs-menu-line-2,
+.body-nav-dark .bs-menu-line-3,
+.body-nav-dark .bs-menu-line-4,
 .body-nav-gentle .bs-menu-line-1,
+.body-nav-gentle .bs-menu-line-2,
+.body-nav-gentle .bs-menu-line-3,
+.body-nav-gentle .bs-menu-line-4,
 .body-nav-pasture .bs-menu-line-1,
+.body-nav-pasture .bs-menu-line-2,
+.body-nav-pasture .bs-menu-line-3,
+.body-nav-pasture .bs-menu-line-4,
 .body-nav-toxic .bs-menu-line-1,
+.body-nav-toxic .bs-menu-line-2,
+.body-nav-toxic .bs-menu-line-3,
+.body-nav-toxic .bs-menu-line-4,
 .body-nav-force .bs-menu-line-1,
+.body-nav-force .bs-menu-line-2,
+.body-nav-force .bs-menu-line-3,
+.body-nav-force .bs-menu-line-4,
 .body-nav-haven .bs-menu-line-1,
+.body-nav-haven .bs-menu-line-2,
+.body-nav-haven .bs-menu-line-3,
+.body-nav-haven .bs-menu-line-4,
 .body-nav-fish .bs-menu-line-1,
+.body-nav-fish .bs-menu-line-2,
+.body-nav-fish .bs-menu-line-3,
+.body-nav-fish .bs-menu-line-4,
 .body-nav-cure .bs-menu-line-1,
+.body-nav-cure .bs-menu-line-2,
+.body-nav-cure .bs-menu-line-3,
+.body-nav-cure .bs-menu-line-4,
 .body-nav-grey .bs-menu-line-1,
+.body-nav-grey .bs-menu-line-2,
+.body-nav-grey .bs-menu-line-3,
+.body-nav-grey .bs-menu-line-4,
 .body-nav-death .bs-menu-line-1,
-.body-nav-traslucent .bs-menu-line-1 {
+.body-nav-death .bs-menu-line-2,
+.body-nav-death .bs-menu-line-3,
+.body-nav-death .bs-menu-line-4,
+.body-nav-traslucent .bs-menu-line-1,
+.body-nav-traslucent .bs-menu-line-2,
+.body-nav-traslucent .bs-menu-line-3,
+.body-nav-traslucent .bs-menu-line-4 {
   position: absolute;
   right: 15px;
-  padding: 0em 0.3em;
-  top: 0.8em;
+  top: calc(50% - 12px);
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .body-nav-dark .container,
 .body-nav-gentle .container,
@@ -17267,7 +17299,7 @@ a.link.disabled {
 .body-nav-grey .body-list li a,
 .body-nav-death .body-list li a,
 .body-nav-traslucent .body-list li a {
-  font-size: 1em;
+  font-size: 1.1em;
   text-decoration: none;
   padding: 0em 0.3em;
   display: flex;

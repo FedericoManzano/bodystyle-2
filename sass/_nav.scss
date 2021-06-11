@@ -13,7 +13,7 @@
 .body-nav-grey,
 .body-nav-death,
 .body-nav-traslucent {
-    position: relative;
+    position:           relative;
     width:              auto;
     display:            flex;
     align-items:        center;
@@ -26,13 +26,18 @@
 
     user-select: none;
 
-    .bs-menu-line-1 {
+    .bs-menu-line-1,
+    .bs-menu-line-2,
+    .bs-menu-line-3,
+    .bs-menu-line-4 {
         position: absolute;
         right: 15px;
-        padding:            $nav-list-link-padding;
-        top: 0.8em;
+        //Spadding:            $nav-list-link-padding;
+       // top: 1.25em;
+       top:calc(50% - 12px);
         cursor: pointer;
-        font-size:           1em;
+        font-size:           1.5em;
+       
     }
 
     
