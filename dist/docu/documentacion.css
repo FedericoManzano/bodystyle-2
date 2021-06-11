@@ -62,6 +62,16 @@
   height: 10px;
   border-radius: 50%;
 }
+.codigo .cabecera .copy {
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px;
+}
+.codigo .cabecera .copy:active {
+  color: #3db325;
+}
 
 .descripcion {
   display: flex;

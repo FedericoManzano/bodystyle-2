@@ -32,54 +32,56 @@
         </ul>
     </div>
 
-    <section class="pagina">
-        <div class="article">
-            <h1 class="h1">Bodystyle</h1>
-            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime praesentium commodi veritatis corporis nihil, ex at deleniti modi ullam quibusdam quo unde perferendis harum temporibus. Non ea cupiditate accusantium.</p>
-            <div class="d-flex">
-                <a href="#" class="btn btn-o-pasture">Descargar</a>
-                <a href="#" class="btn btn-o-dark ml-1">GitHub</a>
-            </div>
+<section class="pagina">
+    <div class="article">
+        <h1 class="h1">Bodystyle</h1>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime praesentium commodi veritatis corporis nihil, ex at deleniti modi ullam quibusdam quo unde perferendis harum temporibus. Non ea cupiditate accusantium.</p>
+        <div class="d-flex">
+            <a href="#" class="btn btn-o-pasture">Descargar</a>
+            <a href="#" class="btn btn-o-dark ml-1">GitHub</a>
         </div>
-        <div class="article">
-            <h2 class="h2">CDN</h2>
-            <p class="p">Dentro de las etiquetas <span class="res">header</span> de la página
-                añadir los siguientes enlaces para agregar la librería.
-            </p>
-            <p class="p">Es necesario agregar el meta view port para poder utilizar la librería.</p>
-        <div class="codigo">
-        <div class="cabecera">
-            Meta View Port
-            <div class="d-flex">
-                <div class="circle bg-pasture"></div>
-                <div class="circle bg-toxic ml-1"></div>
-                <div class="circle bg-force ml-1"></div>
-            </div>
+    </div>
+    <div class="article">
+        <h2 class="h2">CDN</h2>
+        <p class="p">Dentro de las etiquetas <span class="res">header</span> de la página
+            añadir los siguientes enlaces para agregar la librería.
+        </p>
+        <p class="p">Es necesario agregar el meta view port para poder utilizar la librería.</p>
+    <div class="codigo">
+    <div class="cabecera">
+        Meta View Port
+        <div class="d-flex">
+            <div id="1" class="copy">Copy</div>
         </div>
+    </div>
     <pre class="cod-html"> 
     <!-- META obligatorio para poder utilizar la libreria -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </pre>
+    <div>
+        <ul>
+            <li><a href="">prieba</a></li>
+            <li><a href="">prieba</a></li>
+            <li><a href="">prieba</a></li>
+        </ul>
     </div>
-    <p class="p mt-2">Cdn de los estilos de la librería</p>
+    </pre>
+</div>
+<p class="p mt-2">Cdn de los estilos de la librería</p>
     <div class="codigo">
         <div class="cabecera">
             Meta View Port
-            <div class="d-flex">
-                <div class="circle bg-pasture"></div>
-                <div class="circle bg-toxic ml-1"></div>
-                <div class="circle bg-force ml-1"></div>
-            </div>
+        <div class="d-flex">
+            <div id="2" class="copy">Copy</div>
         </div>
+    </div>
     <pre class="cod-html"> 
     <!-- META obligatorio para poder utilizar la libreria -->
     <link  rel="stylesheet"  href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">
     </pre>
-    </div>
+</div>
+</div>
 
-    </div>
-    </section>
-
+</section>
     <script
         src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -89,8 +91,46 @@
     <script>
         $(document).ready(() => {
             BS.NavInit()
-            BS.HtmlInit({lineas: false})
+            BS.HtmlInit()
+
+            let codigos = new Array()
+
+            codigos.push({
+                id: 1,
+                cod: `
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <div>
+                    <ul>
+                        <li><a href="">prieba</a></li>
+                        <li><a href="">prieba</a></li>
+                        <li><a href="">prieba</a></li>
+                    </ul>
+                </div>
+                `
+            }, 
+            {
+                id: 2,
+                cod:  `<!-- META obligatorio para poder utilizar la libreria -->
+                <link  rel="stylesheet"  href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">
+                `
+            })
+            $(".copy").on("click",(e) => {
+                
+                
+                var aux = document.createElement("textarea");
+
+                $(aux).text(codigos[(parseInt($(e.target).attr("id"))) - 1].cod)
+           
+                document.body.appendChild(aux);
+
+                aux.select();
+                document.execCommand("copy");
+                document.body.removeChild(aux);
+            })
+
+
         })
     </script>
 </body>
-</html>
+</html> 
+             

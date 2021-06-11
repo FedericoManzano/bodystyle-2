@@ -65,6 +65,18 @@
             height: 10px;
             border-radius: 50%;
         }
+
+        .copy {
+            color: white;
+            font-size: 13px;
+            cursor: pointer;
+            user-select: none;
+            padding: 2px;
+
+            &:active {
+            color: rgb(61, 179, 37);   
+            }
+        }
     }
 }
 
