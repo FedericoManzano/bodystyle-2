@@ -16049,15 +16049,13 @@ p, span, a {
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?oelv9z");
-  src: url("fonts/icomoon.eot?oelv9z#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?oelv9z") format("truetype"), url("fonts/icomoon.woff?oelv9z") format("woff"), url("fonts/icomoon.svg?oelv9z#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?pbmb1w");
+  src: url("fonts/icomoon.eot?pbmb1w#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?pbmb1w") format("truetype"), url("fonts/icomoon.woff?pbmb1w") format("woff"), url("fonts/icomoon.svg?pbmb1w#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^=bs-], [class*=" bs-"],
-.check-radio-group .label-check::after,
-.check-radio-group .label-radio::after {
+[class^=bs-], [class*=" bs-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
@@ -16550,64 +16548,68 @@ p, span, a {
   content: "";
 }
 
-.bs-brave:before {
+.bs-bs:before {
   content: "";
 }
 
-.bs-blogger:before {
+.bs-brave:before {
   content: "";
 }
 
-.bs-bebo:before {
+.bs-blogger:before {
   content: "";
 }
 
-.bs-arrow-up:before {
+.bs-bebo:before {
   content: "";
 }
 
-.bs-arrow-forward-2:before {
+.bs-arrow-up:before {
   content: "";
 }
 
-.bs-arrow-forward:before {
+.bs-arrow-forward-2:before {
   content: "";
 }
 
-.bs-arrow-down:before {
+.bs-arrow-forward:before {
   content: "";
 }
 
-.bs-arrow-back-2:before {
+.bs-arrow-down:before {
   content: "";
 }
 
-.bs-arrow-back:before {
+.bs-arrow-back-2:before {
   content: "";
 }
 
-.bs-arch-linux:before {
+.bs-arrow-back:before {
   content: "";
 }
 
-.bs-apple:before {
+.bs-arch-linux:before {
   content: "";
 }
 
-.bs-android:before {
+.bs-apple:before {
   content: "";
 }
 
-.bs-alerttriangle:before {
+.bs-android:before {
   content: "";
 }
 
-.bs-add-2:before {
+.bs-alerttriangle:before {
   content: "";
 }
 
-.ba-menu:before {
+.bs-add-2:before {
   content: "";
+}
+
+.ba-menu:before {
+  content: "";
 }
 
 /***********************************************************
@@ -16800,7 +16802,6 @@ p, span, a {
   background: none !important;
   border-radius: 0.3em !important;
   white-space: nowrap !important;
-  box-shadow: 0px 2px 3px #00000075 !important;
   max-width: fit-content !important;
   font-weight: 400 !important;
   text-decoration: none !important;
@@ -16829,6 +16830,7 @@ p, span, a {
 .btn-force {
   background-color: var(--force) !important;
   color: var(--cure);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-force:hover {
   background-color: var(--force-hov) !important;
@@ -16838,6 +16840,7 @@ p, span, a {
 .btn-pasture {
   background-color: var(--pasture) !important;
   color: var(--cure);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-pasture:hover {
   background-color: var(--pasture-hov) !important;
@@ -16847,6 +16850,7 @@ p, span, a {
 .btn-fish {
   background-color: var(--fish) !important;
   color: var(--cure);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-fish:hover {
   background-color: var(--fish-hov) !important;
@@ -16856,6 +16860,7 @@ p, span, a {
 .btn-death {
   background-color: var(--death) !important;
   color: var(--cure);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-death:hover {
   background-color: var(--death-hov) !important;
@@ -16865,6 +16870,7 @@ p, span, a {
 .btn-dark {
   background-color: var(--dark) !important;
   color: var(--cure);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-dark:hover {
   background-color: var(--dark-hov) !important;
@@ -16874,6 +16880,7 @@ p, span, a {
 .btn-cure {
   background-color: var(--cure) !important;
   color: var(--dark);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-cure:hover {
   background-color: var(--cure-hov) !important;
@@ -16883,6 +16890,7 @@ p, span, a {
 .btn-gentle {
   background-color: var(--gentle) !important;
   color: var(--dark);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-gentle:hover {
   background-color: var(--gentle-hov) !important;
@@ -16892,6 +16900,7 @@ p, span, a {
 .btn-toxic {
   background-color: var(--toxic) !important;
   color: var(--dark);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-toxic:hover {
   background-color: var(--toxic-hov) !important;
@@ -16901,6 +16910,7 @@ p, span, a {
 .btn-haven {
   background-color: var(--haven) !important;
   color: var(--dark);
+  box-shadow: 0px 2px 3px #00000075 !important;
 }
 .btn-haven:hover {
   background-color: var(--haven-hov) !important;
@@ -17103,7 +17113,6 @@ a.link.disabled {
   background: none !important;
   border-radius: 0.3em !important;
   white-space: nowrap !important;
-  box-shadow: 0px 2px 3px #00000075 !important;
   max-width: fit-content !important;
   font-weight: 400 !important;
   text-decoration: none !important;

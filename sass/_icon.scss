@@ -1,18 +1,16 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?oelv9z');
-  src:  url('fonts/icomoon.eot?oelv9z#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?oelv9z') format('truetype'),
-    url('fonts/icomoon.woff?oelv9z') format('woff'),
-    url('fonts/icomoon.svg?oelv9z#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?pbmb1w');
+  src:  url('fonts/icomoon.eot?pbmb1w#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pbmb1w') format('truetype'),
+    url('fonts/icomoon.woff?pbmb1w') format('woff'),
+    url('fonts/icomoon.svg?pbmb1w#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="bs-"], [class*=" bs-"],
-.check-radio-group .label-check::after,
-.check-radio-group .label-radio::after{
+[class^="bs-"], [class*=" bs-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   font-style: normal;
@@ -386,48 +384,51 @@
 .bs-calendar:before {
   content: "\e977";
 }
-.bs-brave:before {
+.bs-bs:before {
   content: "\e978";
 }
-.bs-blogger:before {
+.bs-brave:before {
   content: "\e979";
 }
-.bs-bebo:before {
+.bs-blogger:before {
   content: "\e97a";
 }
-.bs-arrow-up:before {
+.bs-bebo:before {
   content: "\e97b";
 }
-.bs-arrow-forward-2:before {
+.bs-arrow-up:before {
   content: "\e97c";
 }
-.bs-arrow-forward:before {
+.bs-arrow-forward-2:before {
   content: "\e97d";
 }
-.bs-arrow-down:before {
+.bs-arrow-forward:before {
   content: "\e97e";
 }
-.bs-arrow-back-2:before {
+.bs-arrow-down:before {
   content: "\e97f";
 }
-.bs-arrow-back:before {
+.bs-arrow-back-2:before {
   content: "\e980";
 }
-.bs-arch-linux:before {
+.bs-arrow-back:before {
   content: "\e981";
 }
-.bs-apple:before {
+.bs-arch-linux:before {
   content: "\e982";
 }
-.bs-android:before {
+.bs-apple:before {
   content: "\e983";
 }
-.bs-alerttriangle:before {
+.bs-android:before {
   content: "\e984";
 }
-.bs-add-2:before {
+.bs-alerttriangle:before {
   content: "\e985";
 }
-.ba-menu:before {
+.bs-add-2:before {
   content: "\e986";
+}
+.ba-menu:before {
+  content: "\e987";
 }

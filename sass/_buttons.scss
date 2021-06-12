@@ -31,6 +31,7 @@
    .btn-#{$var} {
       background-color: map-get($map: $listadoColoresOscuros, $key: $var ) !important;
       color: var(--cure);
+      box-shadow: $btn-shadow         !important;
       &:hover {
          background-color: var(--#{$var}-hov)   !important;
          transition: all 0.3s ease;
@@ -43,6 +44,7 @@
    .btn-#{$var} {
       background-color: map-get($map: $listadoColoresClaros, $key: $var ) !important;
       color: var(--dark);
+      box-shadow: $btn-shadow         !important;
       &:hover {
          background-color: var(--#{$var}-hov)   !important;
          transition: all 0.3s ease;

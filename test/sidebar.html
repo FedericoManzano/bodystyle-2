@@ -10,7 +10,6 @@
     <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/tema-oscuro.css">
     
     <link rel="stylesheet" href="../dist/docu/documentacion.css">
-    <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/tema-oscuro.css">
     
     <title>Document</title>
 </head>
@@ -43,10 +42,12 @@
     </div>
     <div class="article">
         <h2 class="h2">CDN</h2>
+        <h3 class="h3">Meta View Port</h3>
         <p class="p">Dentro de las etiquetas <span class="res">header</span> de la página
             añadir los siguientes enlaces para agregar la librería.
+            Es necesario agregar el meta view port para poder utilizar la librería.
         </p>
-        <p class="p">Es necesario agregar el meta view port para poder utilizar la librería.</p>
+        
     <div class="codigo">
     <div class="cabecera">
         Meta View Port
@@ -66,6 +67,7 @@
     </div>
     </pre>
 </div>
+<h3 class="h3">Bodystyle css</h3>
 <p class="p mt-2">Cdn de los estilos de la librería</p>
     <div class="codigo">
         <div class="cabecera">
@@ -115,14 +117,9 @@
                 `
             })
             $(".copy").on("click",(e) => {
-                
-                
                 var aux = document.createElement("textarea");
-
                 $(aux).text(codigos[(parseInt($(e.target).attr("id"))) - 1].cod)
-           
                 document.body.appendChild(aux);
-
                 aux.select();
                 document.execCommand("copy");
                 document.body.removeChild(aux);
