@@ -17784,7 +17784,7 @@ a.link.disabled {
 .dropdown-toggle {
   z-index: 1000000;
   position: relative;
-  padding-right: 20px;
+  padding-right: 20px !important;
 }
 
 .dropdown-toggle .f-abajo {

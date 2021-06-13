@@ -16,6 +16,7 @@ import Js           from    "./moduls/CodeJs"
 import Waves        from    "./moduls/Waves"
 import ScrollSpy    from    "./moduls/ScrollSpy"
 import ToolTips     from    "./moduls/ToolTips"
+import DropDown from "./moduls/DropDown"
 
 
 (function() {
@@ -25,7 +26,7 @@ import ToolTips     from    "./moduls/ToolTips"
     Waves.init()
     ScrollSpy.init()
     ToolTips.iniciar()
-
+    DropDown.iniciar()
 
 
 
