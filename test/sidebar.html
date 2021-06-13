@@ -15,8 +15,8 @@
 </head>
 <body >
 
-    <div id="sidebar-fija">
-        <a class="sidebar-fija-logo">Bodystyle</a>
+    <div id="sidebar-fija" class="show-only-large">
+        <a class="sidebar-fija-logo fz-30"><span class="bs-bs t-force"></span>Bodystyle</a>
         <a class="titulo-sidebar trigger" data-trigger="#principal">PRINCIPAL <span class="bs-arrow-forward fz-20"></span></a>
         <ul id="principal">
             <li><a href="">Home</a></li>
@@ -30,6 +30,73 @@
             <li><a href="">Webpack</a></li>
         </ul>
     </div>
+
+    <nav class="body-nav-dark hide-only-large ">
+        <a href="" class="body-logo " ><span class="bs-bs fz-38 t-force"></span></a>
+        <!-- Trigger-->
+        <a class="t-cure hide-only-large bs-trigger-colapso" data-trigger="#colapso"><span class="bs-menu-line-2"></span></a>
+        <ul class="body-list show-only-large left">
+            <li><a href="#">Home            </a></li>
+            <li><a href="#">Documentación   </a></li>
+        </ul>
+        <a href="#" class="t-cure mr-2" style="text-decoration: none;">v1.0.0</a>
+        <a href="#" class="t-cure mr-2" style="text-decoration: none;"><span class="bs-github"></span></a>
+    </nav>
+
+    <div id="colapso" class="hide-only-large">
+        <div class="row">
+            <div class="cxs-12 cs-6 cm-4 cl-3">
+                <h6>PRINCIPAL</h6>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Documentación</a></li>
+                    <li><a href="">Repositorio</a></li>
+                </ul>
+            </div>
+            <div class="cxs-12 cs-6 cm-4 cl-3">
+                <h6>INTRODUCCION</h6>
+                <ul>
+                    <li><a href="">Get Started</a></li>
+                    <li><a href="">Descarga</a></li>
+                    <li><a href="">Webpack</a></li>
+                </ul>
+            </div>
+            <div class="cxs-12 cs-6 cm-4 cl-3">
+                <h6>CSS</h6>
+                <ul>
+                    <li><a href="">Get Started</a></li>
+                    <li><a href="">Descarga</a></li>
+                    <li><a href="">Webpack</a></li>
+                </ul>
+            </div>
+            <div class="cxs-12 cs-6 cm-4 cl-3">
+                <h6>COMPONENTES</h6>
+                <ul>
+                    <li><a href="">Get Started</a></li>
+                    <li><a href="">Descarga</a></li>
+                    <li><a href="">Webpack</a></li>
+                </ul>
+            </div>
+            <div class="cxs-12 cs-6 cm-4 cl-3">
+                <h6>FORMULARIOS</h6>
+                <ul>
+                    <li><a href="">Get Started</a></li>
+                    <li><a href="">Descarga</a></li>
+                    <li><a href="">Webpack</a></li>
+                </ul>
+            </div>
+            <div class="cxs-12 cs-6 cm-4 cl-3">
+                <h6>UTILITARIOS</h6>
+                <ul>
+                    <li><a href="">Get Started</a></li>
+                    <li><a href="">Descarga</a></li>
+                    <li><a href="">Webpack</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 
 <section class="pagina">
     <div class="article">
@@ -90,6 +157,7 @@
         crossorigin="anonymous"></script>
     <script src="../dist/js/bodystyle.js"></script>
     <script src="../docs/sidebar.js"></script>
+    <script src="../docs/colapso.js"></script>
     <script>
         $(document).ready(() => {
             BS.NavInit()

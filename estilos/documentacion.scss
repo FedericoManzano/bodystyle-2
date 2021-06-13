@@ -177,21 +177,26 @@
     bottom: 0;
     left: 0;
     width: 260px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(28, 27, 32);
     border-right: 1px solid rgba(0, 0, 0, 0.089);
     overflow: auto;
     user-select: none;
+    color:white;
     .sidebar-fija-logo {
-        display: block;
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.082);
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.103);
         border-bottom: 1px solid rgba(0, 0, 0, 0.075);
         margin-bottom: 10px;
         font-size: 20px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .titulo-sidebar {
         padding: 3px 15px;
+        margin-bottom: 5px;
         font-weight: 600;
         display: flex;
         align-items: center;
@@ -206,7 +211,7 @@
         list-style: none;
         display: none;
         li a {
-            padding: 1px 25px;
+            padding: 3px 25px;
             width: 100%;
             text-decoration: none;
             font-size: 17px;
@@ -225,4 +230,27 @@
     width: 60%;
     margin-left: 280px;
 
+    @media (max-width: 1020px) {
+        width: 100%;
+        margin-left: 0;
+        padding: 30px;
+    }
+}
+
+#colapso {
+    padding: 15px;
+
+    ul {
+        list-style: none;
+        li a {
+            text-decoration: none;
+            padding: 4px;
+            display: block;
+            color: rgb(117, 117, 117);
+            font-size: 17px;
+            &:hover {
+                color: rgb(26, 201, 148);
+            }
+        }
+    }
 }
