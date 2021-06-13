@@ -1,0 +1,32 @@
+.scroll-spy {
+
+    
+    position:           fixed;
+    right:              0;
+    top:                100px;
+    background-color: white;
+    width:              200px;
+    border:             1px solid rgba(0, 0, 0, 0.055);
+    overflow:           hidden;
+
+
+
+    ul {
+        list-style: none;
+        li a {
+            padding:                5px;
+            color:                  black;
+            text-decoration:        none;
+            display:                block;
+            border-bottom:          1px solid rgba(0, 0, 0, 0.055);
+            transition:             all 0.3s ease;
+            font-size:              15px;
+            &:hover {
+                background-color:   var(--pasture);
+                color:              white;
+            }
+        }
+    } 
+}
+
+
