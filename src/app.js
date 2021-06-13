@@ -14,13 +14,16 @@ import C        from    "./moduls/CodeC"
 import Java     from    "./moduls/CodeJava"
 import Js       from    "./moduls/CodeJs"
 import Waves    from    "./moduls/Waves"
+import ScrollSpy    from    "./moduls/ScrollSpy"
+
+
 
 (function() {
 
     Handler.init()
     Disabled.init()
     Waves.init()
-
+    ScrollSpy.init()
 
     /** Codigo */
     const CodigoCssInit = (config) => {

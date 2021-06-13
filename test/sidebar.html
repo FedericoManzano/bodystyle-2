@@ -100,7 +100,7 @@
 
 <section class="pagina">
     <div class="article">
-        <h1 class="h1">Bodystyle</h1>
+        <h1 id="body" class="h1 scroll-item">Bodystyle</h1>
         <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime praesentium commodi veritatis corporis nihil, ex at deleniti modi ullam quibusdam quo unde perferendis harum temporibus. Non ea cupiditate accusantium.</p>
         <div class="d-flex">
             <a href="#" class="btn btn-o-pasture">Descargar</a>
@@ -108,7 +108,7 @@
         </div>
     </div>
     <div class="article">
-        <h2 class="h2">CDN</h2>
+        <h2 id="cdn" class="h2 scroll-item">CDN</h2>
         <h3 class="h3">Meta View Port</h3>
         <p class="p">Dentro de las etiquetas <span class="res">header</span> de la página
             añadir los siguientes enlaces para agregar la librería.
@@ -149,7 +149,12 @@
     </pre>
 </div>
 </div>
-
+<div class="scroll-spy">
+    <ul>
+        <li><a data-scroll="#body" href="#">Bodystyle</a></li>
+        <li><a data-scroll="#cdn" href="#">CDN</a></li>
+    </ul>
+</div>
 </section>
     <script
         src="https://code.jquery.com/jquery-3.6.0.js"

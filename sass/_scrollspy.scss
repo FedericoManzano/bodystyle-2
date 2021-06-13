@@ -8,7 +8,7 @@
     width:              200px;
     border:             1px solid rgba(0, 0, 0, 0.055);
     overflow:           hidden;
-
+    z-index:            200;
 
 
     ul {
@@ -27,6 +27,17 @@
             }
         }
     } 
+
+    .select {
+        background-color:   var(--pasture);
+        color:              white;
+    }
+
+    
 }
 
-
+@media (max-width: 1200px) {
+    .scroll-spy{
+        display: none;    
+    }
+}
