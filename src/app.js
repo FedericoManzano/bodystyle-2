@@ -5,17 +5,17 @@
  * Licencia MIT
  * Repositorio (https://github.com/FedericoManzano/bodystyle-2)
  */
-import Nav      from    "./moduls/Nav"
-import Handler  from    "./moduls/Input-Handler"
-import Disabled from    "./moduls/Disabled"
-import Css      from    "./moduls/CodeCss"
-import Html     from    "./moduls/CodeHtml"
-import C        from    "./moduls/CodeC"
-import Java     from    "./moduls/CodeJava"
-import Js       from    "./moduls/CodeJs"
-import Waves    from    "./moduls/Waves"
+import Nav          from    "./moduls/Nav"
+import Handler      from    "./moduls/Input-Handler"
+import Disabled     from    "./moduls/Disabled"
+import Css          from    "./moduls/CodeCss"
+import Html         from    "./moduls/CodeHtml"
+import C            from    "./moduls/CodeC"
+import Java         from    "./moduls/CodeJava"
+import Js           from    "./moduls/CodeJs"
+import Waves        from    "./moduls/Waves"
 import ScrollSpy    from    "./moduls/ScrollSpy"
-
+import ToolTips     from    "./moduls/ToolTips"
 
 
 (function() {
@@ -24,8 +24,11 @@ import ScrollSpy    from    "./moduls/ScrollSpy"
     Disabled.init()
     Waves.init()
     ScrollSpy.init()
+    ToolTips.iniciar()
 
-    /** Codigo */
+
+
+
     const CodigoCssInit = (config) => {
         Css.iniciar(config)
     }
@@ -50,6 +53,8 @@ import ScrollSpy    from    "./moduls/ScrollSpy"
     const navInit = () => {
         Nav.init()
     }
+
+
 
     const BS = {
         NavInit:    ()        =>  navInit(),
