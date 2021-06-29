@@ -1,10 +1,10 @@
 import Tips from "dynamics-tips/src/moduls/Tips"
-
+import Cover from "dynamics-tips/src/moduls/cover/Cover"
 (function(){
 
     var ToolTips = {
         iniciar: () => {
-            Tips.init()
+            Tips.init(Cover)
         },
         destroy: () => Tips.destroy()
     }

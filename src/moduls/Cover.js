@@ -1,18 +1,20 @@
-import Drop from "dynamics-tips/src/moduls/Dropdown"
+
 import Cover from "dynamics-tips/src/moduls/cover/Cover"
+
+
 (function () {
 
    
-    const DropDown = {
+    const CoverDin = {
         iniciar: () => {
-            Drop.init(Cover)
+            Cover.init()
         },
         destroy: () => {
             Drop.destroy()
         }
     }
 
-    window.DropDown = DropDown
+    window.CoverDin = CoverDin
 })()
 
-export default DropDown
+export default CoverDin

@@ -17,10 +17,11 @@ import Waves        from    "./moduls/Waves"
 import ScrollSpy    from    "./moduls/ScrollSpy"
 import ToolTips     from    "./moduls/ToolTips"
 import DropDown     from    "./moduls/DropDown"
-import CommentDim   from     "./moduls/CommentDim"
+import CommentDim   from    "./moduls/CommentDim"
+import CooverDin    from    "./moduls/Cover"
 
 (function() {
-
+    CooverDin.iniciar()
     Handler.init()
     Disabled.init()
     Waves.init()
@@ -28,7 +29,7 @@ import CommentDim   from     "./moduls/CommentDim"
     ToolTips.iniciar()
     DropDown.iniciar()
     CommentDim.iniciar()
-
+    
 
     const CodigoCssInit = (config) => {
         Css.iniciar(config)
