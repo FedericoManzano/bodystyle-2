@@ -1,11 +1,11 @@
-import Drop from "dynamics-tips/src/modulos/DropDown"
+import Drop from "dynamics-tips/build/moduls/Dropdown"
 
 (function () {
 
    
     const DropDown = {
         iniciar: () => {
-            Drop.iniciar()
+            Drop.init()
         },
         destroy: () => {
             Drop.destroy()

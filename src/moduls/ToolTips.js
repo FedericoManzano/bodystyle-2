@@ -1,10 +1,10 @@
-import Tips from "dynamics-tips/src/modulos/ToolTips"
+import Tips from "dynamics-tips/build/moduls/Tips"
 
 (function(){
 
     var ToolTips = {
         iniciar: () => {
-            Tips.iniciar()
+            Tips.init()
         },
         destroy: () => Tips.destroy()
     }
