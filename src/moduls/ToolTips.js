@@ -1,4 +1,4 @@
-import Tips from "dynamics-tips/build/moduls/Tips"
+import Tips from "dynamics-tips/src/moduls/Tips"
 
 (function(){
 

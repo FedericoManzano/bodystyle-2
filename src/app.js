@@ -16,8 +16,8 @@ import Js           from    "./moduls/CodeJs"
 import Waves        from    "./moduls/Waves"
 import ScrollSpy    from    "./moduls/ScrollSpy"
 import ToolTips     from    "./moduls/ToolTips"
-import DropDown from "./moduls/DropDown"
-
+import DropDown     from    "./moduls/DropDown"
+import CommentDim  from     "./moduls/CommentDim"
 
 (function() {
 
@@ -27,7 +27,7 @@ import DropDown from "./moduls/DropDown"
     ScrollSpy.init()
     ToolTips.iniciar()
     DropDown.iniciar()
-
+    CommentDim.iniciar()
 
 
     const CodigoCssInit = (config) => {

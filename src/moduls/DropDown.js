@@ -1,4 +1,4 @@
-import Drop from "dynamics-tips/build/moduls/Dropdown"
+import Drop from "dynamics-tips/src/moduls/Dropdown"
 
 (function () {
 
