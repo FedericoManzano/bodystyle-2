@@ -17,7 +17,7 @@ import Waves        from    "./moduls/Waves"
 import ScrollSpy    from    "./moduls/ScrollSpy"
 import ToolTips     from    "./moduls/ToolTips"
 import DropDown     from    "./moduls/DropDown"
-import CommentDim  from     "./moduls/CommentDim"
+import CommentDim   from     "./moduls/CommentDim"
 
 (function() {
 

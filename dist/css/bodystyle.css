@@ -17317,6 +17317,35 @@ a.link.disabled {
     display: none;
   }
 }
+.label-topic {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.label-topic .lab {
+  max-width: fit-content;
+  border-radius: 999999px;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 7px 10px;
+  padding-right: 30px;
+  background-color: #2456c441;
+  margin-left: 3px;
+  position: relative;
+}
+.label-topic .lab a {
+  text-decoration: none;
+  color: black;
+}
+.label-topic .lab .cruz {
+  position: absolute;
+  right: 9px;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 /******************************************************************
 ///////////////////////////////////////////////////////////////////
 /////////////////// FORMULARIOS ///////////////////////////////////

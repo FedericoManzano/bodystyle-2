@@ -560,5 +560,8 @@
   content: "";
 }
 
+.ba-menu:before {
+  content: "";
+}
 
 /*# sourceMappingURL=icon.css.map */
