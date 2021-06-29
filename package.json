@@ -27,7 +27,7 @@
   "author": "Federico Manzano",
   "license": "MIT",
   "dependencies": {
-    "dynamics-tips": "^2.0.4",
+    "dynamics-tips": "^2.0.5",
     "jquery": "^3.6.0",
     "show-sintax": "^1.1.1"
   },
