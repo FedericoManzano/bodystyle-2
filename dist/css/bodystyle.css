@@ -17322,18 +17322,21 @@ a.link.disabled {
 .label-topic {
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
+  width: fit-content;
 }
 .label-topic .lab {
   max-width: fit-content;
   border-radius: 999999px;
-  font-size: 13px;
+  font-size: 15px;
   text-decoration: none;
-  padding: 7px 10px;
-  padding-right: 30px;
+  padding: 7px 20px;
+  padding-right: 40px;
   background-color: #2456c441;
   margin-left: 3px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .label-topic .lab a {
   text-decoration: none;
@@ -17344,8 +17347,22 @@ a.link.disabled {
   right: 9px;
   color: black;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
+}
+
+.topic {
+  background-color: transparent;
+  display: flex;
+}
+.topic input.camp {
+  background-color: transparent !important;
+  border: none !important;
+  width: 100%;
+}
+.topic input.camp:focus {
+  border: none !important;
+  border: 1px solid transparent !important;
 }
 
 a.copy {

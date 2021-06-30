@@ -20,7 +20,7 @@ import DropDown     from    "./moduls/DropDown"
 import CommentDim   from    "./moduls/CommentDim"
 import CooverDin    from    "./moduls/Cover"
 import Copy         from    "./moduls/Copy"
-
+import Label        from    "./moduls/Label"
 
 (function() {
     CooverDin.iniciar()
@@ -33,6 +33,8 @@ import Copy         from    "./moduls/Copy"
     CommentDim.iniciar()
     
     Copy.init()
+
+    Label.init()
     
 
     const CodigoCssInit = (config) => {
