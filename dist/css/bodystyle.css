@@ -17278,6 +17278,37 @@ a.link.disabled {
   z-index: 410;
 }
 
+.bs-collection {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.bs-collection .item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+  display: flex;
+  justify-content: space-between;
+}
+.bs-collection .item a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 17px;
+  width: 100%;
+}
+.bs-collection .item:hover {
+  background-color: var(--fish);
+}
+.bs-collection .item:hover a {
+  color: var(--cure);
+}
+.bs-collection .item:last-child {
+  border-bottom: none;
+}
+
 /******************************************************************
 ///////////////////////////////////////////////////////////////////
 /////////////////// JS ////////////////////////////////////////////

@@ -1,0 +1,35 @@
+
+$border: 1px solid rgba(0, 0, 0, 0.151);
+
+.bs-collection {
+    display: flex;
+    flex-direction: column;
+    border: $border;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 4px;
+    .item {
+        border-bottom:  $border;
+        display: flex;
+        justify-content: space-between;
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+            font-size: 17px;
+            width: 100%;
+        }
+        &:hover {
+            background-color:var(--fish);
+            & a {
+                color: var(--cure);
+            }
+            
+        }
+    }
+
+    .item:last-child {
+        border-bottom:  none;
+    }
+}
