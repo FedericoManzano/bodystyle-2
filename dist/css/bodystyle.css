@@ -17319,6 +17319,9 @@ a.link.disabled {
     display: none;
   }
 }
+/***********************************************************
+    TOPICS
+************************************************************/
 .label-topic {
   display: flex;
   flex-wrap: nowrap;
@@ -17339,6 +17342,9 @@ a.link.disabled {
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
+}
+.label-topic .lab:hover {
+  background-color: #0084ff48;
 }
 .label-topic .lab a {
   text-decoration: none;

@@ -1,32 +1,37 @@
+/***********************************************************
+    TOPICS
+************************************************************/
+
 .label-topic {
-
-
-
     display:    flex;
     flex-wrap:  nowrap;
     width:      fit-content;
-
     flex-wrap: wrap;
     
-    .lab {
-        cursor:             pointer;
-        max-width:          fit-content;
-        border-radius:      999999px;
-        text-decoration:    none;
-        padding:            5px 15px;
-        padding-right:      40px;
-        background-color:   #0051ff48;
-        margin-left:        3px;
-        position:           relative;
-        display:            flex;
-        justify-content:    center;
-        align-items:        center;
-        margin-bottom:      5px;
+
+    .lab {  
+        cursor:                 pointer;
+        max-width:              fit-content;
+        border-radius:          999999px;
+        text-decoration:        none;
+        padding:                5px 15px;
+        padding-right:          40px;
+        background-color:       #0051ff48;
+        margin-left:            3px;
+        position:               relative;
+        display:                flex;
+        justify-content:        center;
+        align-items:            center;
+        margin-bottom:          5px;
+
+        &:hover {
+            background-color:   #0084ff48;  
+        }
         a {
-            text-decoration: none;
-            color: #0059ff;
-            white-space: nowrap;
-            font-size: 13px;
+            text-decoration:    none;
+            color:              #0059ff;
+            white-space:        nowrap;
+            font-size:          13px;
         }
 
         .cruz {
@@ -58,11 +63,11 @@
         font-weight: 500 !important;
         font-size:  15px;
         border-radius: 0px !important;
-        border-bottom: 2px solid rgb(172, 172, 172) !important;
+        border-bottom: 2px solid #acacac !important;
         &:focus {
             border: none !important;
             height: 100%;
-            border-bottom: 2px solid rgb(0, 110, 255) !important;
+            border-bottom: 2px solid #006eff !important;
         }
     }
 }

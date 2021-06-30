@@ -13,6 +13,7 @@ class Label {
      * @returns String con el texto del label sin el ','
      */
     static norm (label) {
+        label = label.replace(";", "")
         return label.replace(",", "")
     }
 
@@ -30,6 +31,8 @@ class Label {
             return false 
         if(/^,*$/.test(label))
             return false 
+        if(/^( *[a-zA-Z0-9-_]+ *)+$/.test(label))
+            return false
         return true
     }
 
