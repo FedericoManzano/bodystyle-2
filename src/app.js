@@ -34,8 +34,12 @@ import Label        from    "./moduls/Label"
     
     Copy.init()
 
-    Label.init()
     
+    
+
+    const InitLabel = () => {
+        return new Label()
+    }
 
     const CodigoCssInit = (config) => {
         Css.iniciar(config)
@@ -71,6 +75,7 @@ import Label        from    "./moduls/Label"
         CInit:      (config)  =>  CodigoCInit   ( config ),
         JavaInit:   (config)  =>  CodigoJavaInit( config ),
         JsInit:     (config)  =>  CodigoJsInit  ( config ),
+        LabelInit:  ()        =>  InitLabel()  
     } 
     
     window.BS = BS

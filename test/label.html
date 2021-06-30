@@ -8,29 +8,28 @@
 
     <link rel="stylesheet" href="../dist/css/bodystyle.css">
     <link rel="stylesheet" href="../dist/css/icon.css">
-    <title>Document</title>
+    <title>Topics Docs</title>
 </head>
 <body>
 
-
-    <div class="topic">
-        <!--
-        <div class="label-topic">
-            <label for="" class="lab">
-                <a href="" >CSS </a>
-                <span class="bs-close cruz"></span>
-            </label>
-            <label for="" class="lab">
-                <a href="" >Libreria </a>
-                <span class="bs-close cruz"></span>
-            </label>
-        </div>-->
-       
+    <div class="container mt-3">
+        <h6 class="mb-2">Topics <small class="t-dark fz-13">( Agregue los topics separandolos con ",")</small></h6>
+        <!-- Labels Topic-->
+        <div class="topic" id="topic1"></div>
     </div>
     
-
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
     <script src="../dist/js/bodystyle.js"></script>
-
+    <script>
+        $(document).ready(() => {
+            let la = BS.LabelInit()
+            la.init({id: "#topic1"})
+        })
+    </script>
 
 </body>
 </html>

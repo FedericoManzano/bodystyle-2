@@ -5,23 +5,28 @@
     display:    flex;
     flex-wrap:  nowrap;
     width:      fit-content;
+
+    flex-wrap: wrap;
+    
     .lab {
+        cursor:             pointer;
         max-width:          fit-content;
         border-radius:      999999px;
-        font-size:          15px;
         text-decoration:    none;
-        padding:            7px 20px;
+        padding:            5px 15px;
         padding-right:      40px;
-        background-color:   #2456c441;
+        background-color:   #0051ff48;
         margin-left:        3px;
         position:           relative;
         display:            flex;
         justify-content:    center;
         align-items:        center;
+        margin-bottom:      5px;
         a {
             text-decoration: none;
-            color: black;
-          
+            color: #0059ff;
+            white-space: nowrap;
+            font-size: 13px;
         }
 
         .cruz {
@@ -29,9 +34,9 @@
             right:      9px;
             color:      black;
             font-weight: 500;
-            font-size:  18px;
+            font-size:  15px;
             cursor:     pointer;
-            
+            color:      #0059ff;
         }
     }
 }
@@ -39,14 +44,25 @@
 .topic {
     background-color: transparent;
     display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 15px;
+    border: 1px solid #0000001a;
+    min-height: 3em;
+    border-radius: 5px;
     input.camp {
         background-color: transparent   !important;
         border:none                     !important;
+        width: fit-content;
         width: 100%;
+        font-weight: 500 !important;
+        font-size:  15px;
+        border-radius: 0px !important;
+        border-bottom: 2px solid rgb(172, 172, 172) !important;
         &:focus {
             border: none !important;
-            border: 1px solid transparent !important;
-
+            height: 100%;
+            border-bottom: 2px solid rgb(0, 110, 255) !important;
         }
     }
 }
