@@ -19,6 +19,8 @@ import ToolTips     from    "./moduls/ToolTips"
 import DropDown     from    "./moduls/DropDown"
 import CommentDim   from    "./moduls/CommentDim"
 import CooverDin    from    "./moduls/Cover"
+import Copy         from    "./moduls/Copy"
+
 
 (function() {
     CooverDin.iniciar()
@@ -29,6 +31,8 @@ import CooverDin    from    "./moduls/Cover"
     ToolTips.iniciar()
     DropDown.iniciar()
     CommentDim.iniciar()
+    
+    Copy.init()
     
 
     const CodigoCssInit = (config) => {

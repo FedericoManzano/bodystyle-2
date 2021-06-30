@@ -17346,6 +17346,22 @@ a.link.disabled {
   cursor: pointer;
 }
 
+a.copy {
+  padding: 5px;
+  background-color: black;
+  border-bottom: 2px solid var(--pasture);
+  text-align: right;
+  width: 100%;
+  display: block;
+  color: #117e11;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  font-size: 13px;
+}
+a.copy:active {
+  color: #d33bba;
+}
+
 /******************************************************************
 ///////////////////////////////////////////////////////////////////
 /////////////////// FORMULARIOS ///////////////////////////////////

@@ -8,64 +8,20 @@
 
     <link rel="stylesheet" href="../dist/css/bodystyle.css">
     <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/tema-oscuro.css">
+    <link rel="stylesheet" href="../dist/css/dynamics.css">
     <title>Document</title>
 </head>
 <body >
 
 
-    <section class="container">
-        <pre class="cod-js">
-        class Persona {
-          constructor({nombre, apellido}) {
-            this.nombre = nombre;
-            this.apellido = apellido;
-          }
+    <section class="container mt-4">
+    <a class="copy tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click">Copiar</a>
+    <pre class="cod-html">
+      <div class="container">
+        <h1>Esto es html</h1>
+      </div>
+    </pre>
 
-          getNombre() {
-            return this.nombre;
-          }
-
-          getApellido() {
-            return this.apellido;
-          }
-
-          static Persona personaFabric() {
-            return new Persona()
-          }
-        }
-
-        
-    
-
-        
-
-      </pre>
-      <pre class="cod-c">
-        #include <stdio.h>
-        #include "./federico/lib.c"  
-
-        /*
-        * Devuelve verdadero si el numero es par 
-        * y falso si el numero es impar
-        */
-        int esPar(const int * num) {
-
-          // Expresion booleana
-          return num ? (*num % 2 == 0) : 0;
-        }
-
-        int main() {
-
-          // Declaración de la variable 
-          int var1 = 2;
-
-          // Mostrar resultado por pantalla
-          printf("El numero ingresado es: %s", esPar(&var1) ? "ES PAR": "NO ES PAR");
-
-          return 0;
-
-        }
-      <pre>
     </section>
 
 
@@ -79,10 +35,11 @@
     <script>
         $(document).ready(() => {
             BS.CssInit()
-            BS.HtmlInit()
+            BS.HtmlInit({lineas: false})
             BS.CInit()
             BS.JavaInit()
             BS.JsInit()
+
         })
 
     </script>

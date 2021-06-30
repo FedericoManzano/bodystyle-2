@@ -1,0 +1,15 @@
+a.copy {
+    padding: 5px;
+    background-color: black;
+    border-bottom: 2px solid var(--pasture);
+    text-align: right;
+    width: 100%;
+    display: block;
+    color: rgb(17, 126, 17);
+    cursor: pointer;
+    border-radius:  5px 5px 0 0 ;
+    font-size:      13px;
+    &:active {
+        color: rgb(211, 59, 186);
+    }
+}
