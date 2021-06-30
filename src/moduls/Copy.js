@@ -45,6 +45,18 @@ import $ from "jquery"
                 // Desaparece el cover del tips
                 $(".cover-drop").hide()
             }, 1500)
+
+            $(window).on("scroll", () => {
+                $(".tips").remove()
+                // Desaparece el cover del tips
+                $(".cover-drop").hide()
+            })
+
+            $(window).on("resize", () => {
+                $(".tips").remove()
+                // Desaparece el cover del tips
+                $(".cover-drop").hide()
+            })
         })
 
     } 
