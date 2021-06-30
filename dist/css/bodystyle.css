@@ -16966,6 +16966,8 @@ a.link.disabled {
   font-weight: 500;
   font-size: 1.3em;
   margin-right: 1em;
+  display: flex;
+  align-items: center;
 }
 .body-nav-dark .body-list,
 .body-nav-gentle .body-list,

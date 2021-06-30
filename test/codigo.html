@@ -10,6 +10,18 @@
     <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/tema-oscuro.css">
     <link rel="stylesheet" href="../dist/css/dynamics.css">
     <title>Document</title>
+
+    <style>
+        .clase-css {
+          max-width: 300px;
+
+        }
+        .clase2 {
+          content: "dsdss"
+        }
+        
+        
+    </style>
 </head>
 <body >
 
@@ -24,8 +36,39 @@
 
     </section>
 
+    <section class="container mt-4">
+      <a class="copy tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click">Copiar</a>
+      <pre class="cod-js">
+        import { Modulo } from "/Ruta"
+
+        class Persona {
+          constructor() {
+            this.nombre = "Federico"
+            this.apellido = "Manzano"
+          }
+
+          getNombre() {
+            return this.nombre
+          }
+        }
+      </pre>
+  
+      </section>
 
 
+      <section class="container mt-4">
+        <a class="copy tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click">Copiar</a>
+        <pre class="cod-css">
+        .clase-css {
+          max-width: 300px;
+
+        }
+        .clase2 {
+          content: "dsdss"
+        }
+        </pre>
+    
+        </section>
     <script
         src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -34,14 +77,14 @@
 
     <script>
         $(document).ready(() => {
-            BS.CssInit()
+            BS.CssInit({lineas: false})
             BS.HtmlInit({lineas: false})
             BS.CInit()
             BS.JavaInit()
-            BS.JsInit()
+            BS.JsInit({lineas: false})
 
         })
-
     </script>
 </body>
 </html>
+
