@@ -7,7 +7,7 @@
   font-style: normal;
   font-display: block;
 }
-[class^=bs-], [class*=" bs-"] {
+[class^=bs-], [class*=" bs-"], .check-radio-group {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
