@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <link rel="stylesheet" href="../dist/css/bodystyle.css">
-    <link rel="stylesheet" href="../dist/css/icon.css">
     <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/tema-oscuro.css">
-    <link rel="stylesheet" href="../dist/css/dynamics.css">
+    <link  rel="stylesheet"   href="../dist/css/bodystyle.css">
+    <link  rel="stylesheet"   href="../dist/css/icon.css">
+    <link  rel="stylesheet"   href="../dist/css/dynamics.css">
+    
+    
     <link rel="stylesheet" href="../dist/docu/documentacion.css">
     
     <title>Document</title>
@@ -84,8 +85,6 @@
                     <li><a href="">Get Started</a></li>
                     <li><a href="">Descarga</a></li>
                     <li><a href="">Webpack</a></li> 
-                    <!-- META obligatorio para poder utilizar la libreria -->
-                    <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
                     <div>
                         <ul>
                             <li><a  href="">prieba</a></li>
@@ -94,8 +93,6 @@
                         </ul>
                     </div>
                      
-                    <!-- META obligatorio para poder utilizar la libreria -->
-                    <link  rel="stylesheet"  href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">
                     
                 </ul>
             </div>
@@ -113,65 +110,68 @@
 
 
 <section class="pagina">
-    <div class="article">
-        <h1 id="body" class="h1 scroll-item">Bodystyle</h1>
-        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime praesentium commodi veritatis corporis nihil, ex at deleniti modi ullam quibusdam quo unde perferendis harum temporibus. Non ea cupiditate accusantium.</p>
-        <div class="d-flex">
-            <a href="#" class="btn btn-o-pasture tips-ele" data-position="bottom" data-info="Esto es un tips" data-evt="click">Descargar</a>
-            <a href="#" class="btn btn-o-dark ml-1">GitHub</a>
-        </div>
-    </div>
-    <div class="article">
-        <h2 id="cdn" class="h2 scroll-item">CDN</h2>
-        <h3 class="h3">Meta View Port</h3>
-        <p class="p">Dentro de las etiquetas <span class="res">header</span> de la página
-            añadir los siguientes enlaces para agregar la librería.
-            Es necesario agregar el meta view port para poder utilizar la librería.
-        </p>
-        
   
-        <a class="copy" >
-            <span class="tips-ele" data-position="left" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
-                Copiar
-            </span>
-        </a>
-    <pre class="cod-html"> 
-    <!-- META obligatorio para poder utilizar la libreria -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div>
-        <ul>
-            <li><a href="">prieba</a></li>
-            <li><a href="">prieba</a></li>
-            <li><a href="">prieba</a></li>
-        </ul>
+<article class="article">
+    <h1 id="body"  class="h1 scroll-item">Bodystyle</h1>
+    <p class="p">
+        Bodystyle es una librería de estilos CSS y funcionalidades en JS para 
+        el rápido desarrollo de la interfaz de usuario UI. Todo el código de la 
+        libreria está documentado y cuanta con los archivos con el código fuente 
+        para poder modificarlo.
+    </p>
+    <div class="d-flex">
+        <a href="#" class="btn btn-o-pasture">Descarga</a>
+        <a href="#" class="btn btn-o-dark ml-1">GitHub</a>
     </div>
-    </pre>
+</article>
 
-<h3 class="h3">Bodystyle css</h3>
-<p class="p mt-2">Cdn de los estilos de la librería</p>
-    
+<article class="article">
+    <h2 id="cdn" class="h2 scroll-item">CDN</h2>
+    <p class="p">
+        La forma más rápida de contar con la librería es añadiendo su CDN 
+        en la página.
+    </p>
+
+    <h3 class="h3">Bodystyle CSS</h3>
     <a class="copy" >
         <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
-            Copiar
+          Copiar
         </span>
     </a>
-    <pre class="cod-html"> 
-    <!-- META obligatorio para poder utilizar la libreria -->
-    <link  rel="stylesheet"  href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">
+
+    <pre class="cod-html">
+
+    <!-- Meta viewport necesario para poder utilizar resposive en la página -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!-- Link con el CDN de los estilos css  -->
+    <link rel="stylesheet" href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">   
     </pre>
 
-</div>
+    <h3 class="h3">Bodystyle JS</h3>
+
+    <div>
+    <a class="copy" >
+        <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
+          Copiar
+        </span>
+    </a>
+    <pre class="cod-html">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/js/bodystyle.min.js"></script>   
+    </pre>
+    </div>
+</article>
+    
+</section>
+
 <div class="scroll-spy">
     <ul>
         <li><a data-scroll="#body" href="#">Bodystyle</a></li>
         <li><a data-scroll="#cdn" href="#">CDN</a></li>
     </ul>
 </div>
-</section>
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="../dist/js/bodystyle.js"></script>
     <script src="../docs/sidebar.js"></script>
     <script src="../docs/colapso.js"></script>
@@ -186,3 +186,5 @@
              
 
     
+    
+               

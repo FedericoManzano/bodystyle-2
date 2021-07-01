@@ -13,9 +13,16 @@ import $ from "jquery"
         // Crea un text area axiliar en la pagina
         var aux = document.createElement("textarea");
 
+
+        // Obtiene el id de la etiqueta pre
+        // Para poder copiar el codigo
+        // contenido en ella
+        let pre = $(elemento).data("target")
+
+        
         // Introduce el texto que el usuario quiere copiar 
         // dentro del textarea auxiliar
-        $(aux).text($(elemento).siblings("pre").text())
+        $(aux).text($(pre).text())
 
         // agrega al documento el text area
         document.body.appendChild(aux);
