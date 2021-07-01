@@ -12,6 +12,7 @@ $border: 1px solid rgba(0, 0, 0, 0.151);
         border-bottom:  $border;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         a {
             display: block;
             text-decoration: none;

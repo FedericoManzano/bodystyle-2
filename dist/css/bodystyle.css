@@ -17290,6 +17290,7 @@ a.link.disabled {
   border-bottom: 1px solid rgba(0, 0, 0, 0.151);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .bs-collection .item a {
   display: block;
