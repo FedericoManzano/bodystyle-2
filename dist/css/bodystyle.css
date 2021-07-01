@@ -15842,6 +15842,18 @@ p, span, a {
   font-weight: bold !important;
 }
 
+.t-upper {
+  text-transform: uppercase !important;
+}
+
+.t-lower {
+  text-transform: lowercase !important;
+}
+
+.t-cap {
+  text-transform: capitalize !important;
+}
+
 .ov-hidden {
   overflow: hidden !important;
 }
@@ -17278,6 +17290,9 @@ a.link.disabled {
   z-index: 410;
 }
 
+/***********************************************************
+    COLLENTIONS
+************************************************************/
 .bs-collection {
   display: flex;
   flex-direction: column;

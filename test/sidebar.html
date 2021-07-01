@@ -7,8 +7,9 @@
 
 
     <link rel="stylesheet" href="../dist/css/bodystyle.css">
+    <link rel="stylesheet" href="../dist/css/icon.css">
     <link  rel="stylesheet"  href="https://ghcdn.rawgit.org/FedericoManzano/bodystyle-v3.0.0-fuente/master/dist/css/tema-oscuro.css">
-    
+    <link rel="stylesheet" href="../dist/css/dynamics.css">
     <link rel="stylesheet" href="../dist/docu/documentacion.css">
     
     <title>Document</title>
@@ -82,7 +83,20 @@
                 <ul>
                     <li><a href="">Get Started</a></li>
                     <li><a href="">Descarga</a></li>
-                    <li><a href="">Webpack</a></li>
+                    <li><a href="">Webpack</a></li> 
+                    <!-- META obligatorio para poder utilizar la libreria -->
+                    <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+                    <div>
+                        <ul>
+                            <li><a  href="">prieba</a></li>
+                            <li><a  href="">prieba</a></li>
+                            <li><a  href="">prieba</a></li>
+                        </ul>
+                    </div>
+                     
+                    <!-- META obligatorio para poder utilizar la libreria -->
+                    <link  rel="stylesheet"  href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">
+                    
                 </ul>
             </div>
             <div class="cxs-12 cs-6 cm-4 cl-3">
@@ -103,7 +117,7 @@
         <h1 id="body" class="h1 scroll-item">Bodystyle</h1>
         <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime praesentium commodi veritatis corporis nihil, ex at deleniti modi ullam quibusdam quo unde perferendis harum temporibus. Non ea cupiditate accusantium.</p>
         <div class="d-flex">
-            <a href="#" class="btn btn-o-pasture">Descargar</a>
+            <a href="#" class="btn btn-o-pasture tips-ele" data-position="bottom" data-info="Esto es un tips" data-evt="click">Descargar</a>
             <a href="#" class="btn btn-o-dark ml-1">GitHub</a>
         </div>
     </div>
@@ -115,13 +129,12 @@
             Es necesario agregar el meta view port para poder utilizar la librería.
         </p>
         
-    <div class="codigo">
-    <div class="cabecera">
-        Meta View Port
-        <div class="d-flex">
-            <div id="1" class="copy">Copy</div>
-        </div>
-    </div>
+  
+        <a class="copy" >
+            <span class="tips-ele" data-position="left" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
+                Copiar
+            </span>
+        </a>
     <pre class="cod-html"> 
     <!-- META obligatorio para poder utilizar la libreria -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,21 +146,20 @@
         </ul>
     </div>
     </pre>
-</div>
+
 <h3 class="h3">Bodystyle css</h3>
 <p class="p mt-2">Cdn de los estilos de la librería</p>
-    <div class="codigo">
-        <div class="cabecera">
-            Meta View Port
-        <div class="d-flex">
-            <div id="2" class="copy">Copy</div>
-        </div>
-    </div>
+    
+    <a class="copy" >
+        <span class="tips-ele" data-position="right" data-info="<span class='t-toxic fz-13'>Copiado !!<span>" data-evt="click" >
+            Copiar
+        </span>
+    </a>
     <pre class="cod-html"> 
     <!-- META obligatorio para poder utilizar la libreria -->
     <link  rel="stylesheet"  href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">
     </pre>
-</div>
+
 </div>
 <div class="scroll-spy">
     <ul>
@@ -165,42 +177,12 @@
     <script src="../docs/colapso.js"></script>
     <script>
         $(document).ready(() => {
-            BS.NavInit()
-            BS.HtmlInit()
-
-            let codigos = new Array()
-
-            codigos.push({
-                id: 1,
-                cod: `
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <div>
-                    <ul>
-                        <li><a href="">prieba</a></li>
-                        <li><a href="">prieba</a></li>
-                        <li><a href="">prieba</a></li>
-                    </ul>
-                </div>
-                `
-            }, 
-            {
-                id: 2,
-                cod:  `<!-- META obligatorio para poder utilizar la libreria -->
-                <link  rel="stylesheet"  href="https://rawcdn.githack.com/FedericoManzano/bodystyle/58a25e885718d0b2db6675c502ce6a41a45f373c/dist/css/bodystyle.min.css">
-                `
-            })
-            $(".copy").on("click",(e) => {
-                var aux = document.createElement("textarea");
-                $(aux).text(codigos[(parseInt($(e.target).attr("id"))) - 1].cod)
-                document.body.appendChild(aux);
-                aux.select();
-                document.execCommand("copy");
-                document.body.removeChild(aux);
-            })
-
-
+            BS.NavInit({lineas: false})
+            BS.HtmlInit({lineas: false})
         })
     </script>
 </body>
 </html> 
              
+
+    
