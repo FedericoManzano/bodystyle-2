@@ -15,6 +15,12 @@
     }
 }
 
+.hide-since-medium {
+    @include agregar-a-medida-minima(m){
+        display: none !important;
+    }
+}
+
 .hide-since-small {
     @include agregar-a-medida-maxima(s){
         display: none !important;
@@ -40,6 +46,12 @@
     }
 
     @include agregar-a-medida-maxima(xs){
+        display: none !important;
+    }
+}
+
+.show-since-medium {
+    @include agregar-a-medida-minima(s){
         display: none !important;
     }
 }

@@ -8,7 +8,7 @@ import $ from "jquery"
 (function(){
 
     // Desplazamiento del sidenav hacia la izquierda
-    const HIDE      = -260
+    const HIDE      = -100
 
     // Desplazamiento del sidenav hacia la derecha
     const SHOW      = 0
@@ -24,6 +24,11 @@ import $ from "jquery"
      * Agrega el cover para desaparecer el nav
      */
     const initNav = () => {
+
+        $("bs-trigger").children("span").removeClass("bs-close")
+        $("bs-trigger").children("span").addClass("bs-menu-line-2")
+
+
         // Agrega el sidebar cover
         $("body").append(`<div class="body-sidebar-cover"></div>`)
 
@@ -34,6 +39,10 @@ import $ from "jquery"
 
         // Obtiene el id del sidebar
         id = $(".bs-trigger").data("trigger")
+        $(id).css("top", $(".body-nav-dark").outerHeight()  )
+        $(window).on("scroll", () => {
+            $(id).css("top", $(".body-nav-dark").outerHeight() )
+        })
             
     }
 
@@ -44,12 +53,16 @@ import $ from "jquery"
      */
     const move = (left) => {
         if(visible) {
-            $(id).css("left", left)
+            $(id).css("left", left + "%")
             $(".body-sidebar-cover").hide()
+            $(".bs-trigger span").removeClass("bs-close")
+            $(".bs-trigger span").addClass("bs-menu-line-2")
             visible = false
         } else {
-            $(id).css("left", left)
+            $(id).css("left", left + "%")
             $(".body-sidebar-cover").show()
+            $(".bs-trigger span").removeClass("bs-menu-line-2")
+            $(".bs-trigger span").addClass("bs-close")
             visible = true
         }
     }

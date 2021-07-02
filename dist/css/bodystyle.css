@@ -16073,6 +16073,12 @@ p, span, a {
   }
 }
 
+@media (min-width: 1030px) {
+  .hide-since-medium {
+    display: none !important;
+  }
+}
+
 @media (max-width: 770px) {
   .hide-since-small {
     display: none !important;
@@ -16098,6 +16104,12 @@ p, span, a {
 }
 @media (max-width: 400px) {
   .show-only-small {
+    display: none !important;
+  }
+}
+
+@media (min-width: 770px) {
+  .show-since-medium {
     display: none !important;
   }
 }
@@ -16887,51 +16899,76 @@ a.link.disabled {
 .body-nav-dark .bs-menu-line-2,
 .body-nav-dark .bs-menu-line-3,
 .body-nav-dark .bs-menu-line-4,
+.body-nav-dark .bs-close,
 .body-nav-gentle .bs-menu-line-1,
 .body-nav-gentle .bs-menu-line-2,
 .body-nav-gentle .bs-menu-line-3,
 .body-nav-gentle .bs-menu-line-4,
+.body-nav-gentle .bs-close,
 .body-nav-pasture .bs-menu-line-1,
 .body-nav-pasture .bs-menu-line-2,
 .body-nav-pasture .bs-menu-line-3,
 .body-nav-pasture .bs-menu-line-4,
+.body-nav-pasture .bs-close,
 .body-nav-toxic .bs-menu-line-1,
 .body-nav-toxic .bs-menu-line-2,
 .body-nav-toxic .bs-menu-line-3,
 .body-nav-toxic .bs-menu-line-4,
+.body-nav-toxic .bs-close,
 .body-nav-force .bs-menu-line-1,
 .body-nav-force .bs-menu-line-2,
 .body-nav-force .bs-menu-line-3,
 .body-nav-force .bs-menu-line-4,
+.body-nav-force .bs-close,
 .body-nav-haven .bs-menu-line-1,
 .body-nav-haven .bs-menu-line-2,
 .body-nav-haven .bs-menu-line-3,
 .body-nav-haven .bs-menu-line-4,
+.body-nav-haven .bs-close,
 .body-nav-fish .bs-menu-line-1,
 .body-nav-fish .bs-menu-line-2,
 .body-nav-fish .bs-menu-line-3,
 .body-nav-fish .bs-menu-line-4,
+.body-nav-fish .bs-close,
 .body-nav-cure .bs-menu-line-1,
 .body-nav-cure .bs-menu-line-2,
 .body-nav-cure .bs-menu-line-3,
 .body-nav-cure .bs-menu-line-4,
+.body-nav-cure .bs-close,
 .body-nav-grey .bs-menu-line-1,
 .body-nav-grey .bs-menu-line-2,
 .body-nav-grey .bs-menu-line-3,
 .body-nav-grey .bs-menu-line-4,
+.body-nav-grey .bs-close,
 .body-nav-death .bs-menu-line-1,
 .body-nav-death .bs-menu-line-2,
 .body-nav-death .bs-menu-line-3,
 .body-nav-death .bs-menu-line-4,
+.body-nav-death .bs-close,
 .body-nav-traslucent .bs-menu-line-1,
 .body-nav-traslucent .bs-menu-line-2,
 .body-nav-traslucent .bs-menu-line-3,
-.body-nav-traslucent .bs-menu-line-4 {
+.body-nav-traslucent .bs-menu-line-4,
+.body-nav-traslucent .bs-close {
   position: absolute;
   right: 15px;
   top: calc(50% - 12px);
   cursor: pointer;
   font-size: 1.5em;
+  z-index: 1000000000;
+}
+.body-nav-dark .bs-close,
+.body-nav-gentle .bs-close,
+.body-nav-pasture .bs-close,
+.body-nav-toxic .bs-close,
+.body-nav-force .bs-close,
+.body-nav-haven .bs-close,
+.body-nav-fish .bs-close,
+.body-nav-cure .bs-close,
+.body-nav-grey .bs-close,
+.body-nav-death .bs-close,
+.body-nav-traslucent .bs-close {
+  font-size: 2em;
 }
 .body-nav-dark .container,
 .body-nav-gentle .container,
@@ -17136,10 +17173,10 @@ a.link.disabled {
 .body-sidebar-dark {
   font: 16px;
   position: fixed;
-  width: 260px;
+  width: 100%;
   top: 0;
   bottom: 0;
-  left: -260px;
+  left: -100%;
   z-index: 420;
   border-right: 1px solid rgba(0, 0, 0, 0.055);
   transition: left 0.3s ease;
@@ -17155,6 +17192,7 @@ a.link.disabled {
 .body-sidebar-toxic .side-list,
 .body-sidebar-haven .side-list,
 .body-sidebar-dark .side-list {
+  width: 100%;
   margin-top: 0em;
   list-style: none;
   display: flex;
@@ -17172,11 +17210,13 @@ a.link.disabled {
 .body-sidebar-haven .side-list .side-logo,
 .body-sidebar-dark .side-list .side-logo {
   display: flex;
+  justify-content: center;
   padding: 0.56em 1em;
   font-weight: 500;
-  font-size: 1.3em;
+  font-size: 1.8em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.055);
   background-color: rgba(0, 0, 0, 0.041);
+  text-align: center;
 }
 .body-sidebar-force .side-list li a,
 .body-sidebar-fish .side-list li a,
@@ -17189,11 +17229,14 @@ a.link.disabled {
 .body-sidebar-haven .side-list li a,
 .body-sidebar-dark .side-list li a {
   display: flex;
+  justify-content: center;
   text-decoration: none;
   width: 100%;
-  font-size: 1em;
+  font-size: 1.5em;
   padding: 0.5em 1em;
   font-weight: 300;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
 }
 
 .body-sidebar-force .side-logo,
@@ -17209,6 +17252,7 @@ a.link.disabled {
 .body-sidebar-pasture .side-list li a,
 .body-sidebar-dark .side-list li a {
   color: var(--cure);
+  border-bottom: 1px solid #ffffff25;
 }
 .body-sidebar-force .side-list li a:hover,
 .body-sidebar-fish .side-list li a:hover,
@@ -17231,6 +17275,7 @@ a.link.disabled {
 .body-sidebar-cure .side-list li a,
 .body-sidebar-gentle .side-list li a {
   color: var(--death);
+  border-bottom: 1px solid #00000025;
 }
 .body-sidebar-grey .side-list li a:hover,
 .body-sidebar-toxic .side-list li a:hover,
@@ -17286,7 +17331,6 @@ a.link.disabled {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.555);
   z-index: 410;
 }
 
