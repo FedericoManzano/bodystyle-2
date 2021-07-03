@@ -16968,7 +16968,9 @@ a.link.disabled {
 .body-nav-grey .bs-close,
 .body-nav-death .bs-close,
 .body-nav-traslucent .bs-close {
-  font-size: 2em;
+  font-size: 2.5em;
+  top: 15px;
+  right: 12px;
 }
 .body-nav-dark .container,
 .body-nav-gentle .container,
