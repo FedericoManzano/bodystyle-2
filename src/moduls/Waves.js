@@ -52,10 +52,9 @@ import $ from "jquery"
         })
     }
 
-    const Waves = {
+    const Waves =  {
         init: () => inicializar()
     }
-
     window.Waves = Waves
 
 })()

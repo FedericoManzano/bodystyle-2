@@ -16498,6 +16498,21 @@ table tbody tr td {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: auto;
+  border-radius: 3px;
+  margin-left: 4px;
+  background-color: var(--force);
+  color: var(--cure);
+}
+
 /******************************************************************
 ///////////////////////////////////////////////////////////////////
 /////////////////// COMPONENTES ///////////////////////////////////
