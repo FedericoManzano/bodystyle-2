@@ -16500,17 +16500,70 @@ table tbody tr td {
 
 .badge {
   display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: auto;
   padding: 0.25em 0.4em;
   font-size: 75%;
   font-weight: 600;
   line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: auto;
-  border-radius: 3px;
-  margin-left: 4px;
+  border-radius: 4px;
   background-color: var(--force);
   color: var(--cure);
+}
+
+.badge-force {
+  background-color: var(--force);
+  color: var(--cure);
+}
+
+.badge-pasture {
+  background-color: var(--pasture);
+  color: var(--cure);
+}
+
+.badge-dark {
+  background-color: var(--dark);
+  color: var(--cure);
+}
+
+.badge-death {
+  background-color: var(--death);
+  color: var(--cure);
+}
+
+.badge-fish {
+  background-color: var(--fish);
+  color: var(--cure);
+}
+
+.badge-cure {
+  background-color: var(--cure);
+  color: var(--death);
+}
+
+.badge-bor-red {
+  border-radius: 9999999px !important;
+}
+
+.badge-toxic {
+  background-color: var(--toxic);
+  color: var(--death);
+}
+
+.badge-gentle {
+  background-color: var(--gentle);
+  color: var(--death);
+}
+
+.badge-haven {
+  background-color: var(--haven);
+  color: var(--death);
+}
+
+.badge-grey {
+  background-color: var(--grey);
+  color: var(--death);
 }
 
 /******************************************************************
