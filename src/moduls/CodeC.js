@@ -1,16 +1,12 @@
 import CodigoC from "show-sintax/src/modulos/CodigoC"
 
 
-(function() {
+(() => {
    
-    const inicializar = (config) => {
-        CodigoC.iniciar(config)
-    }
+    const inicializar = (config) => CodigoC.iniciar(confi)
 
     const C = {
-        iniciar: (config) => {
-            inicializar(config)
-        }
+        iniciar: (config) => inicializar(config)
     }
 
     window.C = C

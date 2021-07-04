@@ -1,5 +1,5 @@
 import CodigoHtml from "show-sintax/src/modulos/CodigoHtml"
-(function () {
+(() => {
 
     const inicializar = (config) => {
         CodigoHtml.iniciar(config)

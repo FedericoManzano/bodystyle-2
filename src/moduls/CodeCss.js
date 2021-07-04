@@ -1,7 +1,7 @@
 import CodigoCss from "show-sintax/src/modulos/CodigoCss"
 
 
-(function() {
+(() => {
    
     const inicializar = (config) => CodigoCss.iniciar(config)
 

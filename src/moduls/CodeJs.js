@@ -1,6 +1,6 @@
 import CodigoJs from "show-sintax/src/modulos/CodigoJs"
 
-(function() {
+(() => {
 
     const inicializar = (config) => {
         CodigoJs.iniciar(config)

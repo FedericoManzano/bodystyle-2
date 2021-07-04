@@ -2,7 +2,7 @@
 import Cover from "dynamics-tips/src/moduls/cover/Cover"
 
 
-(function () {
+(() => {
 
    
     const CoverDin = {

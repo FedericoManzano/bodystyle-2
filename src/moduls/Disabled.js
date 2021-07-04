@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
 
-(function(){
+(() => {
 
     const inicializar = () => {
         $(".disabled, .disabled *").removeAttr("onclick")

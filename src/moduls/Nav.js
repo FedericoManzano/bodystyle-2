@@ -1,11 +1,12 @@
 import $ from "jquery"
 
+
 /**
  * Logica del Nav de la librería 
  * Muestra o oculta el sidebar dependiendo el estado de mismo
  * en un momento determinado según la demanda del usuario.
  */
-(function(){
+(() => {
 
     // Desplazamiento del sidenav hacia la izquierda
     const HIDE      = -100

@@ -22,7 +22,7 @@ import CooverDin    from    "./moduls/Cover"
 import Copy         from    "./moduls/Copy"
 import Label        from    "./moduls/Label"
 
-(function() {
+(() => {
     CooverDin.iniciar()
     Handler.init()
     Disabled.init()

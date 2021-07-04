@@ -4,7 +4,7 @@ import Comment from "dynamics-tips/src/moduls/Comment"
  * Comentarios dinámicos de la dependecia Dynamics Tips
  * @see node_modules/dynamics-tips/src/moduls/CommentDim
  */
-(function () {
+(() => {
 
     
     const CommentDin = {

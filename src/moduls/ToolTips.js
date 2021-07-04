@@ -4,7 +4,7 @@ import Tips from "dynamics-tips/src/moduls/Tips"
 
 // Cover importado de la librería DynamicsTips
 import Cover from "dynamics-tips/src/moduls/cover/Cover"
-(function(){
+(() => {
 
 
     var ToolTips = {

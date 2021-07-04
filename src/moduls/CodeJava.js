@@ -1,7 +1,7 @@
 import CodigoJava from "show-sintax/src/modulos/CodigoJava"
 
 
-(function () {
+(() => {
 
     const inicializar = (config) => {
         CodigoJava.iniciar(config)

@@ -4,7 +4,7 @@ import $ from "jquery"
 /**
  * Efecto waves para botones
  */
-(function() {
+(() => {
 
 
     // Clase de css con los estilos de objeto temporal

@@ -6,7 +6,7 @@ import $ from "jquery"
  * dentro de los elementos <pre> de la página
  * @see node_modules/show-code
  */
-(function (){
+(() => {
 
 
     const exec = (elemento) => {

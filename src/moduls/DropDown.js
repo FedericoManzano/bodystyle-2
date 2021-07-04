@@ -9,7 +9,7 @@ import Cover from "dynamics-tips/src/moduls/cover/Cover"
  * Elemento drop de la librería Dynamics Tips 
  * Repositorio: https://github.com/FedericoManzano/dynamics-tips2
  */
-(function () {
+(() => {
     const DropDown = {
         /**
          * Inicializa los elementos de la dependecia Dynamics
