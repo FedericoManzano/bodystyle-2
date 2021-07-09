@@ -26,9 +26,7 @@ import $ from 'jquery'
     }
 
     var Disabled = {
-        init: () => {
-            inicializar();
-        }
+        init: () => inicializar()
     }
     window.Disabled = Disabled
 })()
